@@ -1,0 +1,142 @@
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+.regale-blue{
+    background: linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%);
+
+}
+  
+
+nav ul li a{
+  font-size:12px ;
+  font-weight: 600;
+  font-family: 'Metropolis', sans-serif;
+  line-height: 18px;
+  text-align: center;
+}
+
+.back-to-top-box:hover .back-to-top{
+  position: relative;
+  top: -5px;
+}
+
+  /* nav ul :hover .dropdown{
+    visibility: visible;
+    transition: all 300 opacity 2s ease-in-out;
+  }
+  
+
+  .dropdown{
+    visibility: hidden;
+  }
+   */
+ /* fonts */
+h1{
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Metropolis';
+}
+h2{
+  font-weight: 700;
+  font-family: "Metropolis";
+}
+h3{
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: -2%;
+  font-family: "Metropolis";
+}
+h4{
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 600;
+  font-family: "Averta";
+}
+h5{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: "Metropolis";
+}
+h6{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: "Metropolis";
+}
+.txt{
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: "Metropolis";
+}
+.txt2{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Metropolis";
+}
+.txt3{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #9ABFF8;
+  font-family: "Metropolis";
+}
+.txt4{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Metropolis";
+}
+.txt5{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "Metropolis";
+}
+.txt6{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #05284C;
+  font-family: "Metropolis";
+}
+.txt7{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "Metropolis";
+}
+
+p{
+  font-weight: 400;
+  font-family: "Metropolis";
+  
+}
+
+/* for all the arrow buttons */
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none !important;
+  font-size: 16px;
+  color: #3580F1;
+  border-radius: 6px !important;
+  cursor: pointer;
+  transition:all 0.3s ease !important ;
+  line-height: 24px;
+  font-weight: 500;
+}
+.arrow:hover{
+  gap: 15px;
+  color: white;
+}
+/* for all the arrow buttons */
+  

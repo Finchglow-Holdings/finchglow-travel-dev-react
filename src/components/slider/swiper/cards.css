@@ -1,0 +1,66 @@
+/* Slideshow.css */
+.swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end !important;
+}
+  
+  
+.card{
+    border-radius: 10px 10px 0px 0px;
+    /* width: 100%; */
+    gap: 8px;
+}
+.card-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 37px 23px;
+    
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: #E6EFFD;
+    padding: 1px;
+}
+.card-image .card-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+   
+    
+}
+.name{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #375370;
+    line-height: 30px;
+    font-family: "Metropolis";
+}
+.discription{
+    font-size: 16px;
+    color: #697E94;
+    text-align: left;
+    line-height: 24px;
+}
+  
+

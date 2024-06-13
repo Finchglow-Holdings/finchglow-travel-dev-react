@@ -1,0 +1,98 @@
+  /****** form and button ****/
+  .form-example333{
+    position: relative;
+    top: 48px;
+ }
+ 
+ .form-example122{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: baseline;
+ }
+ 
+.subs-cribe{
+   border-radius: 15px;
+   border: 1px solid #C2C2C2;
+   background: var(--neutral-colors-color-300, #F9F9FF);
+   display: flex;
+   height: 44px;
+   width: 100%;
+   padding: 30px 30px;
+   align-items: flex-start;
+   gap: 305.909px;
+   flex-shrink: 0;
+}
+  
+ 
+ 
+ input,
+ input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height:2;
+ }
+ .mail-box{
+    width: 471px;
+    height: 66px;
+    flex-shrink: 0; 
+    
+ }
+
+ .groundText{
+   color: #102228;
+   text-align: center;
+   font-feature-settings: 'clig' off, 'liga' off;
+   font-family: 'Montserrat';
+   font-size: 35.689px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 48.436px; /* 135.714% */;
+   text-align: center;
+   font-feature-settings: 'clig' off, 'liga' off;
+   font-family: Montserrat;
+   font-size: 35.689px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 48.436px; /* 135.714% */
+ }
+ 
+ 
+ .suscrib{
+    background: #F5811E;
+    background-image: -o-linear-gradient(top, #F5811E, #F5811E);
+    background-image: -webkit-gradient(to bottom, #F5811E, #F5811E);
+    border-radius: 15px;
+    color: var(--neutral-colors-white, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'DM Sans';
+    width: 100%;
+    font-size: 20.394px;
+    height: 44px ;
+    padding: 30px 30px;
+    border: solid #F5811E 1px;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .suscrib:hover {
+    border: solid #F5811E 1px;
+    background: #F5811E;
+    background-image: -webkit-linear-gradient(top, #F5811E, #F5811E);
+    background-image: -moz-linear-gradient(top, #F5811E, #F5811E);
+    background-image: -ms-linear-gradient(top, #F5811E, #F5811E);
+    background-image: -o-linear-gradient(top, #F5811E, #F5811E);
+    background-image: -webkit-gradient(to bottom, #F5811E, #F5811E);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+   }
+ 
+ /*************** end of form and button **************/
+ 
