@@ -153,7 +153,7 @@ function Faq() {
                                         Yes, we have strategic partnerships with several airlines across different regions.
                                         See our growing list of airline partners
                                     </p>
-                                    <FadeLink to="/services" >
+                                    <FadeLink to="/partnerPlus" >
                                         <span className='arrow hover:!text-[#667085]'>
                                             Here
                                             <FaArrowRight />

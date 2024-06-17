@@ -1,23 +1,31 @@
-import React from 'react';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Nav from './navigation/nav'; // Correct import statement
-import Title from './contents/title'; // Correct import statement
-import contents from './props/contents'; // Ensure this is the correct path
-import RoundText from './contents/roundText';
-import round from './props/round';
-import TestimonialSlider from './testimonial/testimonial'
-import TalkToUs from './contents/talkToUs';
-import Footer from '../components/contents/footer'
-import background from './contents/images/blue-background - Copy.png';
-import background2 from './contents/images/sharing report.jpeg';
-import VideoSection from './contents/sections/videoSection';
+import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Nav from "./navigation/nav"; // Correct import statement
+import Title from "./contents/title"; // Correct import statement
+import contents from "./props/contents"; // Ensure this is the correct path
+import RoundText from "./contents/roundText";
+import round from "./props/round";
+import TestimonialSlider from "./testimonial/testimonial";
+import TalkToUs from "./contents/talkToUs";
+import talk from "./props/talk";
+import Footer from "../components/contents/footer";
+import background from "./contents/images/blue-background - Copy.png";
+import background2 from "./contents/images/sharing report.jpeg";
+import VideoSection from "./contents/sections/videoSection";
 
-
-
-
-
+function createTalkToUs(talk) {
+  return (
+    <TalkToUs
+      key={talk.id}
+      title={talk.title}
+      details={talk.details}
+      buttz={talk.buttz}
+      links={talk.links}
+    />
+  );
+}
 
 function createRoundText(content) {
   return (
@@ -34,8 +42,6 @@ function createRoundText(content) {
   );
 }
 
-
-
 function createTitle(content) {
   return (
     <Title
@@ -49,28 +55,26 @@ function createTitle(content) {
 }
 
 function About() {
-  
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
-    <div>
-      <section className="flex flex-col justify-center items-center w-full">
-        <Nav />
-        <div className="flex justify-center items-center w-full mt-[70px]">
-          {contents.filter(content => content.id === 2).map(createTitle)}
-        </div>
+    <div className="flex flex-col justify-center items-center w-full">
+      <Nav />
+      <section className="flex justify-center items-center w-full mt-[70px]">
+        {contents.filter((content) => content.id === 2).map(createTitle)}
       </section>
 
-      <section className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[429px] w-full h-auto overflow-hidden"
-        style={{ backgroundImage: `url(${background})` }}>
-        
+      <section
+        className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[429px] w-full h-auto overflow-hidden"
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px] my-0 mx-auto">
           <div className="flex flex-col lg:flex-row justify-between gap-[70px] items-start w-full">
             <div className="relative flex flex-col justify-start items-start gap-[6px]  h-auto text-left">
-              
-              <h3 data-aos="fade-up"
+              <h3
+                data-aos="fade-up"
                 className="text-[#B3CFFA] silver:w-[231px]"
               >
                 Why Finchglow Travels?
@@ -79,68 +83,85 @@ function About() {
 
             <div className="relative flex flex-col justify-center items-start gap-[40px] w-full h-auto text-left mb-[30px]">
               <div className="relative flex flex-col justify-center items-start gap-[20px] w-full h-auto text-left">
-                <span data-aos="fade-up" className="txt2 text-[#B3CFFA] lg:w-[739px]"
+                <span
+                  data-aos="fade-up"
+                  className="txt2 text-[#B3CFFA] lg:w-[739px]"
                 >
-                  Finchglow Travels was founded on the principle of excellent service, a determination to simplify travel complexities,
-                  and upholding the highest standards of professionalism, efficiency, and customer satisfaction. We are constantly designing
-                  solutions that make the Nigerian travel industry better.
+                  Finchglow Travels was founded on the principle of excellent
+                  service, a determination to simplify travel complexities, and
+                  upholding the highest standards of professionalism,
+                  efficiency, and customer satisfaction. We are constantly
+                  designing solutions that make the Nigerian travel industry
+                  better.
                 </span>
-                <span data-aos="fade-up" className="txt3 !text-[#FFFFFF] lg:w-[739px]"
+                <span
+                  data-aos="fade-up"
+                  className="txt3 !text-[#FFFFFF] lg:w-[739px]"
                 >
-                  This commitment to continuous improvement ensures our customers (whether travel agents or corporate, independent, and VIP travellers)
-                  always have access to the best travel standards. We are constantly evolving and adapting to the opportunities that lie ahead.
+                  This commitment to continuous improvement ensures our
+                  customers (whether travel agents or corporate, independent,
+                  and VIP travellers) always have access to the best travel
+                  standards. We are constantly evolving and adapting to the
+                  opportunities that lie ahead.
                 </span>
-                
               </div>
-              
             </div>
           </div>
         </div>
-
       </section>
-      
+
       <section className="flex justify-center items-center w-full ">
-        {round.filter(content => content.id === 2).map(createRoundText)}
+        {round.filter((content) => content.id === 2).map(createRoundText)}
       </section>
 
-      <section className="relative flex flex-col justify-center items-center  bg-fixed   bg-no-repeat bg-cover bg-center md:h-[425px] w-full h-auto overflow-hidden"
-        style={{ backgroundImage: `url(${background2})` }}>
+      <section
+        className="relative flex flex-col justify-center items-center  bg-fixed   bg-no-repeat bg-cover bg-center md:h-[425px] w-full h-auto overflow-hidden"
+        style={{ backgroundImage: `url(${background2})` }}>        
       </section>
 
       <section className="relative flex flex-col justify-center items-center  bg-[#EEF5FF]   w-full h-auto overflow-hidden">
         <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[80px] my-0 mx-auto">
-          <h3 data-aos="fade-up" className="text-[#05284C]  text-left w-full mb-[30px]">
-            Your No 1 Travel Consolidator  
+          <h3
+            data-aos="fade-up"
+            className="text-[#05284C]  text-left w-full mb-[30px]"
+          >
+            Your No 1 Travel Consolidator
           </h3>
           <div className="flex flex-col lg:flex-row justify-between gap-[20px] items-start w-full">
             <div className="relative flex flex-col justify-start items-start gap-[6px] w-full h-auto text-left">
-              
-              <span data-aos="fade-up" className="txt2 !font-semibold !text-[20px] !leading-[30px] text-[#697E94] lg:w-[543px]"
-                >
-                  As Nigeria’s foremost travel consolidator, Finchglow Travels has the scale to deliver maximum value and a team of seasoned professionals that
-                  possess an unparalleled understanding of the travel landscape. We offer unprecedented access to a vast network of suppliers and partners, ensuring
-                  you have options for the best rates and inventory available.
-                </span>
+              <span
+                data-aos="fade-up"
+                className="txt2 !font-semibold !text-[20px] !leading-[30px] text-[#697E94] lg:w-[543px]"
+              >
+                As Nigeria’s foremost travel consolidator, Finchglow Travels has
+                the scale to deliver maximum value and a team of seasoned
+                professionals that possess an unparalleled understanding of the
+                travel landscape. We offer unprecedented access to a vast
+                network of suppliers and partners, ensuring you have options for
+                the best rates and inventory available.
+              </span>
             </div>
 
             <div className="relative flex flex-col justify-center items-start gap-[40px] w-full h-auto text-left mb-[30px]">
               <div className="relative flex flex-col justify-center items-center gap-[20px] w-full h-auto text-left">
-                <span data-aos="fade-up" className="txt2 !leading-[26px] text-[#506982] lg:w-[402px]"
+                <span
+                  data-aos="fade-up"
+                  className="txt2 !leading-[26px] text-[#506982] lg:w-[402px]"
                 >
-                  As Nigeria’s foremost travel consolidator, Finchglow Travels has the scale to deliver maximum value and a team of seasoned professionals that
-                  possess an unparalleled understanding of the travel landscape. We offer unprecedented access to a vast network of suppliers and partners, ensuring
-                  you have options for the best rates and inventory available.
+                  As Nigeria’s foremost travel consolidator, Finchglow Travels
+                  has the scale to deliver maximum value and a team of seasoned
+                  professionals that possess an unparalleled understanding of
+                  the travel landscape. We offer unprecedented access to a vast
+                  network of suppliers and partners, ensuring you have options
+                  for the best rates and inventory available.
                 </span>
-                
-                
               </div>
-              
             </div>
           </div>
         </div>
       </section>
 
-      <VideoSection/>
+      <VideoSection />
 
       <section className="relative flex flex-col justify-center items-center bg-[#E6EAED] md:h-[384px] w-full h-auto overflow-hidden">
         <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[50px]  at500:px-[55px]  my-0 mx-auto overflow-hidden">
@@ -148,11 +169,11 @@ function About() {
         </div>
       </section>
 
-      <TalkToUs />
-      <Footer/>
+      <section className="flex justify-center items-center w-full ">
+        {talk.filter((talk) => talk.id === 1).map(createTalkToUs)}
+      </section>
+      <Footer />
     </div>
-   
-    
   );
 }
 

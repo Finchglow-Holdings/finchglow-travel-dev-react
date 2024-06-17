@@ -1,0 +1,98 @@
+.blogSlider-container .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+}
+
+:root {
+    --swiper-navigation-size: 44px;
+    /*
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+}
+
+.swiper-button-prev-blogSlide,
+.swiper-button-next-blogSlide {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev-blogSlide.swiper-button-disabled,
+.swiper-button-next-blogSlide.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-prev-blogSlide.swiper-button-hidden,
+.swiper-button-next-blogSlide.swiper-button-hidden {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-prev-blogSlide,
+.swiper-navigation-disabled .swiper-button-next-blogSlide {
+    display: none !important;
+}
+
+.swiper-button-prev-blogSlide svg,
+.swiper-button-next-blogSlide svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.swiper-rtl .swiper-button-prev-blogSlide svg,
+.swiper-rtl .swiper-button-next-blogSlide svg {
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev-blogSlide,
+.swiper-rtl .swiper-button-next-blogSlide {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+}
+
+.swiper-button-next-blogSlide,
+.swiper-rtl .swiper-button-prev-blogSlide {
+    right: var(--swiper-navigation-sides-offset, 10px);
+    left: auto;
+}
+
+.swiper-button-lock {
+    display: none;
+}
+
+/* Navigation font start */
+.swiper-button-prev-blogSlide:after,
+.swiper-button-next-blogSlide:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-prev-blogSlide:after,
+.swiper-rtl .swiper-button-next-blogSlide:after {
+    content: 'prev';
+}
+
+.swiper-button-next-blogSlide:after,
+.swiper-rtl .swiper-button-prev-blogSlide:after {
+    content: 'next';
+}
+

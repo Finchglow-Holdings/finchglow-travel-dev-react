@@ -5,7 +5,7 @@ import Button from './Button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function   TalkToUs() {
+function   TalkToUs(props) {
 
     useEffect(() => {
         AOS.init({ duration: 3000, once: true });
@@ -17,18 +17,18 @@ function   TalkToUs() {
           
           {/* <!-- start growing your business --> */}
             <div className="flex flex-col justify-center items-center text-center w-full">
-                <h2 data-aos="fade-up" className="text-[#FFFFFF] mb-[20px] text-[38px] sm:text-[48px] leading-[60px] sm:leading-[72px] tracking-[-2%]">Want to speak with us about our services?</h2>
+                <h2 data-aos="fade-up" className="text-[#FFFFFF] mb-[20px] text-[38px] sm:text-[48px] leading-[60px] sm:leading-[72px] tracking-[-2%]">{props.title}</h2>
                 <div className="relative w-full flex flex-col justify-center items-center ">
-                    <p data-aos="fade-up" className="text-[18px] sm:text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">
-                        Speak with a representative about all your travel needs now.
+                    <p data-aos="fade-up" className="text-[18px] sm:text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[802px] w-full">
+                        {props.details}
                     </p>
-                    <div data-aos="fade-up"  className="flex flex-col items-center justify-center w-[178px] h-auto "> 
-                    <Button  size="cdn" className="">
-                        <a  href="#" className="cdn">
-                            Chart with us!
-                        </a>
-                    </Button>
-                        
+                    <div data-aos="fade-up"  className="flex flex-col items-center justify-center  h-auto "> 
+                        <Button  size="cdn" className="">
+                            <a  href={props.links} >
+                                {props.buttz}
+                            </a>
+                        </Button>
+                            
                     </div>
                 </div>
             </div>

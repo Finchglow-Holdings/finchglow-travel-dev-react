@@ -4,8 +4,19 @@
   @tailwind utilities;
 
 .regale-blue{
-    background: linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%);
+  background: linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%);
 
+}
+.bigcolour {
+  background: linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%);
+
+}
+.bigcolour2 {
+  background: linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%);
+
+}
+.blueColor{
+  background: linear-gradient(179.03deg, rgba(1, 20, 40, 0.2) -47.85%, rgba(5, 72, 142, 0.2) -152.17%);
 }
   
 
@@ -112,6 +123,13 @@ h6{
   font-weight: 700;
   font-family: "Metropolis";
 }
+.txt8{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  font-family: "Metropolis";
+}
+
 
 p{
   font-weight: 400;

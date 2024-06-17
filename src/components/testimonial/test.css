@@ -36,6 +36,7 @@
 .customer_name {
     font-size: 18px;
     line-height: 28px;
+    /* color: #CCDFFC; */
    
 }
 
@@ -46,15 +47,9 @@
     /* margin-bottom: 20px; */
     text-align: center;
     font-weight: 500 !important;
+    /* color: #CCDFFC; */
 }
 
-.sas {
-    color: #05284C !important;
-}
-
-.partern {
-    color: #0260EE !important;
-}
 
 @media (max-width: 768px) {
     .comment {
@@ -83,7 +78,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    color:#CCDFFC;
 }
 
 .swiper-button-prev-test.swiper-button-disabled,

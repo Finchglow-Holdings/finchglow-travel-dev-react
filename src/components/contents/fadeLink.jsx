@@ -13,7 +13,7 @@ const FadeLink = ({ to, children, onClick }) => {
     setTimeout(() => {
       navigate(to);
       setLoading(false);
-    }, 400); // 2 seconds delay
+    }, 300); // 2 seconds delay
     if (onClick) onClick();
   };
 

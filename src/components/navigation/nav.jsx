@@ -38,9 +38,9 @@ const Nav = () => {
 
         <div className="relative w-full mx-auto flex md:flex-row justify-between items-start md:items-center">
           <div className="relative flex justify-start items-start text-white text-2xl font-bold mb-2 md:mb-0">
-            <a href="/">
+            <FadeLink to="/">
               <img src={logo} alt="logo" className="h-auto w-[128.07px]" />
-            </a>
+            </FadeLink >
           </div>
 
           <ul className="hidden silver:flex justify-end items-center space-x-4">
@@ -48,7 +48,7 @@ const Nav = () => {
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
-              <span className={`relative flex gap-[10px] items-center py-[10px] pr-[10px] ${activeLink === "about" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+              <span className={`relative flex gap-[10px] items-center text-[#05284C] py-[10px] pr-[10px] ${activeLink === "about" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
                 <FadeLink to="/about">
                   About us
                 </FadeLink>
@@ -68,23 +68,29 @@ const Nav = () => {
                 >
                   <ul className="flex flex-col py-2">
                     <li className='flex justify-center items-center w-full px-[5px]'>
-                      <a href="Our-story" className="flex w-full px-4 text-[#05284C] dark:hover:text-gray-600">Our story</a>
+                      <FadeLink
+                        to="/ourstory"
+                        className={`flex w-full px-4 !text-[#05284C] dark:hover:text-gray-600 ${activeLink === "about" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}
+                        onClick={() => setActiveLink("about")}
+                      >
+                        Our story
+                      </FadeLink>
                     </li>
                   </ul>
                 </div>
               )}
             </li>
-            <li className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "services" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+            <li className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "services" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
               <FadeLink to="/services">
                 Services
               </FadeLink>
             </li>
-            <li className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "blog" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+            <li className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
               <FadeLink to="/blog">
                 Blog
               </FadeLink>
             </li>
-            <li className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "contact" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+            <li className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "contact" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
               <FadeLink to="/contact">
                 Contact us
               </FadeLink>
@@ -116,7 +122,7 @@ const Nav = () => {
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >
-                <span className={`relative flex gap-[10px] items-center py-[10px] pr-[10px] ${activeLink === "about" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+                <span className={`relative flex gap-[10px] items-center py-[10px] text-[#05284C] pr-[10px] ${activeLink === "about" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
                   <FadeLink to="/about">
                     About us
                   </FadeLink>
@@ -142,17 +148,17 @@ const Nav = () => {
                   </div>
                 )}
               </li>
-              <li className={`py-[10px] pr-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "services" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+              <li className={`py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "services" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
                 <FadeLink to="/services">
                   Services
                 </FadeLink>
               </li>
-              <li className={`py-[10px] pr-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "blog" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+              <li className={`py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
                 <FadeLink to="/blog">
                   Blog
                 </FadeLink>
               </li>
-              <li className={`py-[10px] pr-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "contact" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
+              <li className={`py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "contact" ? 'border-b-[5px] border-b-[#81B0F7]' : ''}`}>
                 <FadeLink to="/contact">
                   Contact us
                 </FadeLink>
@@ -169,3 +175,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
+

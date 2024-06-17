@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube,  FaArrowUp } from "react-icons/fa";
 import logo from './images/Accredited Agent logo.png'
 import logo2 from './images/FT_logo_X5-01.png'
+import FadeLink from './fadeLink';
 
 import '../contents/styles/_footer.css';
 
@@ -20,9 +21,9 @@ function footer() {
       
 
       <section className="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
-          <div className="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[15px] at500:px-[64px] my-0 mx-auto">
+          <div className="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[15px] at500:px-[64px] my-0 mx-auto ">
             {/* back to top */}
-            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="relative z-[20] flex justify-center items-center silver:justify-end silver:items-end w-full ">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="relative z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full ">
               <span  className="relative  flex justify-center items-center bottom-[69px] !text-center !right-0 bg-[#697E94] !h-[36px] !w-[158px] !py-[8px] !px-[15px]">
                   <a href="#top" className="back-to-top-box  flex justify-center items-center  gap-[10px] !text-[#FFFFFF] ">
                     Back to top
@@ -79,9 +80,11 @@ function footer() {
                               </a>
                           </li>
                           <li data-aos="fade-up">
-                              <a  className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="ancillary.html">
-                                  Ancillary Services
-                              </a>
+                              <FadeLink  to="/ancill">
+                                    <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                                        Ancillary Services
+                                    </span>
+                              </FadeLink>
                           </li>
                           <li data-aos="fade-up">
                               <a  className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="#">
