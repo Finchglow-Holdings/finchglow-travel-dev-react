@@ -1,6 +1,6 @@
-/* Commented imports (assuming these are handled elsewhere) */
-@import './assets/fonts/style.css';
-/* @import "~/react-slideshow-image/dist/styles.css"; */
+
+/* @import "~react-slideshow-image/dist/styles.css"; */
+
 /* Global Styles */
 * {
   box-sizing: border-box;

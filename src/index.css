@@ -1,3 +1,5 @@
+/* Commented imports (assuming these are handled elsewhere) */
+@import "./assets/fonts/style.css";
 
   @tailwind base;
   @tailwind components;
