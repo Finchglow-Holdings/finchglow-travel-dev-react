@@ -54,8 +54,8 @@ const Navbar = () => {
           <div className="relative flex justify-start items-start  text-white text-2xl font-bold mb-2 md:mb-0">
             <a href="#">
               {scrolled ? 
-                (<img src={logo2} alt="logo" className="h-auto w-[128.07px]" />) :
-                (<img src={logo} alt="logo" className="h-auto  w-[128.07px]" />)}
+                (<img src={logo2} alt="logo" className="h-auto w-[130px]" />) :
+                (<img src={logo} alt="logo" className="h-auto  w-[130px]" />)}
             </a>
           </div>
 

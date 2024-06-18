@@ -39,7 +39,7 @@ const Nav = () => {
         <div className="relative w-full mx-auto flex md:flex-row justify-between items-start md:items-center">
           <div className="relative flex justify-start items-start text-white text-2xl font-bold mb-2 md:mb-0">
             <FadeLink to="/">
-              <img src={logo} alt="logo" className="h-auto w-[128.07px]" />
+              <img src={logo} alt="logo" className="h-auto w-[130px]" />
             </FadeLink >
           </div>
 

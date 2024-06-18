@@ -27,7 +27,7 @@ function footer() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="relative z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full "
+            className="sidebar z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full "
           >
             <span className="relative  flex justify-center items-center bottom-[69px] !text-center !right-0 bg-[#697E94] !h-[36px] !w-[158px] !py-[8px] !px-[15px]">
               <a
@@ -44,9 +44,9 @@ function footer() {
             <div className="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
               <div
                 data-aos="fade-up"
-                className="text-2xl cursor-pointer w-[128.07px] h-[36.02px]"
+                className="text-2xl cursor-pointer w-[130px] h-[36.02px]"
               >
-                <a className="w-full" href="index.html">
+                <a className="w-full" href="#">
                   <img
                     className="w-full h-auto transition-all duration-300 ease-in-out"
                     src={logo2}
@@ -242,3 +242,6 @@ function footer() {
 }
 
 export default footer;
+
+
+

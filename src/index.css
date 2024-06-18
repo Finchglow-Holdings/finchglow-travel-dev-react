@@ -158,3 +158,16 @@ p{
 }
 /* for all the arrow buttons */
   
+
+/* Make the back to top sticky */
+.sticky-wrapper {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 23;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
