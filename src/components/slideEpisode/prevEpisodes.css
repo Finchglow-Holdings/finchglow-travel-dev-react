@@ -1,0 +1,100 @@
+.episode-container.swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+}
+
+
+:root {
+    --swiper-navigation-size: 44px;
+    /*
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+}
+
+.swiper-button-prev-episo,
+.swiper-button-next-episo {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev-episo.swiper-button-disabled,
+.swiper-button-next-episo.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-prev-episo.swiper-button-hidden,
+.swiper-button-next-episo.swiper-button-hidden {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-prev-episo,
+.swiper-navigation-disabled .swiper-button-next-episo {
+    display: none !important;
+}
+
+.swiper-button-prev-episo svg,
+.swiper-button-next-episo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.swiper-rtl .swiper-button-prev-episo svg,
+.swiper-rtl .swiper-button-next-episo svg {
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev-episo,
+.swiper-rtl .swiper-button-next-episo {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+}
+
+.swiper-button-next-episo,
+.swiper-rtl .swiper-button-prev-episo {
+    right: var(--swiper-navigation-sides-offset, 10px);
+    left: auto;
+}
+
+.swiper-button-lock {
+    display: none;
+}
+
+/* Navigation font start */
+.swiper-button-prev-episo:after,
+.swiper-button-next-episo:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-prev-episo:after,
+.swiper-rtl .swiper-button-next-episo:after {
+    content: 'prev';
+}
+
+.swiper-button-next-episo:after,
+.swiper-rtl .swiper-button-prev-episo:after {
+    content: 'next';
+}
+
+/* Navigation font end */

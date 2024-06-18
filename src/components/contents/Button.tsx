@@ -8,7 +8,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   className?: string;
-  size?: "small" | "cdn" | "arrow" | "play" | "medium" | "large";
+  size?: "small" | "cdn" | "arrow" | "sign" | "play" | "medium" | "large";
   color?: "primary" | "secondary" | "danger";
 }
 
@@ -39,7 +39,7 @@ Button.propTypes = {
   type: PropTypes.oneOf(["button", "submit", "reset"]),
   disabled: PropTypes.bool,
   className: PropTypes.string,
-  size: PropTypes.oneOf(["small", "cdn", "arrow", "play", "medium", "large"]),
+  size: PropTypes.oneOf(["small", "cdn", "sign", "arrow", "play", "medium", "large"]),
   color: PropTypes.oneOf(["primary", "secondary", "danger"]),
 };
 

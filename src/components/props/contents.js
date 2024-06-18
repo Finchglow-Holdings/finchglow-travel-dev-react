@@ -14,7 +14,7 @@ const contents = [
   {
     id: 2,
     title: "About us",
-    subTitle: "We are Nigeria’s Premier Indigenous Travel Consolidator",
+    subTitle: "we are Nigeria’s Premier Indigenous Travel Consolidator",
     riteContent: "Established in 2006 as a travel agency, Finchglow Travels is now Nigeria’s foremost travel consolidator.",
     imgURL: image2,
   },
@@ -35,7 +35,7 @@ const contents = [
   // Add more content objects as needed for other pages
   {
     id: 5,
-    title: "About us",
+    title: "Our Story",
     subTitle: "About Finchglow Travels",
     riteContent: "Our vast experience and expertise enable us to leverage extensive knowledge, insights, and time-tested solutions from diverse businesses to maximise savings and profits for every client requiring our services.",
     imgURL: image2,
@@ -80,7 +80,7 @@ const contents = [
     title: "PartnerPlus Connect",
     subTitle: "Connect With Us Through Our PartnerPlus Connect Webinar",
     riteContent: "PartnerPlus Connect is more than just an industry-focused monthly webinar — it's a catalyst for growth and innovation in Nigeria's travel industry. Led by Finchglow Travels' top executives, PartnerPlus Connect provides a unique opportunity for agents to learn from industry leaders and peers alike.",
-    imgURL: image3,
+    imgURL: image2,
   },
 ];
 

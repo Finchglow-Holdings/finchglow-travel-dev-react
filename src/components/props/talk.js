@@ -42,6 +42,14 @@ const talk = [
     buttz: "Get started",
     links: null
   },
+    
+   {
+    id: 7,
+    title: "Don't Just Peek, Dive Deep, and Get in on the Secret Sauce! Join over 4,000 other trade partners and maximise your profit.",
+    details: null,
+    buttz: "Get started",
+    links: null
+  },
   
   // Add more content objects as needed for other pages
 ];
