@@ -35,24 +35,24 @@ function RoundText(props) {
             <div className="flex flex-col justify-center items-start w-full h-auto  gap-[20px] text-left ">
               <span
                 data-aos="fade-up"
-                className={`txt3 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'lg:!w-[609px]'}`} dangerouslySetInnerHTML={{ __html: props.description1 }}
+                className={`txt3 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`} dangerouslySetInnerHTML={{ __html: props.description1 }}
               >
               </span>
               <span
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'lg:!w-[609px]'}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`}
               >
                 {props.description2}
               </span>
               <span
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'lg:!w-[609px]'}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`}
               >
                 {props.description3}
               </span>
               <span
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'lg:!w-[609px]'}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`}
               >
                 {props.description4}
               </span>

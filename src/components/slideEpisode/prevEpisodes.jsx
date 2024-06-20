@@ -28,7 +28,8 @@ function PrevEpisodes() {
         className="relative flex flex-col md:!overflow-hidden"
         style={{ width: "100%" }}
         modules={[Navigation, Pagination, A11y, Autoplay]}
-        spaceBetween={30}
+        spaceBetween={50}
+        
         // loop={true}
         // autoplay={{
         //   delay: 5000,

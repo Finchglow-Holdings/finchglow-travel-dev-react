@@ -53,16 +53,16 @@ const ImageSlider = () => {
               {slide.title && slide.subTitle && (
                 <div className="content">
                   <div className="text-container absolute bottom-[50px] flex flex-col text-left w-full">
-                    <h1 className="uppercase text-[#E6EAED] text-[29px] leading-[38px] at500:text-[39px] at500:leading-[48px] md:text-[55px] md:leading-[60px]" style={{ textAlign: "left", fontWeight: "900" }}>{slide.title}</h1>
-                    <p className=" text-[#E6EAED] text-[14px] leading-[18px] at500:text-[20px] at500:leading-[24px] sm:w-[521px]" style={{ textAlign: "left", fontWeight: "600" }}>{slide.subTitle}</p>
+                    <h1 className=" font-metropolis uppercase text-[#E6EAED] text-[29px] leading-[38px] at500:text-[39px] at500:leading-[48px] md:text-[55px] md:leading-[60px]" style={{ textAlign: "left", fontWeight: "900" }}>{slide.title}</h1>
+                    <p className=" font-metropolis  text-[#E6EAED] text-[14px] leading-[18px] at500:text-[20px] at500:leading-[24px] sm:w-[521px]" style={{ textAlign: "left", fontWeight: "600" }}>{slide.subTitle}</p>
                   </div>
                 </div>
               )}
               {slide.title1 && slide.subTitle1 && (
                 <div className="content ">
                   <div className="text-container absolute bottom-[190px] flex justify-center items-center flex-col text-center w-full">
-                    <h1 className=" uppercase text-[#E6EAED] text-[29px] leading-[38px] at500:text-[39px] at500:leading-[48px] md:text-[55px] md:leading-[60px]" style={{  fontWeight: "900" }}>{slide.title1}</h1>
-                    <p className=" text-[#E6EAED] text-[14px] leading-[18px] at500:text-[20px] at500:leading-[24px] sm:w-[521px]" style={{  fontWeight: "600" }}>{slide.subTitle1}</p>
+                    <h1 className=" font-metropolis  uppercase text-[#E6EAED] text-[29px] leading-[38px] at500:text-[39px] at500:leading-[48px] md:text-[55px] md:leading-[60px]" style={{  fontWeight: "900" }}>{slide.title1}</h1>
+                    <p className=" font-metropolis  text-[#E6EAED] text-[14px] leading-[18px] at500:text-[20px] at500:leading-[24px] sm:w-[521px]" style={{  fontWeight: "600" }}>{slide.subTitle1}</p>
                   </div>
                 </div>
               )}

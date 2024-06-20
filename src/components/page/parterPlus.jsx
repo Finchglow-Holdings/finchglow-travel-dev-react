@@ -67,7 +67,7 @@ function PartnerPlusConnect() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
+    <div className="flex flex-col justify-center items-center w-full overflow-hidden">
       <Nav />
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 11).map(createTitle)}
@@ -138,7 +138,7 @@ function PartnerPlusConnect() {
       </section>
 
       <section className="relative flex flex-col justify-center items-center bg-[#EEF8FF]  w-full h-auto  overflow-hidden">
-        <div className="static w-full at500:w-[90%] flex flex-col justify-center gap-[30px] items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[40px] my-0 mx-auto">
+        <div className="static w-full at500:w-[90%] flex flex-col justify-center gap-[30px] items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[40px] my-0 mx-auto overflow-hidden">
           <EpisodesSlide />
         </div>
       </section>

@@ -19,6 +19,10 @@ export default {
  
       },
 
+      fontFamily: {
+        metropolis: ['Metropolis', 'sans-serif'],
+      },
+
       backgroundImage: {
         'custom-gradient': 'linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%)',
         'custom1-gradient': `

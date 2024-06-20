@@ -11,6 +11,7 @@ import OurLocations from './contents/ourLocations';
 
 import background from './contents/images/blue-background - Copy.png';
 import GetInToch from './form/ContactForm';
+import MapEmbed from './contents/sections/MapEmbed';
 
 
 
@@ -59,6 +60,7 @@ function ContactUs() {
         <section className="flex justify-center items-center w-full mt-[70px]">
           {contents.filter(content => content.id === 4).map(createTitle)}
         </section>
+        <MapEmbed/>
 
         <GetInToch/>
 

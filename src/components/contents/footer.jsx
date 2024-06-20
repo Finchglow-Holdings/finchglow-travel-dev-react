@@ -70,7 +70,7 @@ function footer() {
                     <a href="#">
                       <img
                         src={logo}
-                        className="w-[182.74px] h-[60px] object-cover"
+                        className=" w-[182.74px] h-[60px] object-cover"
                         alt="Accredited Agent logo"
                       />
                     </a>

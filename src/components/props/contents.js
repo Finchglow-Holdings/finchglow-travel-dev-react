@@ -34,7 +34,7 @@ const contents = [
     title: "Contact us",
     subTitle: "We are strategically positioned to serve you better.",
     riteContent: "At Finchglow Travels, we specialise in crafting tailored travel solutions that simplify the complexities of global travel while delivering strategic results for businesses and individuals.",
-    imgURL: image4,
+    imgURL: null,
   },
   // Add more content objects as needed for other pages
   {

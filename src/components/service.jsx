@@ -59,7 +59,7 @@ function Service() {
             <div className="relative lg:bottom-[-78px] flex justify-start items-start w-full h-auto mb-[30px] lg:mb-0 ">
               <img
                 src={image1}
-                className="w-full h-[300px] lg:w-[559px] lg:h-[656px] object-cover"
+                className=" bg-gray-500 w-full h-[300px] lg:w-[559px] lg:h-[656px] object-cover"
                 alt=""
               />
             </div>
@@ -123,7 +123,7 @@ function Service() {
                 <span className="relative h-[64px] w-[64px] flex justify-center items-center rounded-[50%] bg-[#FAC2C3]">
                   <img
                     src={icons2}
-                    className="absolute h-[20px] w-[20px] object-cover"
+                    className="bg-gray-500 absolute h-[20px] w-[20px] object-cover"
                     alt=""
                   />
                 </span>
@@ -183,7 +183,7 @@ function Service() {
             <div className="relative w-full h-auto mb-[30px] lg:mb-0">
               <img
                 src={image3}
-                className="w-full h-auto lg:w-[623px] lg:h-[656px] object-cover"
+                className="bg-gray-500 w-full h-auto lg:w-[623px] lg:h-[656px] object-cover"
                 alt=""
               />
             </div>
@@ -303,14 +303,73 @@ function Service() {
             <div className="relative flex justify-end items-end w-full h-auto mb-[30px] lg:mb-0">
               <img
                 src={image4}
-                className="w-full h-auto lg:w-[538px] lg:h-[689px] object-cover"
+                className=" bg-gray-500 w-full h-auto lg:w-[538px] lg:h-[689px] object-cover"
                 alt=""
               />
             </div>
           </div>
         </div>
       </section>
-  
+
+      {/* Visa and Immigration Services */}
+      <section className="relative bg-custom-gradient  flex flex-col justify-center items-center w-full h-auto  overflow-hidden ">
+        <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px]  at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between items-center  w-full h-auto ">
+            <div className="relative  flex justify-start items-start w-full h-auto mb-[30px] lg:mb-0 ">
+              <img
+                src={image1}
+                className=" bg-gray-500 w-full h-[300px] lg:w-[559px] lg:h-[656px] object-cover"
+                alt=""
+              />
+            </div>
+
+            <div className="relative flex flex-col justify-center items-center w-full h-auto text-left ">
+              <div className="relative flex flex-col justify-center items-start gap-[17px] w-full lg:w-[446px] h-auto text-left ">
+                <span
+                  data-aos="fade-up"
+                  className="relative w-full h-auto mb-[10px]"
+                >
+                  <img
+                    src={icons1}
+                    className="h-[64px] w-[64px] object-cover"
+                    alt=""
+                  />
+                </span>
+                <div className="flex flex-col justify-center items-start gap-[16px] text-left w-full silver:w-[446px]">
+                  <h3 data-aos="fade-up" className="text-[#05284C]">
+                    Visa and Immigration Services
+                  </h3>
+                  <span
+                    data-aos="fade-up"
+                    className="txt2 text-[#667085] text-left w-full silver:w-[358px]"
+                  >
+                    Simplify your Visa Experience with Finchglow Travels as your
+                    Visa and Immigration Partner
+                  </span>
+                </div>
+                <span
+                  data-aos="fade-up"
+                  className="txt2 text-[#667085] text-left w-full silver:w-[446px]"
+                >
+                  Visa and immigration processes can be daunting, but Finchglow
+                  Travels' expert consultants are here to help. We specialise in
+                  visa applications, ensuring all requirements and documents are
+                  correctly handled. Whether moving abroad or travelling for
+                  work or leisure, we provide personalised assistance for a
+                  smooth journey.
+                </span>
+                <FadeLink to="/OurVisa">
+                  <span data-aos="fade-up" className="arrow !text-[#0260EE]">
+                    Why Choose Our Visa and Immigration Services?
+                    <FaArrowRight />
+                  </span>
+                </FadeLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

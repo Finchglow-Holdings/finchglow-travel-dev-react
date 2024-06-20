@@ -60,7 +60,7 @@ function About() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
+    <div className="flex flex-col justify-center items-center w-full ">
       <Nav />
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 2).map(createTitle)}
@@ -85,7 +85,7 @@ function About() {
               <div className="relative flex flex-col justify-center items-start gap-[20px] w-full h-auto text-left">
                 <span
                   data-aos="fade-up"
-                  className="txt2 text-[#B3CFFA] lg:w-[739px]"
+                  className="txt2 text-[#B3CFFA] xl:w-[739px]"
                 >
                   Finchglow Travels was founded on the principle of excellent
                   service, a determination to simplify travel complexities, and
@@ -96,7 +96,7 @@ function About() {
                 </span>
                 <span
                   data-aos="fade-up"
-                  className="txt3 !text-[#FFFFFF] lg:w-[739px]"
+                  className="txt3 !text-[#FFFFFF] xl:w-[739px]"
                 >
                   This commitment to continuous improvement ensures our
                   customers (whether travel agents or corporate, independent,
@@ -131,7 +131,7 @@ function About() {
             <div className="relative flex flex-col justify-start items-start gap-[6px] w-full h-auto text-left">
               <span
                 data-aos="fade-up"
-                className="txt2 !font-semibold !text-[20px] !leading-[30px] text-[#697E94] lg:w-[543px]"
+                className="txt2 !font-semibold !text-[20px] !leading-[30px] text-[#697E94] xl:w-[543px]"
               >
                 As Nigeria’s foremost travel consolidator, Finchglow Travels has
                 the scale to deliver maximum value and a team of seasoned
@@ -146,7 +146,7 @@ function About() {
               <div className="relative flex flex-col justify-center items-center gap-[20px] w-full h-auto text-left">
                 <span
                   data-aos="fade-up"
-                  className="txt2 !leading-[26px] text-[#506982] lg:w-[402px]"
+                  className="txt2 !leading-[26px] text-[#506982] xl:w-[402px]"
                 >
                   As Nigeria’s foremost travel consolidator, Finchglow Travels
                   has the scale to deliver maximum value and a team of seasoned
