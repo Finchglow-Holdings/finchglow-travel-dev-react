@@ -1,13 +1,16 @@
+
 import Homepage from './components/hompage';
 import './App.css';
+import ZohoChat from './components/zohoChat';
 
 function App() {
-  
+ 
 
   return (
-  
-    <Homepage/>
-
+    <div>
+      <ZohoChat />
+      <Homepage />
+    </div>
   );
 }
 

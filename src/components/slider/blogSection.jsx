@@ -749,7 +749,7 @@ const blogSection = () => {
 
                     </Swiper>
                     
-                    <div data-aos="fade-up" className="relative  flex  !justify-between !items-center w-full !gap-2 max-w-[1280px] px-[15px] pt-[30px] at500:px-[10px] my-0 mx-auto ">
+                    <div  className="relative  flex  !justify-between !items-center w-full !gap-2 max-w-[1280px] px-[15px] pt-[30px] at500:px-[10px] my-0 mx-auto ">
                         <div className="next !float-right p-2 ">
                             <FaArrowLeft className="swiper-button-prev-blogSlide !relative !left-[-3px] !top-0 !text-[#05284C] hover:!text-[#05284C] !w-[20px]" />
                         </div>

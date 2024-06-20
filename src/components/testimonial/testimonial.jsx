@@ -64,7 +64,7 @@ function TestSlide() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="relative  flex !gap-[20px] !justify-center !items-center w-full  max-w-[1280px] px-[15px]  at500:px-[10px] my-0 mx-auto ">
+      <div  data-aos-anchor-placement="top-bottom" className="relative  flex !gap-[20px] !justify-center !items-center w-full  max-w-[1280px] px-[15px]  at500:px-[10px] my-0 mx-auto ">
           <div className="next  p-2 ">
           <FaArrowLeft size={20} className={`swiper-button-prev-test !relative  !top-0 ${location.pathname === '/' ? '' : '!text-[#05284C]'}`} />
           </div>

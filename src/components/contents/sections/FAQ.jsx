@@ -22,7 +22,7 @@ function Faq() {
             <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:p4-[40px] md:px-[85px]  my-0 mx-auto">
                 <div className="flex flex-col md:flex-row justify-between gap-[56.89px] w-full">
                     <div className="flex flex-col justify-start items-start w-full md:w-[398.22px] gap-[40px]">
-                        <div className="flex flex-col justify-start items-start gap-[18px]">
+                        <div className="flex flex-col justify-start items-start gap-[17px]">
                             <span data-aos="fade-up" className="txt4 leading-[24px] text-[#0260EE]">Support</span>
                             <h3 data-aos="fade-up" className="text-[#101828]">FAQs</h3>
                             <span data-aos="fade-up" className="txt4 leading-[20px] text-[#667085]">

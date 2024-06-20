@@ -13,13 +13,13 @@ const FadeLink = ({ to, children, onClick }) => {
     setTimeout(() => {
       navigate(to);
       setLoading(false);
-    }, 300); // 2 seconds delay
+    }, 1000); // 1 seconds delay
     if (onClick) onClick();
   };
 
   return (
     
-        <div className={`fade-link ${loading ? 'fade-out' : 'fade-in'}`}>
+        <div className={`fade-link w-full flex justify-start items-start ${loading ? 'fade-out' : 'fade-in'}`}>
             <NavLink to={to} onClick={handleClick}>
                 {children}
             </NavLink>

@@ -1,36 +1,26 @@
-import React, { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import { useLocation } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { useLocation } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../slider/swiper/pagination.css";
 import "../slider/swiper/navigation.css";
 import "./prevEpisodes.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import EpisodesSlide from './episodeSlide';
-import EpisodeContent from '../props/episodeContent';
-
-
-
-
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import EpisodesSlide from "./episodeSlide";
+import EpisodeContent from "../props/episodeContent";
 
 function PrevEpisodes() {
-
-
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   const location = useLocation();
   // const isHomePage = location.pathname === '/App';
-
-  
 
   return (
     <div className="episode-container w-full flex gap-[30px] flex-col items-center">
@@ -72,11 +62,7 @@ function PrevEpisodes() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        className="relative  flex !gap-[20px] !justify-end !items-end w-full  max-w-[1280px] px-[15px]  at500:px-[10px] pt-[30px] my-0 mx-auto "
-      >
+      <div className="relative  flex !gap-[20px] !justify-end !items-end w-full at500:w-[90%]  max-w-[1280px] px-[15px]  at500:px-[10px] pt-[30px] my-0 mx-auto ">
         <div className="next  p-2 ">
           <FaArrowLeft
             size={20}
@@ -92,6 +78,6 @@ function PrevEpisodes() {
       </div>
     </div>
   );
-};
+}
 
 export default PrevEpisodes;

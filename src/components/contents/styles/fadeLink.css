@@ -13,6 +13,7 @@
 }
 .fade-link a {
   /* color: #05284C; */
+  
   transition: opacity 1s ease-in-out;
 }
 

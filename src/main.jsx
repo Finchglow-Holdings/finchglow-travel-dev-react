@@ -16,8 +16,9 @@ import CorPorate from "./components/page/corPorate";
 import TravelPackages from "./components/page/travelPackages";
 import AffiliatePrograms from "./components/page/affiliate";
 import AncillaryServices from "./components/page/ancillary";
-import OurAncillService from "./components/page/ancillService";
+import OurVisaService from "./components/page/ourVisa";
 import PartnerPlusConnect from "./components/page/parterPlus";
+import BlogPost from "./components/page/blogPostStack";
 
 
 
@@ -47,34 +48,36 @@ const router = createBrowserRouter([
   // pages
   {
     path: "ourstory", // Path should be lowercase and match the link
-    element: <OurStory/>,
+    element: <OurStory />,
   },
-   {
+  {
     path: "corPorate", // Path should be lowercase and match the link
     element: <CorPorate />,
   },
-    {
+  {
     path: "travelPackages", // Path should be lowercase and match the link
-    element: <TravelPackages/>,
+    element: <TravelPackages />,
   },
-    {
+  {
     path: "affiliate", // Path should be lowercase and match the link
-    element: <AffiliatePrograms/>,
+    element: <AffiliatePrograms />,
   },
-    {
+  {
     path: "ancillary", // Path should be lowercase and match the link
-    element: <AncillaryServices/>,
+    element: <AncillaryServices />,
   },
-    {
-    path: "ancill", // Path should be lowercase and match the link
-    element: <OurAncillService/>,
+  {
+    path: "OurVisa", // Path should be lowercase and match the link
+    element: <OurVisaService />,
   },
-    {
+  {
     path: "partnerPlus", // Path should be lowercase and match the link
     element: <PartnerPlusConnect />,
   },
-   
-  
+  {
+    path: "blogPost", // Path should be lowercase and match the link
+    element: <BlogPost />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

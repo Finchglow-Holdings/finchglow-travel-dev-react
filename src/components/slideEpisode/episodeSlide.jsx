@@ -73,7 +73,7 @@ function EpisodesSlide(props) {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center w-full lg:w-[555px] bg-[#D4E8F6] gap-[10px] px-[50px] py-[30px]">
+        <div className="flex flex-col justify-center items-center w-full lg:w-[555px] bg-[#D4E8F6] gap-[10px] p-[15px] sm:px-[50px] sm:py-[30px]">
           <img
             src={props.imgURL}
             className="w-full h-auto object-cover"

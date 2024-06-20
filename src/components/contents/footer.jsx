@@ -27,7 +27,7 @@ function footer() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="sidebar z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full "
+            className=" z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full "
           >
             <span className="relative  flex justify-center items-center bottom-[69px] !text-center !right-0 bg-[#697E94] !h-[36px] !w-[158px] !py-[8px] !px-[15px]">
               <a
@@ -83,12 +83,11 @@ function footer() {
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="about.html"
-                    >
-                      About us
-                    </a>
+                    <FadeLink to="/about">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        About us
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
                     <FadeLink to="/partnerPlus">
@@ -98,20 +97,18 @@ function footer() {
                     </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="corporate.html"
-                    >
-                      Corporate Travel Management
-                    </a>
+                    <FadeLink to="/corPorate">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Corporate Travel Management
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="bespoke.html"
-                    >
-                      Leisure Travel
-                    </a>
+                    <FadeLink to="">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Leisure Travel
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
                     <FadeLink to="/ancill">
@@ -121,12 +118,11 @@ function footer() {
                     </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="#"
-                    >
-                      Products
-                    </a>
+                    <FadeLink to="">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Products
+                      </span>
+                    </FadeLink>
                   </li>
                 </ul>
               </div>
@@ -134,44 +130,39 @@ function footer() {
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="blog.html"
-                    >
-                      Blog
-                    </a>
+                    <FadeLink to="/blog">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Blog
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="newsletter.html"
-                    >
-                      Newsletter
-                    </a>
+                    <FadeLink to="">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Newsletter
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="branches.html"
-                    >
-                      Contact us
-                    </a>
+                    <FadeLink to="/contact">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Contact us
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="faq.html"
-                    >
-                      FAQ
-                    </a>
+                    <FadeLink to="">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        FAQ
+                      </span>
+                    </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <a
-                      className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]"
-                      href="testimonials.html"
-                    >
-                      Testimonials
-                    </a>
+                    <FadeLink to="">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Testimonials
+                      </span>
+                    </FadeLink>
                   </li>
                 </ul>
               </div>
@@ -193,7 +184,7 @@ function footer() {
             <div>
               <ul className="flex gap-4">
                 <li>
-                  <a href="">
+                  <a href="https://www.instagram.com/finchglow/">
                     <FaInstagram
                       size={20}
                       className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
@@ -201,7 +192,7 @@ function footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://x.com/finchglow?mx=2">
                     <FaTwitter
                       size={20}
                       className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
@@ -209,7 +200,7 @@ function footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.facebook.com/finchglowtravelsng">
                     <FaFacebook
                       size={20}
                       className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
@@ -217,7 +208,7 @@ function footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.facebook.com/finchglowtravelsng">
                     <FaLinkedin
                       size={20}
                       className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
@@ -225,7 +216,7 @@ function footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.youtube.com/@finchglow_travels">
                     <FaYoutube
                       size={20}
                       className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"

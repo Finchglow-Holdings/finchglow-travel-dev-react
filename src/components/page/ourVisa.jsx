@@ -87,7 +87,7 @@ function createTalkToUs(talk) {
 
 
 
-function OurAncillService() {
+function OurVisaService() {
   
    useEffect(() => {
     AOS.init({ duration: 3000, once: true });
@@ -138,4 +138,4 @@ function OurAncillService() {
   );
 }
 
-export default OurAncillService;
+export default OurVisaService;

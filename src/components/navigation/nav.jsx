@@ -96,7 +96,7 @@ const Nav = () => {
               </FadeLink>
             </li>
             <li className="py-[10px] pl-[20px]">
-              <Button size="medium" onClick={handleClick} className="hover:text-gray-400 text-[#05284C]">Register as Trade Partner</Button>
+              <Button size="medium" onClick={handleClick} className=" text-[#05284C]">Register as Trade Partner</Button>
             </li>
           </ul>
 
