@@ -70,7 +70,7 @@ const Nav = () => {
               </span>
               {hovered && (
                 <div
-                  className="dropdown cursor-pointer absolute top-[40px] w-[100px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] border-b-[5px] border-b-[#81B0F7]"
+                  className="dropdown cursor-pointer absolute top-[33px] w-[100px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] border-b-[5px] border-b-[#81B0F7]"
                   onMouseEnter={() => setHovered(true)}
                   onMouseLeave={() => setHovered(false)}
                 >
@@ -146,12 +146,12 @@ const Nav = () => {
           <div className="silver:hidden flex justify-center items-center absolute top-[73px] transition-all ease-in duration-300 w-full bg-[#F1F5FC] border-b-[3px] border-solid">
             <ul className="flex flex-col justify-start items-start w-full py-[20px] px-[15px] at500:px-[20px] md:px-[79px] space-y-2 z-[30]">
               <li
-                className="relative flex flex-col gap-[10px]"
+                className="relative flex flex-col gap-[10px] "
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >
                 <span
-                  className={`relative flex gap-[10px] items-center py-[10px] text-[#05284C] pr-[10px] ${activeLink === "about" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
+                  className={`relative flex gap-[10px] items-center text-[#05284C] py-[10px] pr-[10px] ${activeLink === "about" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
                 >
                   <FadeLink to="/about">About us</FadeLink>
                   <span className="cursor-pointer ">
@@ -172,18 +172,19 @@ const Nav = () => {
                 </span>
                 {hovered && (
                   <div
-                    className="dropdown absolute top-[40px] w-[100px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] border-b-[5px] border-b-[#81B0F7]"
+                    className="dropdown cursor-pointer absolute top-[33px] w-[100px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] border-b-[5px] border-b-[#81B0F7]"
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                   >
                     <ul className="flex flex-col py-2">
                       <li className="flex justify-center items-center w-full px-[5px]">
-                        <a
-                          href="#"
-                          className="flex w-full px-4 text-[#05284C] dark:hover:text-gray-600"
+                        <FadeLink
+                          to="/ourstory"
+                          className={`flex w-full px-4 !text-[#05284C] dark:hover:text-gray-600 ${activeLink === "about" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
+                          onClick={() => setActiveLink("about")}
                         >
                           Our story
-                        </a>
+                        </FadeLink>
                       </li>
                     </ul>
                   </div>

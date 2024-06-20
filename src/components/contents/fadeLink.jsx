@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import '../contents/styles/fadeLink.css'; // Ensure this is the correct path to your CSS
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import "../contents/styles/fadeLink.css"; // Ensure this is the correct path to your CSS
 import { FiLoader } from "react-icons/fi";
 
 const FadeLink = ({ to, children, onClick }) => {
@@ -11,30 +11,30 @@ const FadeLink = ({ to, children, onClick }) => {
     event.preventDefault();
     setLoading(true);
     setTimeout(() => {
-      navigate(to);
+      navigate(to, { replace: true });
+      window.scrollTo(0, 0); // Scroll to the top of the page
+      // window.location.reload();
       setLoading(false);
-    }, 1000); // 1 seconds delay
+    }, 100); // 1 second delay
     if (onClick) onClick();
   };
 
   return (
-    
-        <div className={`fade-link w-full flex justify-start items-start ${loading ? 'fade-out' : 'fade-in'}`}>
-            <NavLink to={to} onClick={handleClick}>
-                {children}
-            </NavLink>
-            {loading && (
-                <div className='overlay'>
-                    <div className="loading">
-                        <FiLoader size={30} />
-                    </div>
-                </div>
-            )}
+    <div
+      className={`fade-link w-full flex justify-start items-start ${loading ? "fade-out" : "fade-in"}`}
+    >
+      <NavLink to={to} onClick={handleClick}>
+        {children}
+      </NavLink>
+      {loading && (
+        <div className="overlay">
+          <div className="loading">
+            <FiLoader size={30} />
+          </div>
         </div>
-    
+      )}
+    </div>
   );
 };
 
 export default FadeLink;
-
-

@@ -5,7 +5,7 @@ import { GoArrowDown } from "react-icons/go";
 import slideImage from "./slide-img/background-img.jpeg";
 import slideImage1 from "./slide-img/0_h2iP-6qo5GkYTh0K.jpg";
 import slideImage2 from "./slide-img/20191101-Dawn-over-the-Dolomites.jpg";
-import { FaArrowUp } from "react-icons/fa";
+
 
 const ImageSlider = () => {
   const slides = [
@@ -98,7 +98,7 @@ const ImageSlider = () => {
       <div className="relative flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto z-[8]">
         <div className="relative w-full  z-[555] cursor-pointer ">
           <a href="#down">
-            <GoArrowDown className="text-[#FFFFFF] hover:text-[#3580F1] absolute right-0 bottom-[4px] hover:bottom-[70px] w-[57.82px] h-[57.82px] object-cover cursor-pointer" />
+            <GoArrowDown className="text-[#FFFFFF] hover:text-[#3580F1] absolute right-0 bottom-[50px]  w-[57.82px] h-[57.82px] object-cover cursor-pointer" />
           </a>
           
         </div>

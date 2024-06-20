@@ -111,7 +111,7 @@ function footer() {
                     </FadeLink>
                   </li>
                   <li data-aos="fade-up">
-                    <FadeLink to="/ancill">
+                    <FadeLink to="/ancillary">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Ancillary Services
                       </span>

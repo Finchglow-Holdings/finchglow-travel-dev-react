@@ -3,93 +3,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap');
 
 
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    @font-face {
-      font-family: 'Metropolis';
-      src: url('fonts/Metropolis-Regular.woff2') format('woff2'),
-        url('fonts/Metropolis-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Metropolis';
-      src: url('fonts/Metropolis-Medium.woff2') format('woff2'),
-        url('fonts/Metropolis-Medium.woff') format('woff');
-      font-weight: 500;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Metropolis';
-      src: url('fonts/Metropolis-SemiBold.woff2') format('woff2'),
-        url('fonts/Metropolis-SemiBold.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Metropolis';
-      src: url('fonts/Metropolis-Bold.woff2') format('woff2'),
-        url('fonts/Metropolis-Bold.woff') format('woff');
-      font-weight: 700;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Metropolis';
-      src: url('fonts/Metropolis-ExtraBold.woff2') format('woff2'),
-        url('fonts/Metropolis-ExtraBold.woff') format('woff');
-      font-weight: 800;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Metropolis';
-      src: url('fonts/Metropolis-Black.woff2') format('woff2'),
-        url('fonts/Metropolis-Black.woff') format('woff');
-      font-weight: 900;
-      font-style: normal;
-    }
-  
-    body {
-      font-family: 'Metropolis', sans-serif;
-    }
 
-.regale-blue{
+body {
+  font-family: 'Metropolis', sans-serif;
+}
+
+.regale-blue {
   background: linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%);
 
 }
+
 .bigcolour {
   background: linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%);
 
 }
+
 .bigcolour2 {
   background: linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%);
 
 }
-.blueColor{
+
+.blueColor {
   background: linear-gradient(179.03deg, rgba(1, 20, 40, 0.2) -47.85%, rgba(5, 72, 142, 0.2) -152.17%);
 }
-  
 
-nav ul li a{
-  font-size:12px ;
+
+nav ul li a {
+  font-size: 12px;
   font-weight: 600;
   font-family: 'Metropolis', sans-serif;
   line-height: 18px;
   text-align: center;
 }
 
-.back-to-top-box:hover .back-to-top{
+.back-to-top-box:hover .back-to-top {
   position: relative;
   top: -5px;
 }
 
-  /* nav ul :hover .dropdown{
+/* nav ul :hover .dropdown{
     visibility: visible;
     transition: all 300 opacity 2s ease-in-out;
   }
@@ -99,87 +55,100 @@ nav ul li a{
     visibility: hidden;
   }
    */
- /* fonts */
-h1{
+/* fonts */
+h1 {
   font-size: 48px;
   line-height: 64px;
   text-align: center;
   font-weight: 900;
   font-family: 'Metropolis', sans-serif;
 }
-h2{
+
+h2 {
   font-weight: 700;
   font-family: 'Metropolis', sans-serif;
 }
-h3{
+
+h3 {
   font-size: 36px;
   line-height: 44px;
   font-weight: 700;
   letter-spacing: -2%;
   font-family: 'Metropolis', sans-serif;
 }
-h4{
+
+h4 {
   font-size: 48px;
   line-height: 64px;
   font-weight: 600;
   font-family: "Averta";
 }
-h5{
+
+h5 {
   font-size: 20px;
   line-height: 32px;
   font-weight: 700;
   font-family: 'Metropolis', sans-serif;
 }
-h6{
+
+h6 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
   font-family: 'Metropolis', sans-serif;
 }
-.txt{
+
+.txt {
   font-size: 16px;
   line-height: 32px;
   font-weight: 600;
   font-family: 'Metropolis', sans-serif;
 }
-.txt2{
+
+.txt2 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-font-family: 'Metropolis', sans-serif;
+  font-family: 'Metropolis', sans-serif;
 }
-.txt3{
+
+.txt3 {
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
   color: #9ABFF8;
   font-family: 'Metropolis', sans-serif;
 }
-.txt4{
+
+.txt4 {
   font-size: 16px;
   font-weight: 600;
   font-family: 'Metropolis', sans-serif;
 }
-.txt5{
+
+.txt5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   font-family: 'Metropolis', sans-serif;
 }
-.txt6{
+
+.txt6 {
   font-size: 18px;
   line-height: 28px;
   font-weight: 700;
   color: #05284C;
   font-family: 'Metropolis', sans-serif;
 }
-.txt7{
+
+.txt7 {
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
   font-family: 'Metropolis', sans-serif;
 }
-.txt8{
+
+.txt8 {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -187,14 +156,14 @@ font-family: 'Metropolis', sans-serif;
 }
 
 
-p{
+p {
   font-weight: 400;
   font-family: 'Metropolis', sans-serif;
-  
+
 }
 
 /* for all the arrow buttons */
-.arrow{
+.arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,15 +173,15 @@ p{
   color: #3580F1;
   border-radius: 6px !important;
   cursor: pointer;
-  transition:all 0.3s ease !important ;
+  transition: all 0.3s ease !important;
   line-height: 24px;
   font-weight: 500;
   font-family: 'Metropolis', sans-serif;
 }
-.arrow:hover{
+
+.arrow:hover {
   gap: 15px;
   color: white;
 }
-/* for all the arrow buttons */
-  
 
+/* for all the arrow buttons */
