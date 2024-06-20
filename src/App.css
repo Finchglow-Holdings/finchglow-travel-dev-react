@@ -31,6 +31,7 @@
 /* Text Container */
 .text-container {
   color: #E6EAED;
+  font-family: 'Metropolis', sans-serif;
   animation: slideIn 1s ease-out;
   z-index: 5;
 }

@@ -126,6 +126,7 @@
   transition: all 0.3s ease !important;
   line-height: 24px;
   font-weight: 500;
+  font-family: 'Metropolis', sans-serif;
 }
 
 .btn.arrow:hover {
@@ -136,6 +137,7 @@
 .btn.play {
   display: flex;
   justify-content: center;
+  font-family: 'Metropolis', sans-serif;
   align-items: center;
   border-radius: 50%;
   border: 2px solid #F8ADAF;
