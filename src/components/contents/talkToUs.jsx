@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { FaArrowUp } from "react-icons/fa";
+import FadeLink from "./fadeLink";
 import Button from "./Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 function TalkToUs(props) {
   const location = useLocation();
   const ispartnerPage = location.pathname === "/partnerPlus";
+  const isaAcillaryPage = location.pathname === "/ancillary";
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
@@ -40,9 +41,17 @@ function TalkToUs(props) {
               data-aos="fade-up"
               className="flex flex-col items-center justify-center  h-auto "
             >
-              <Button size="cdn" className="">
-                <a href={props.links}>{props.buttz}</a>
-              </Button>
+             
+
+{/* 
+              <FadeLink to={props.pageLink}>
+                <Button
+                  size="cdn"
+                  
+                >
+                  <a href={props.links}>{props.buttz}</a>
+                </Button>
+              </FadeLink> */}
             </div>
           </div>
         </div>

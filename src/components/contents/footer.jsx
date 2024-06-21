@@ -43,11 +43,11 @@ function footer() {
           <div className="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
             <div className="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
               <div
-                data-aos="fade-up"
+                
                 className="text-2xl cursor-pointer w-[130px] h-[36.02px]"
               >
                 <a className="w-full" href="#">
-                  <img
+                  <img data-aos="fade-up"
                     className="w-full h-auto transition-all duration-300 ease-in-out"
                     src={logo2}
                   />

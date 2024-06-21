@@ -10,11 +10,11 @@ import talk from "../props/talk";
 import TestimonialSlider from "../testimonial/testimonial";
 import Footer from "../contents/footer";
 import WhyChooseUs from "../contents/whyChoodeUs";
-import Button from "../contents/Button";
 import image1 from "../contents/images/service/duty calls.jpeg";
 import image2 from "../contents/images/service/tickets.jpeg";
 import background from "../contents/images/blue-background - Copy.png";
 import EpisodesSlide from "../slideEpisode/prevEpisodes";
+
 
 // go to props to input contents for the ones u can't input here
 
@@ -153,13 +153,13 @@ function PartnerPlusConnect() {
       </section>
 
       {/* newsletter */}
-      <section className="relative bg-custom2-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[418px] overflow-hidden z-[3] lg:overflow-visible">
+      <section className="relative bg-custom2-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[430px] overflow-hidden z-[3] lg:overflow-visible">
         <div className="static w-full sm:w-[90%] flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[40px]  md:px-[80px] my-0 mx-auto">
           <div className="relative lg:bottom-[60px] flex bg-[#05284C] flex-col-reverse lg:flex-row justify-center items-center w-full h-auto lg:h-[426.67px] rounded-[21.33px] p-[20px] at500:p-[30px] md:pt-[40px] md:pb-[10px] md:px-[60px] overflow-hidden">
             <div className="flex flex-col-reverse lg:flex-row justify-center items-start  w-full">
               <div className="relative flex justify-start items-start w-full h-auto text-left">
-                <div className="flex flex-col justify-center items-start gap-[35.56px] text-left w-full">
-                  <div className="flex flex-col justify-center items-start gap-[17.78px] text-left lg:w-[426.67px]">
+                <div className="flex flex-col justify-center items-start gap-[17px] text-left w-full">
+                  <div className="flex flex-col justify-center items-start gap-[12px] text-left lg:w-[426.67px]">
                     <h3 data-aos="fade-up" className="text-[#FFFFFF]">
                       Newsletter
                     </h3>
@@ -172,20 +172,13 @@ function PartnerPlusConnect() {
                       the first to know about the next edition of PartnerPlus
                       Connect and other juicy training opportunities.
                     </span>
-                    <span data-aos="fade-up" className="txt3 text-[#E6EAED]">
+                    {/* <span data-aos="fade-up" className="txt3 text-[#E6EAED]">
                       You’ll definitely be better off for it
-                    </span>
+                    </span> */}
                   </div>
 
-                  <div className="relative z-[20] flex justify-start items-start w-full">
-                    <span
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom"
-                    >
-                      <Button size="sign" className="">
-                        Sign up now
-                      </Button>
-                    </span>
+                  <div className="flex w-full">
+                  
                   </div>
                 </div>
               </div>

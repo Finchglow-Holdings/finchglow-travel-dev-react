@@ -123,7 +123,7 @@ function Service() {
                 <span className="relative h-[64px] w-[64px] flex justify-center items-center rounded-[50%] bg-[#FAC2C3]">
                   <img
                     src={icons2}
-                    className="bg-gray-500 absolute h-[20px] w-[20px] object-cover"
+                    className=" absolute h-[20px] w-[20px] object-cover"
                     alt=""
                   />
                 </span>

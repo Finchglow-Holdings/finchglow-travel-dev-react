@@ -301,15 +301,20 @@ function OurStory() {
         <div className="static w-full flex flex-col justify-center items-center gap-[48px] 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[40px] md:px-[80px] my-0 mx-auto">
           <div className=" relative  flex flex-col md:flex-row justify-between items-center gap-[30px]">
             <div className=" flex gap-[17px] flex-col justify-center items-start w-full lg:w-[502px]">
-              <span className="txt4 leading-[24px] text-[#67A0F5]">
-                {" "}
+              <span
+                data-aos="fade-up"
+                className="txt4 leading-[24px] text-[#67A0F5]"
+              >
                 Our Values
               </span>
-              <h3 className="text-[#FFFFFF]">
+              <h3 data-aos="fade-up" className="text-[#FFFFFF]">
                 With Finchglow Travels, professionalism is a promise and a
                 guarantee.
               </h3>
-              <span className="txt5 !leading-[26px] text-[#CDD4DB] lg:w-[468px]">
+              <span
+                data-aos="fade-up"
+                className="txt5 !leading-[26px] text-[#CDD4DB] lg:w-[468px]"
+              >
                 Our team of travel experts is dedicated to providing
                 unparalleled service, backed by years of industry experience and
                 a commitment to excellence.
@@ -317,18 +322,24 @@ function OurStory() {
             </div>
 
             <div className="flex gap-[40px] flex-col justify-center items-start w-full ">
-              <span className="flex gap-[20px] justify-start items-start w-full">
-                <img
+              <span data-aos="fade-up"
+          
+                className="flex gap-[20px] justify-start items-start w-full"
+              >
+                <img 
                   src={icon6}
                   className="w-[28px] h-auto object-contain"
                   alt=""
                 />
-                <h2 className="text-[20px] leading-[25px] text-[#CDD4DB]">
+                <h2
+                  data-aos="fade-up"
+                  className="text-[20px] leading-[25px] text-[#CDD4DB]"
+                >
                   Professionalism in Service
                 </h2>
               </span>
 
-              <span className="flex gap-[20px] justify-start items-start w-full">
+              <span data-aos="fade-up" className="flex gap-[20px] justify-start items-start w-full">
                 <img
                   src={icon6}
                   className="w-[28px] h-auto object-contain"
@@ -339,7 +350,7 @@ function OurStory() {
                 </h2>
               </span>
 
-              <span className="flex gap-[20px] justify-start items-start w-full">
+              <span data-aos="fade-up" className="flex gap-[20px] justify-start items-start w-full">
                 <img
                   src={icon6}
                   className="w-[28px] h-auto object-contain"

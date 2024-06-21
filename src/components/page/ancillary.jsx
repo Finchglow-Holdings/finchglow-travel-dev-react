@@ -74,8 +74,7 @@ function createTalkToUs(talk) {
       title={talk.title}
       details={talk.details}
       buttz={talk.buttz}
-      links={talk.links}
-      
+      pageLink={talk.pageLink}
     />
   );
 }

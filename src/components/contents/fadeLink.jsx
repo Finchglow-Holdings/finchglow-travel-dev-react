@@ -38,3 +38,32 @@ const FadeLink = ({ to, children, onClick }) => {
 };
 
 export default FadeLink;
+
+// import React, { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { RiLoader2Line } from "react-icons/ri";
+// import "../contents/styles/fadeLink.css"; // Ensure you have the required CSS for the fade effect and loading spinner
+
+// const FadeLink = ({ to, children }) => {
+//   const [loading, setLoading] = useState(false);
+//   const navigate = useNavigate();
+
+//   const handleClick = (e) => {
+//     e.preventDefault();
+//     setLoading(true);
+
+//     setTimeout(() => {
+//       navigate(to);
+//       setLoading(false);
+//     }, 500); // Adjust the timeout to match your fade duration
+//   };
+
+//   return (
+//     <a href={to} onClick={handleClick} className="fade-link">
+//       {children}
+//       {loading && <RiLoader2Line className="spinner" />}
+//     </a>
+//   );
+// };
+
+// export default FadeLink;

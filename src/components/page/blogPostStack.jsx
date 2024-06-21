@@ -10,7 +10,9 @@ import BlogInfoSection from "../contents/sections/blogInFo";
 import IntroSection from "../contents/sections/blogIntro";
 import intro from "../props/introContent";
 import Sidebar from "../contents/sections/sideBar";
-// import Newsletter from "../form/newsLetter";
+import LatestBlogSection from "../contents/sections/latestBlog";
+
+
 
 function createIntro(intro) {
   return (
@@ -75,7 +77,7 @@ function BlogPost() {
 
       <section className="relative bg-[#FFFFFF] flex flex-col justify-center items-center w-full  overflow-hidden">
         <div className="static w-full  flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] my-0 mx-auto">
-          <div className="relative flex justify-between items-start w-full h-auto">
+          <div className="relative flex flex-col-reverse gap-[50px] lg:flex-row justify-between items-start w-full h-auto">
             <section className="flex justify-center items-center w-full">
               {intro.filter((intro) => intro.id === 1).map(createIntro)}
             </section>
@@ -83,7 +85,8 @@ function BlogPost() {
           </div>
         </div>
       </section>
-      {/* <Newsletter /> */}
+      
+      <LatestBlogSection/>
 
       <Footer />
     </div>

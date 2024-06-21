@@ -45,16 +45,6 @@ nav ul li a {
   top: -5px;
 }
 
-/* nav ul :hover .dropdown{
-    visibility: visible;
-    transition: all 300 opacity 2s ease-in-out;
-  }
-  
-
-  .dropdown{
-    visibility: hidden;
-  }
-   */
 /* fonts */
 h1 {
   font-size: 48px;

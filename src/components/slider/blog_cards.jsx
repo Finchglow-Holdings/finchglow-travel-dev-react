@@ -155,27 +155,27 @@ const BlogSlide = () => {
               >
                 Blog
               </span>
-
-              <FadeLink to="/blogPost">
-                <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                  <h5
-                    data-aos="fade-up"
-                    className="text-[#101828] !leading-[30px] w-[268px]"
-                  >
-                    Building your API Stack
-                  </h5>
-                  <span
-                    data-aos="fade-up"
-                    className="relative w-[24px] h-[28px] cursor-pointer"
-                  >
+              <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
+                <h5
+                  data-aos="fade-up"
+                  className="text-[#101828] !leading-[30px] w-[268px]"
+                >
+                  Building your API Stack
+                </h5>
+                <span
+                  data-aos="fade-up"
+                  className="relative w-[24px] h-[28px] cursor-pointer"
+                >
+                  <FadeLink to="/blogPost">
                     <img
                       className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out"
                       src={Icon}
                       alt="arrow up"
                     />
-                  </span>
-                </div>
-              </FadeLink>
+                  </FadeLink>
+                </span>
+              </div>
+             
 
               <span data-aos="fade-up" className="txt5 text-[#667085]">
                 The rise of RESTful APIs has been met by a rise in tools for

@@ -180,14 +180,12 @@ const Navbar = () => {
                     {hovered ? (
                       <SlArrowUp
                         size={13}
-                        onClick={closeMenu}
-                        className="text-[#05284C]"
+                        className={`${scrolled ? "text-[#05284C]" : "text-white"}`}
                       />
                     ) : (
                       <SlArrowDown
                         size={13}
-                        onClick={openMenu}
-                        className="text-[#05284C]"
+                        className={`${scrolled ? "text-[#05284C]" : "text-white"}`}
                       />
                     )}
                   </span>

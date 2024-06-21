@@ -1,18 +1,17 @@
-.relative {
-    overflow: visible;
-}
-
-
-.sidebar {
-    position: -webkit-sticky;
- 
-    position: sticky;
-    top: 149px;
- 
-}
-
-
-.sidebar {
+/* Styles for large screens */
+@media (min-width: 1024px) {
+  .sidebar {
     flex: 0 0 384px;
-    
+  }
+
+  .relative {
+    overflow: visible;
+  }
+
+  .sidebar {
+    position: -webkit-sticky;
+
+    position: sticky;
+    top: 135px;
+  }
 }

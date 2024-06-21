@@ -4,7 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination,  A11y } from 'swiper/modules';
 import { useSwiper } from 'swiper/react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import Icon from "../contents/images/Vector 3.png" 
+import Icon1 from "../contents/images/icons/Group 781.png"; 
+import Icon2 from "../contents/images/icons/Group 782.png"; 
+import Icon3 from "../contents/images/icons/Group 783.png"; 
+import Icon4 from "../contents/images/icons/Group 784.png"; 
+import Icon5 from "../contents/images/icons/Group 785.png"; 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -58,8 +62,8 @@ const Slideshow = () => {
         <SwiperSlide className=" md:right-[-8px] z-[4]">
           <div className="card   bg-[#FFFFFF] border-b-[#0143A7] border-b-[7px] px-[20px]  ">
             <div className="image-content">
-              <div data-aos="fade-up" className="card-image">
-                <img src={Icon} alt="flight icon" className="card-img" />
+              <div data-aos="fade-up" className="">
+                <img src={Icon1} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
@@ -88,8 +92,8 @@ const Slideshow = () => {
         <SwiperSlide>
           <div className="card  bg-[#E2F1FF] border-b-[#3580F1] border-b-[7px] px-[20px] pt-[40px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="card-image">
-                <img src={Icon} alt="flight icon" className="card-img" />
+              <div data-aos="fade-up" className="">
+                <img src={Icon2} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
@@ -118,8 +122,8 @@ const Slideshow = () => {
         <SwiperSlide>
           <div className="card  bg-[#F0F4F8] border-b-[#8294A6] border-b-[7px] px-[20px] pt-[0px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="card-image">
-                <img src={Icon} alt="flight icon" className="card-img" />
+              <div data-aos="fade-up" className="">
+                <img src={Icon3} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
@@ -148,8 +152,8 @@ const Slideshow = () => {
         <SwiperSlide className="z-[4]">
           <div className="card  bg-[#E6EFFD] border-b-[#B4BFC9] border-b-[7px] px-[20px] pt-[20px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="card-image">
-                <img src={Icon} alt="flight icon" className="card-img" />
+              <div data-aos="fade-up" className="">
+                <img src={Icon4} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div data-aos="fade-up" className="card-content">
@@ -176,10 +180,10 @@ const Slideshow = () => {
         </SwiperSlide>
 
         <SwiperSlide className=" md:right-[8px] ">
-          <div className="card  bg-[#E2F1FF] border-b-[#67A0F5] border-b-[7px] px-[20px] pt-[20px] ">
+          <div className="card  bg-[#F0F8FF] border-b-[#67A0F5] border-b-[7px] px-[20px] pt-[20px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="card-image">
-                <img src={Icon} alt="flight icon" className="card-img" />
+              <div data-aos="fade-up" className="">
+                <img src={Icon5} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
@@ -194,35 +198,6 @@ const Slideshow = () => {
               </p>
 
               <FadeLink to="OurVisa">
-                <span
-                  data-aos="fade-up"
-                  className="arrow hover:!text-[#3580F1]"
-                >
-                  Read more
-                  <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
-                </span>
-              </FadeLink>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className=" md:right-[8px] ">
-          <div className="card  bg-[#FFFFFF] border-b-[#0143A7] border-b-[7px] px-[20px] pt-[10px] ">
-            <div className="image-content">
-              <div data-aos="fade-up" className="card-image">
-                <img src={Icon} alt="flight icon" className="card-img" />
-              </div>
-            </div>
-            <div className="card-content">
-              <span data-aos="fade-up" className="name">
-                Trade Partner Plus
-              </span>
-              <p data-aos="fade-up" className="discription !font-medium">
-                Enjoy a boost in your revenue while offering your clients
-                unbeatable deals and discounts that will make them choose you
-                over your competitors.
-              </p>
-              <FadeLink to="/partnerPlus">
                 <span
                   data-aos="fade-up"
                   className="arrow hover:!text-[#3580F1]"
