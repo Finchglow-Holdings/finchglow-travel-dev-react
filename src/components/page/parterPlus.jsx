@@ -14,6 +14,7 @@ import image1 from "../contents/images/service/duty calls.jpeg";
 import image2 from "../contents/images/service/tickets.jpeg";
 import background from "../contents/images/blue-background - Copy.png";
 import EpisodesSlide from "../slideEpisode/prevEpisodes";
+import ZohoOptinForm from "../form/zohoOptinForm";
 
 
 // go to props to input contents for the ones u can't input here
@@ -178,7 +179,7 @@ function PartnerPlusConnect() {
                   </div>
 
                   <div className="flex w-full">
-                  
+                  <ZohoOptinForm/>
                   </div>
                 </div>
               </div>
