@@ -10,6 +10,7 @@ import Location from './props/location';
 import OurLocations from './contents/ourLocations';
 import background from './contents/images/blue-background - Copy.png';
 import MapEmbed from './contents/sections/MapEmbed';
+import GetinTouchForm from './form/getinTouchForm';
 
 
 
@@ -60,7 +61,7 @@ function ContactUs() {
         </section>
         <MapEmbed/>
 
-        {/* <GetInToch/> */}
+        <GetinTouchForm/>
 
         <section className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[321px] w-full h-auto overflow-hidden"
           style={{ backgroundImage: `url(${background})` }}>
