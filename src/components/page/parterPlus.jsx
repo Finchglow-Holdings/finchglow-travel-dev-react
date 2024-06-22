@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "../navigation/nav"; // Correct import statement
@@ -15,6 +15,8 @@ import image2 from "../contents/images/service/tickets.jpeg";
 import background from "../contents/images/blue-background - Copy.png";
 import EpisodesSlide from "../slideEpisode/prevEpisodes";
 import ZohoOptinForm from "../form/zohoOptinForm";
+import OverlayForm from "../form/overlayForm";
+
 
 
 // go to props to input contents for the ones u can't input here
@@ -57,19 +59,26 @@ function createTalkToUs(talk) {
       details={talk.details}
       buttz={talk.buttz}
       links={talk.links}
+      pageLink={talk.pageLink}
+      signUP={talk.signUP}
     />
   );
 }
 
 function PartnerPlusConnect() {
-  
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <div className="flex flex-col justify-center items-center w-full overflow-hidden">
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+      
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 11).map(createTitle)}
       </section>
@@ -179,7 +188,7 @@ function PartnerPlusConnect() {
                   </div>
 
                   <div className="flex w-full">
-                  <ZohoOptinForm/>
+                    <ZohoOptinForm />
                   </div>
                 </div>
               </div>

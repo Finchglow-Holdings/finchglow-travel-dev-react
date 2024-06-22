@@ -93,7 +93,7 @@ const ZohoOptinForm = () => {
           </div>
         </div>
       </div>
-      <img src="https://vkqvt-zgpvh.maillist-manage.net/images/spacer.gif" id="refImage" onLoad={() => { window.referenceSetter && window.referenceSetter(document.getElementById('refImage')) }} alt="Reference" />
+      <img src="https://vkqvt-zgpvh.maillist-manage.net/images/spacer.gif" className='hidden' id="refImage" onLoad={() => { window.referenceSetter && window.referenceSetter(document.getElementById('refImage')) }} alt="Reference" />
       <input type="hidden" id="signupFormType" value="QuickForm_Vertical" />
       <div id="zcOptinOverLay" onContextMenu={() => false} style={{ display: 'none', textAlign: 'center', backgroundColor: 'rgb(0, 0, 0)', opacity: 0.5, zIndex: 100, position: 'fixed', width: '100%', top: 0, left: 0, height: '988px' }}></div>
       <div id="zcOptinSuccessPopup" style={{ display: 'none', zIndex: 9999, width: '800px', height: '40%', top: '84px', position: 'fixed', left: '26%', backgroundColor: '#FFFFFF', borderColor: '#E6E6E6', borderStyle: 'solid', borderWidth: '1px', boxShadow: '0 1px 10px #424242', padding: '35px' }}>

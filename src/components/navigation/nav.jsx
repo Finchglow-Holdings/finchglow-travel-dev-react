@@ -7,7 +7,7 @@ import logo from './logos/FT_logo_X5-01.png'; // Ensure this is the correct path
 import FadeLink from '../contents/fadeLink'; // Import the FadeLink component
 import { useLocation } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({ openOverlay }) => {
   const [toggle, setToggle] = useState(false);
   const [hovered, setHovered] = useState(false);
   const { pathname } = useLocation();
@@ -29,12 +29,12 @@ const Nav = () => {
   }
 
   const handleClick = () => {
-    alert('Button clicked!');
+    alert("Button clicked!");
   };
 
   return (
     <nav className="flex justify-center items-center w-full fixed top-0 z-[88] bg-[#F1F5FC] ">
-      <div className="relative flex justify-center items-center w-full 2xl:w-[1280px] py-[20px] px-[15px] at500:px-[40px] overflow-hidden">
+      <div className="relative flex justify-center items-center w-full 2xl:w-[1280px] py-[20px] px-[15px] at500:px-[40px] ">
         <div className="relative w-full mx-auto flex md:flex-row justify-between items-start md:items-center">
           <div className="relative flex justify-start items-start text-white text-2xl font-bold mb-2 md:mb-0">
             <FadeLink to="/">
@@ -106,7 +106,7 @@ const Nav = () => {
             <li className="py-[10px] pl-[20px]">
               <Button
                 size="medium"
-                onClick={handleClick}
+                onClick={openOverlay}
                 className=" text-[#05284C]"
               >
                 Register as Trade Partner
@@ -208,7 +208,7 @@ const Nav = () => {
               <li className="py-[10px] pr-[20px]">
                 <Button
                   size="medium"
-                  onClick={handleClick}
+                  onClick={openOverlay}
                   className=" text-[#05284C]"
                 >
                   Register as Trade Partner

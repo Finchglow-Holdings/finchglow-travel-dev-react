@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nav from '../navigation/nav'; // Correct import statement
@@ -14,7 +14,7 @@ import TicketingSupport from '../contents/ticketingSupport';
 import ticketing from '../props/ticketing';
 import ExperienceTheDifference from '../contents/experience';
 import experience from '../props/exp';
-
+import OverlayForm from "../form/overlayForm";
 
 
 
@@ -95,8 +95,9 @@ function createTalkToUs(talk) {
       title={talk.title}
       details={talk.details}
       buttz={talk.buttz}
+      pageLink={talk.pageLink}
       links={talk.links}
-      
+      signUP={talk.signUP}
     />
   );
 }
@@ -108,33 +109,38 @@ function createTalkToUs(talk) {
 
 
 function TravelPackages() {
-  
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
    useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 7).map(createTitle)}
       </section>
-      
+
       {/* WhyChooseUs */}
       <section className="flex justify-center items-center w-full ">
         {cards.filter((cards) => cards.id === 2).map(createWhyChooseUs)}
       </section>
-      
+
       {/* TicketingSupport */}
       <section className="flex justify-center items-center w-full ">
         {ticketing
           .filter((ticketing) => ticketing.id === 1)
           .map(createTicketingSupport)}
       </section>
-      
+
       <section className="relative bg-[#F9FAFB] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
-        <div className='static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto'>
-            {experience
+        <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+          {experience
             .filter((experience) => experience.id === 2)
             .map(createeExperience)}
         </div>

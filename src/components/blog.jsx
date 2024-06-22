@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nav from './navigation/nav';
@@ -8,7 +8,7 @@ import contents from './props/contents'; // Ensure this is the correct path
 import BlogSlider from './slider/blogSection';
 import Footer from './contents/footer';
 import TestimonialSlide from './testimonial/testimonial';
-
+import OverlayForm from "./form/overlayForm";
 
 
 function createTitle(content) {
@@ -24,7 +24,10 @@ function createTitle(content) {
 }
 
 function Blog() {
-
+    const [isOpen, setIsOpen] = useState(false);
+    const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+  
     useEffect(() => {
         AOS.init({ duration: 3000, once: true });
     }, []);
@@ -34,11 +37,13 @@ function Blog() {
 
     return (
       <div>
-        <Nav />
+        <Nav openOverlay={openOverlay} />
+        <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+
         <section className="flex justify-center items-center w-full mt-[70px]">
           {contents.filter((content) => content.id === 3).map(createTitle)}
         </section>
-        
+
         <BlogSlider />
 
         <section className="relative flex flex-col justify-center items-center  md:h-[384px] w-full h-auto overflow-hidden">

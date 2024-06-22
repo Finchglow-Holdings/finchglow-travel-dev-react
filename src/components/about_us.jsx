@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "./navigation/nav"; // Correct import statement
@@ -14,6 +14,7 @@ import Footer from "../components/contents/footer";
 import background from "./contents/images/blue-background - Copy.png";
 import background2 from "./contents/images/sharing report.jpeg";
 import VideoSection from "./contents/sections/videoSection";
+import OverlayForm from "./form/overlayForm";
 
 function createTalkToUs(talk) {
   return (
@@ -23,6 +24,7 @@ function createTalkToUs(talk) {
       details={talk.details}
       buttz={talk.buttz}
       links={talk.links}
+      signUP={talk.signUP}
     />
   );
 }
@@ -55,13 +57,19 @@ function createTitle(content) {
 }
 
 function About() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <div className="flex flex-col justify-center items-center w-full ">
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 2).map(createTitle)}
       </section>
@@ -116,8 +124,8 @@ function About() {
 
       <section
         className="relative flex flex-col justify-center items-center  bg-fixed   bg-no-repeat bg-cover bg-center md:h-[425px] w-full h-auto overflow-hidden"
-        style={{ backgroundImage: `url(${background2})` }}>        
-      </section>
+        style={{ backgroundImage: `url(${background2})` }}
+      ></section>
 
       <section className="relative flex flex-col justify-center items-center  bg-[#EEF5FF]   w-full h-auto overflow-hidden">
         <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[80px] my-0 mx-auto">

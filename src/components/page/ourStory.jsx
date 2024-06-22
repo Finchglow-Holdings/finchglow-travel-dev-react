@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "../navigation/nav"; // Correct import statement
@@ -19,6 +19,11 @@ import icon3 from "../contents/images/icons/loca.png";
 import icon4 from "../contents/images/icons/corporate-social-responsibility (1) 1.png";
 import icon5 from "../contents/images/icons/award 119.png";
 import icon6 from "../contents/images/icons/Check icon.png";
+import OverlayForm from "../form/overlayForm";
+
+
+
+
 
 function createTalkToUs(talk) {
   return (
@@ -28,6 +33,8 @@ function createTalkToUs(talk) {
       details={talk.details}
       buttz={talk.buttz}
       links={talk.links}
+      pageLink={talk.pageLink}
+      signUP={talk.signUP}
     />
   );
 }
@@ -45,13 +52,19 @@ function createTitle(content) {
 }
 
 function OurStory() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 5).map(createTitle)}
       </section>
@@ -117,8 +130,9 @@ function OurStory() {
         <div className="static w-[95%] flex flex-col justify-center items-start gap-[48px] 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[40px] md:pl-[80px] md:pr-[40px] my-0 mx-auto">
           <h3 className="text-[#05284C]">Company Snapshot</h3>
           <div className="flex flex-col xl:flex-row justify-start items-start w-full gap-[20px] xl:gap-[10px]">
-            <div className="flex flex-col at500:flex-row justify-center items-start  gap-[20px] xl:gap-[10px]">
-              <div className="bg-[#D4E8F6] flex flex-col justify-between items-start text-left rounded-[20px] gap-[20px] h-auto md:h-[395px] w-full xl:w-[260px] p-[30px]">
+            <div className="flex flex-col at500:flex-row justify-center items-start w-full gap-[20px] xl:gap-[10px]">
+
+              <div className="bg-[#D4E8F6] flex flex-col justify-start items-start text-left rounded-[20px] gap-[20px] at500:gap-[50px] h-auto md:h-[395px] w-full p-[30px]">
                 <img
                   className=" w-[56px] h-auto object-contain"
                   src={icon1}
@@ -132,7 +146,7 @@ function OurStory() {
                 </span>
               </div>
 
-              <div className="bg-[#052444] flex flex-col justify-between items-start text-left rounded-[20px] gap-[20px] h-auto md:h-[395px] w-full xl:w-[321px] p-[30px]">
+              <div className="bg-[#052444] flex flex-col justify-start items-start text-left rounded-[20px] gap-[20px] at500:gap-[50px] h-auto md:h-[395px] w-full p-[30px]">
                 <img
                   className=" w-[56px] h-auto object-contain"
                   src={icon2}
@@ -147,8 +161,8 @@ function OurStory() {
               </div>
             </div>
 
-            <div className="flex flex-col at500:flex-row justify-center items-start gap-[20px] xl:gap-[10px]">
-              <div className="bg-[#B3CFFA] flex flex-col justify-between items-start text-left rounded-[20px] gap-[20px] h-auto md:h-[395px] w-full xl:w-[260px] p-[30px]">
+            <div className="flex flex-col at500:flex-row justify-center items-start gap-[20px] w-full xl:gap-[10px]">
+              <div className="bg-[#B3CFFA] flex flex-col justify-start items-start text-left rounded-[20px] gap-[20px] at500:gap-[50px] h-auto md:h-[395px] w-full p-[30px]">
                 <img
                   className=" w-[56px] h-auto object-contain"
                   src={icon3}
@@ -161,15 +175,17 @@ function OurStory() {
                 </span>
               </div>
 
-              <div className="bg-[#0260EE] flex flex-col justify-between items-start text-left rounded-[20px] gap-[20px] h-auto md:h-[395px] w-full xl:w-[195px] p-[30px]">
+              <div className="bg-[#0260EE] flex flex-col justify-start items-start text-left rounded-[20px] gap-[20px] at500:gap-[50px] h-auto md:h-[395px] w-full p-[30px]">
                 <img
                   className=" w-[56px] h-auto object-contain"
                   src={icon4}
                   alt=""
                 />
+          
                 <span className="txt5 !leading-[26px] text-[#FFFFFF]">
                   Commitment to Sustainability and CSR.
                 </span>
+                
               </div>
             </div>
           </div>
@@ -322,11 +338,11 @@ function OurStory() {
             </div>
 
             <div className="flex gap-[40px] flex-col justify-center items-start w-full ">
-              <span data-aos="fade-up"
-          
+              <span
+                data-aos="fade-up"
                 className="flex gap-[20px] justify-start items-start w-full"
               >
-                <img 
+                <img
                   src={icon6}
                   className="w-[28px] h-auto object-contain"
                   alt=""
@@ -339,7 +355,10 @@ function OurStory() {
                 </h2>
               </span>
 
-              <span data-aos="fade-up" className="flex gap-[20px] justify-start items-start w-full">
+              <span
+                data-aos="fade-up"
+                className="flex gap-[20px] justify-start items-start w-full"
+              >
                 <img
                   src={icon6}
                   className="w-[28px] h-auto object-contain"
@@ -350,7 +369,10 @@ function OurStory() {
                 </h2>
               </span>
 
-              <span data-aos="fade-up" className="flex gap-[20px] justify-start items-start w-full">
+              <span
+                data-aos="fade-up"
+                className="flex gap-[20px] justify-start items-start w-full"
+              >
                 <img
                   src={icon6}
                   className="w-[28px] h-auto object-contain"

@@ -1,27 +1,21 @@
-import React from 'react';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Nav from '../navigation/nav'; // Correct import statement
-import Title from '../contents/title'; // Correct import statement
-import contents from '../props/contents'; // Ensure this is the correct path
-import TalkToUs from '../contents/talkToUs';
-import talk from '../props/talk';
-import Footer from '../contents/footer'
-import WhyChooseUs from '../contents/whyChoodeUs';
-import cards from '../props/cards';
-import TicketingSupport from '../contents/ticketingSupport';
-import ticketing from '../props/ticketing';
-import ExperienceTheDifference from '../contents/experience';
-import experience from '../props/exp';
-import background from '../contents/images/blue-background - Copy.png';
-
-
-
-
-
-
-
+import React from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Nav from "../navigation/nav"; // Correct import statement
+import Title from "../contents/title"; // Correct import statement
+import contents from "../props/contents"; // Ensure this is the correct path
+import TalkToUs from "../contents/talkToUs";
+import talk from "../props/talk";
+import Footer from "../contents/footer";
+import WhyChooseUs from "../contents/whyChoodeUs";
+import cards from "../props/cards";
+import TicketingSupport from "../contents/ticketingSupport";
+import ticketing from "../props/ticketing";
+import ExperienceTheDifference from "../contents/experience";
+import experience from "../props/exp";
+import background from "../contents/images/blue-background - Copy.png";
+import OverlayForm from "../form/overlayForm";
 
 function createWhyChooseUs(card) {
   return (
@@ -60,9 +54,6 @@ function createTicketingSupport(ticketing) {
   );
 }
 
-
-
-
 function createTitle(content) {
   return (
     <Title
@@ -81,7 +72,6 @@ function createeExperience(experience) {
       key={experience.id}
       subTitle={experience.subTitle}
       details={experience.details}
-   
     />
   );
 }
@@ -94,53 +84,50 @@ function createTalkToUs(talk) {
       details={talk.details}
       buttz={talk.buttz}
       links={talk.links}
-      
+      pageLink={talk.pageLink}
+      signUP={talk.signUP}
     />
   );
 }
 
-
-
-
-
-
-
-
-
 function CorPorate() {
-  
-   useEffect(() => {
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
+  useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+      
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 6).map(createTitle)}
       </section>
-      
+
       {/* WhyChooseUs */}
       <section className="flex justify-center items-center w-full ">
         {cards.filter((cards) => cards.id === 1).map(createWhyChooseUs)}
       </section>
-      
+
       {/* TicketingSupport */}
       <section className="flex justify-center items-center w-full ">
         {ticketing
           .filter((ticketing) => ticketing.id === 2)
           .map(createTicketingSupport)}
       </section>
-      
+
       <section className="relative bg-[#F9FAFB] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
-        <div className='static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto'>
-            {experience
+        <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+          {experience
             .filter((experience) => experience.id === 1)
             .map(createeExperience)}
         </div>
       </section>
 
-      
       <section className="flex justify-center items-center w-full ">
         {talk.filter((talk) => talk.id === 4).map(createTalkToUs)}
       </section>

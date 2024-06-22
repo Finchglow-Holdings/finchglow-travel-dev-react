@@ -3,6 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FadeLink from './fadeLink';
 
 function RoundText(props) {
   const location = useLocation();
@@ -23,10 +24,7 @@ function RoundText(props) {
             <span data-aos="fade-up" className="txt2 text-[#3580F1]">
               {props.title}
             </span>
-            <h3
-              data-aos="fade-up"
-              className="text-[#05284C] silver:w-[388px]"
-            >
+            <h3 data-aos="fade-up" className="text-[#05284C] silver:w-[388px]">
               {props.subTitle}
             </h3>
           </div>
@@ -35,36 +33,37 @@ function RoundText(props) {
             <div className="flex flex-col justify-center items-start w-full h-auto  gap-[20px] text-left ">
               <span
                 data-aos="fade-up"
-                className={`txt3 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`} dangerouslySetInnerHTML={{ __html: props.description1 }}
-              >
-              </span>
+                className={`txt3 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
+                dangerouslySetInnerHTML={{ __html: props.description1 }}
+              ></span>
               <span
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
               >
                 {props.description2}
               </span>
               <span
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
               >
                 {props.description3}
               </span>
               <span
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? 'lg:w-[541px]' : 'xl:!w-[609px]'}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
               >
                 {props.description4}
               </span>
             </div>
-            <a
-              data-aos="fade-up"
-              href="#"
-              className={`arrow !text-[#0260EE] ${location.pathname === '/' ? '' : '!hidden'}`}
-            >
-              {props.buttonText}
-              <FaArrowRight />
-            </a>
+            <FadeLink to={props.LinkText}>
+              <span
+                data-aos="fade-up"
+                className={`arrow !text-[#0260EE] ${location.pathname === "/" ? "" : "!hidden"}`}
+              >
+                {props.buttonText}
+                <FaArrowRight />
+              </span>
+            </FadeLink>
           </div>
         </div>
       </div>

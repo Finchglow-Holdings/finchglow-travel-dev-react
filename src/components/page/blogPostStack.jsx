@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "../navigation/nav"; // Correct import statement
@@ -11,8 +11,7 @@ import IntroSection from "../contents/sections/blogIntro";
 import intro from "../props/introContent";
 import Sidebar from "../contents/sections/sideBar";
 import LatestBlogSection from "../contents/sections/latestBlog";
-
-
+import OverlayForm from "../form/overlayForm";
 
 function createIntro(intro) {
   return (
@@ -60,6 +59,10 @@ function createTitle(content) {
 }
 
 function BlogPost() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
   const linkToCopy = "https://example.com/specific-page"; // link here
 
   useEffect(() => {
@@ -68,7 +71,9 @@ function BlogPost() {
 
   return (
     <div>
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+
       <section className="flex justify-center items-center w-full mt-[70px]">
         {contents.filter((content) => content.id === 12).map(createTitle)}
       </section>
@@ -85,8 +90,8 @@ function BlogPost() {
           </div>
         </div>
       </section>
-      
-      <LatestBlogSection/>
+
+      <LatestBlogSection />
 
       <Footer />
     </div>

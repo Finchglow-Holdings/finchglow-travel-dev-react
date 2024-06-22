@@ -1,16 +1,22 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import FadeLink from "./fadeLink";
 import Button from "./Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OverlayForm from "../form/overlayForm";
 
 function TalkToUs(props) {
   const location = useLocation();
   const ispartnerPage = location.pathname === "/partnerPlus";
   const isaAcillaryPage = location.pathname === "/ancillary";
 
+
+ const [isOpen, setIsOpen] = useState(false);
+ const openOverlay = () => setIsOpen(true);
+ const closeOverlay = () => setIsOpen(false);
+ 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
@@ -41,21 +47,16 @@ function TalkToUs(props) {
               data-aos="fade-up"
               className="flex flex-col items-center justify-center  h-auto "
             >
-             
-
-{/* 
-              <FadeLink to={props.pageLink}>
-                <Button
-                  size="cdn"
-                  
-                >
+              <FadeLink to={props.pageLink} onClick={props.mail}>
+                <Button size="cdn">
                   <a href={props.links}>{props.buttz}</a>
                 </Button>
-              </FadeLink> */}
+              </FadeLink>
             </div>
           </div>
         </div>
       </div>
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
     </section>
   );
 }

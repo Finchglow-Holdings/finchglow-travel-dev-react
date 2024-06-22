@@ -4,11 +4,12 @@ import image2 from './service/room.jpeg';
 const contents = [
   {
     id: 1,
-    title: "Where we are",
+    title: "Who we are",
     subTitle: "Providing Seamless Travel Experiences For Every Client",
     description1: "Finchglow Travels is Nigeria’s foremost travel consolidator. Established in 2006, we have grown from a lone travel agency to becoming a trusted business partner for travel agencies, corporate organisations, and individual travellers across Nigeria.",
     description2: "Over the last 18 years, we have consistently delivered innovative travel solutions and unequalled customer service to our clients, maintaining an annual turnover of over 30 billion NGN. Driven by our culture of customer-centricity, we currently have nine offices across Lagos, Abuja, Port Harcourt, and Kano.", 
     buttonText: "Read more",
+    LinkText: "/about",
     imgURL: image1,
   },
   {

@@ -7,7 +7,7 @@ import logo from './logos/finchglow-logo.png';
 import logo2 from './logos/FT_logo_X5-01.png';
 import FadeLink from '../contents/fadeLink'; // Import the FadeLink component
 
-const Navbar = () => {
+const Navbar = ({ openOverlay }) => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("about");
@@ -22,9 +22,9 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -41,9 +41,7 @@ const Navbar = () => {
   //   setToggle(false); // Close the menu if a link is clicked (for mobile view)
   // }
 
-  const handleClick = () => {
-    alert('Button clicked!');
-  };
+
 
   return (
     <nav
@@ -126,7 +124,7 @@ const Navbar = () => {
             <li className="py-[10px] pl-[20px]">
               <Button
                 size="medium"
-                onClick={handleClick}
+                onClick={openOverlay}
                 className={` ${scrolled ? "text-[#05284C]" : "text-white"} `}
               >
                 Register as Trade Partner
@@ -153,7 +151,6 @@ const Navbar = () => {
             <div className="w-[65px]">
               <Button
                 size="small"
-                onClick={handleClick}
                 className={` hover:text-gray-400 ${scrolled ? "bg-[#05284C] text-white" : "bg-white  text-[#05284C]"} `}
               >
                 login
@@ -231,7 +228,7 @@ const Navbar = () => {
               <li className="py-[10px] pr-[20px]">
                 <Button
                   size="medium"
-                  onClick={handleClick}
+                  onClick={openOverlay}
                   className={` hover:text-gray-400 ${scrolled ? "text-[#05284C]" : "text-white"} `}
                 >
                   Register as Trade Partner

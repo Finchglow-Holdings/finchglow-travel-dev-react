@@ -15,7 +15,7 @@ const FadeLink = ({ to, children, onClick }) => {
       window.scrollTo(0, 0); // Scroll to the top of the page
       // window.location.reload();
       setLoading(false);
-    }, 100); // 1 second delay
+    }, 1000); // 1 second delay
     if (onClick) onClick();
   };
 
@@ -29,7 +29,7 @@ const FadeLink = ({ to, children, onClick }) => {
       {loading && (
         <div className="overlay">
           <div className="loading">
-            <FiLoader size={30} />
+            <FiLoader size={50} />
           </div>
         </div>
       )}

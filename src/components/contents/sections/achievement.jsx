@@ -56,7 +56,7 @@ const AchievementsSection = () => {
               serviced over 20,000 clients. We are dedicated to offering the
               best possible service across all our touch points.
             </p>
-            <FadeLink to="/">
+            <FadeLink to="/ourstory">
               <span className="arrow !text-[#0260EE]">
                 Learn more
                 <img src={icon} alt="" />

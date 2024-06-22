@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import FadeLink from "./contents/fadeLink";
 import Title from "./contents/title";
 import contents from "./props/contents";
@@ -15,6 +16,11 @@ import image3 from "./contents/images/service/traveller.jpeg";
 import icons3 from "./contents/images/service/icon/Group 78.png";
 import image4 from "./contents/images/service/business meeting.jpeg";
 import icons4 from "./contents/images/service/icon/Group 78.png";
+import OverlayForm from "./form/overlayForm";
+
+
+
+
 
 function createRoundText(content) {
   return (
@@ -42,9 +48,17 @@ function createTitle(content) {
 }
 
 function Service() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
+  const closeOverlay = () => setIsOpen(false);
+
+
+
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <Nav />
+      <Nav openOverlay={openOverlay} />
+      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+
       <div className="flex justify-center items-center w-full my-[70px]">
         {contents.filter((content) => content.id === 1).map(createTitle)}
       </div>

@@ -25,6 +25,7 @@ function createRoundText(content) {
       description1={content.description1}
       description2={content.description2}
       buttonText={content.buttonText}
+      LinkText={content.LinkText}
       imgURL={content.imgURL}
     />
   );
@@ -78,7 +79,7 @@ function Main() {
                 Latest Blog Posts
               </h3>
             </div>
-            <div className="flex justify-between w-[80%]">
+            <div className="flex flex-col silver:flex-row gap-[17px] justify-between w-[80%]">
               <span
                 data-aos="fade-up"
                 className="txt3 !text-[#667085] lg:w-[660px]"
