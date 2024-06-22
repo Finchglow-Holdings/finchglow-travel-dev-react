@@ -54,7 +54,7 @@ const ImageSlider = () => {
               }}
             ></div>
 
-            <div className=" flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto h-full">
+            <div className=" relative flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto h-full">
               {slide.title && slide.subTitle && (
                 <div className="content">
                   <div className="text-container absolute bottom-[50px] flex flex-col text-left w-full">

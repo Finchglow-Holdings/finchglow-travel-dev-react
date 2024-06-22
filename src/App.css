@@ -77,15 +77,5 @@
   fill: #3580F1; /* Change the color to light gray */
 }
 
-/* Keyframe Animation for Slide In */
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0);
-  }
-}
+
 

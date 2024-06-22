@@ -96,7 +96,7 @@ const Nav = ({ openOverlay }) => {
             <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
             >
-              <FadeLink to="/blog">Blog</FadeLink>
+              <FadeLink to="/">Blog</FadeLink>
             </li>
             <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "contact" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
@@ -198,7 +198,7 @@ const Nav = ({ openOverlay }) => {
               <li
                 className={`py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
               >
-                <FadeLink to="/blog">Blog</FadeLink>
+                <FadeLink to="/">Blog</FadeLink>
               </li>
               <li
                 className={`py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "contact" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
