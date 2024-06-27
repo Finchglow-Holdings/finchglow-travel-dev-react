@@ -1,66 +1,37 @@
-.overlay-content {
-    border-radius: 8px;
-
-}
-
-
+/* Overlay styling */
 .overlay1 {
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 / 82%);
-    justify-content: center;
-    align-items: center;
-    opacity: 100;
+    z-index: 9999;
     overflow: hidden;
-
     transition: opacity 300ms ease-out;
 }
 
+/* Scaling animation */
+@keyframes scale-in {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
 
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
+/* Form container styling with scaling animation */
 .form-container {
-
-    padding: 20px;
-    border-radius: 20px !important;
-    /* Example height to enable scrolling */
-
-
-}
-
-.form-container::-webkit-scrollbar {
-    width: 8px;
-    /* Width of the scrollbar */
-}
-
-.form-container::-webkit-scrollbar-thumb {
-    background: #888;
-    /* Scrollbar thumb color */
-    border-radius: 8px;
-    /* Scrollbar thumb border radius */
-
-}
-
-.form-container::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    /* Scrollbar thumb hover color */
-}
-
-.form-container::-webkit-scrollbar-track {
-    background: #fff;
-    /* Scrollbar track color */
-}
-
-
-
-/* contact form ends */
-
-
-.form-container {
+    position: relative;
+    top: 14px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -68,11 +39,28 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 554px;
-    height: 550px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
     box-sizing: border-box;
+    animation: scale-in 0.3s ease-out;
 }
 
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.form-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Hide scrollbar for other browsers (Firefox) */
+.form-container {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+/* Typography and form elements styling */
 .form-container h2 {
     font-family: 'Metropolis', sans-serif !important;
     font-size: 18px;
@@ -97,26 +85,18 @@
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    font-size: 12px;
 }
 
-.form-container input {
-    width: 100%;
-    height: 44px ;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
+.form-container input,
 .form-container select {
-    height: 44px;
+    width: 100%;
+    height: 40px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    cursor: pointer;
 }
 
 .form-container input:focus {
@@ -124,6 +104,7 @@
     outline: none;
 }
 
+/* Button styling */
 .form-container button {
     display: flex;
     align-items: center;
@@ -149,10 +130,9 @@
     border: 2px solid #ED3237;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
-    
 }
 
-
+/* Close button styling */
 .form-container .close-button {
     position: absolute !important;
     top: 10px !important;

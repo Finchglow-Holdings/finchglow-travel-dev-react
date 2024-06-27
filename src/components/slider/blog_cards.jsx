@@ -66,14 +66,14 @@ const BlogSlide = () => {
             </div>
             <div className="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
               <span
-                data-aos="fade-up"
+               
                 className="txt4 text-[#0260EE] leading-[24px]"
               >
                 Blog
               </span>
               <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
                 <h5
-                  data-aos="fade-up"
+            
                   className="text-[#101828] !leading-[30px] w-[268px]"
                 >
                   How to effectively price for your tickets
@@ -82,7 +82,7 @@ const BlogSlide = () => {
                       <img className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src={Icon} alt="arrow up" />
                   </div> */}
                 <a
-                  data-aos="fade-up"
+                  
                   href="#"
                   className="relative w-[24px] h-[28px] cursor-pointer"
                 >
@@ -93,7 +93,7 @@ const BlogSlide = () => {
                   />
                 </a>
               </div>
-              <span data-aos="fade-up" className="txt5 text-[#667085]">
+              <span className="txt5 text-[#667085]">
                 How do you create compelling presentations that wow your
                 colleagues...
               </span>
@@ -108,14 +108,14 @@ const BlogSlide = () => {
             </div>
             <div className="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
               <span
-                data-aos="fade-up"
+              
                 className="txt4 text-[#0260EE] leading-[24px]"
               >
                 Industry Insight
               </span>
               <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
                 <h5
-                  data-aos="fade-up"
+                  
                   className="text-[#101828] !leading-[30px] w-[268px]"
                 >
                   Migrating to automated platform for bookings
@@ -124,7 +124,7 @@ const BlogSlide = () => {
                       <img className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src={Icon} alt="arrow up" />
                   </div> */}
                 <a
-                  data-aos="fade-up"
+                  
                   href="#"
                   className="relative w-[24px] h-[28px] cursor-pointer"
                 >
@@ -135,7 +135,7 @@ const BlogSlide = () => {
                   />
                 </a>
               </div>
-              <span data-aos="fade-up" className="txt5 text-[#667085]">
+              <span className="txt5 text-[#667085]">
                 Linear helps streamline software projects, sprints, tasks, and
                 bug tracking. Here’s how to get started.
               </span>
@@ -150,20 +150,20 @@ const BlogSlide = () => {
             </div>
             <div className="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
               <span
-                data-aos="fade-up"
+                
                 className="txt4 text-[#0260EE] leading-[24px]"
               >
                 Blog
               </span>
               <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
                 <h5
-                  data-aos="fade-up"
+                 
                   className="text-[#101828] !leading-[30px] w-[268px]"
                 >
                   Building your API Stack
                 </h5>
                 <span
-                  data-aos="fade-up"
+                  
                   className="relative w-[24px] h-[28px] cursor-pointer"
                 >
                   <FadeLink to="/blogPost">
@@ -177,7 +177,7 @@ const BlogSlide = () => {
               </div>
              
 
-              <span data-aos="fade-up" className="txt5 text-[#667085]">
+              <span  className="txt5 text-[#667085]">
                 The rise of RESTful APIs has been met by a rise in tools for
                 creating, testing, and managing them.
               </span>
@@ -192,14 +192,14 @@ const BlogSlide = () => {
             </div>
             <div className="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
               <span
-                data-aos="fade-up"
+               
                 className="txt4 text-[#0260EE] leading-[24px]"
               >
                 Blog
               </span>
               <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
                 <h5
-                  data-aos="fade-up"
+                 
                   className="text-[#101828] !leading-[30px] w-[268px]"
                 >
                   How to effectively price for your tickets
@@ -208,7 +208,7 @@ const BlogSlide = () => {
                       <img className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src={Icon} alt="arrow up" />
                   </div> */}
                 <a
-                  data-aos="fade-up"
+                  
                   href="#"
                   className="relative w-[24px] h-[28px] cursor-pointer"
                 >
@@ -219,7 +219,7 @@ const BlogSlide = () => {
                   />
                 </a>
               </div>
-              <span data-aos="fade-up" className="txt5 text-[#667085]">
+              <span  className="txt5 text-[#667085]">
                 How do you create compelling presentations that wow your
                 colleagues...
               </span>
@@ -234,14 +234,14 @@ const BlogSlide = () => {
             </div>
             <div className="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
               <span
-                data-aos="fade-up"
+              
                 className="txt4 text-[#0260EE] leading-[24px]"
               >
                 Blog
               </span>
               <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
                 <h5
-                  data-aos="fade-up"
+                 
                   className="text-[#101828] !leading-[30px] w-[268px]"
                 >
                   Building your API Stack
@@ -250,7 +250,7 @@ const BlogSlide = () => {
                       <img className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src={Icon} alt="arrow up" />
                   </div> */}
                 <a
-                  data-aos="fade-up"
+                
                   href="#"
                   className="relative w-[24px] h-[28px] cursor-pointer"
                 >
@@ -261,7 +261,7 @@ const BlogSlide = () => {
                   />
                 </a>
               </div>
-              <span data-aos="fade-up" className="txt5 text-[#667085]">
+              <span  className="txt5 text-[#667085]">
                 The rise of RESTful APIs has been met by a rise in tools for
                 creating, testing, and managing them.
               </span>
@@ -276,14 +276,14 @@ const BlogSlide = () => {
             </div>
             <div className="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
               <span
-                data-aos="fade-up"
+               
                 className="txt4 text-[#0260EE] leading-[24px]"
               >
                 Blog
               </span>
               <div className="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
                 <h5
-                  data-aos="fade-up"
+                 
                   className="text-[#101828] !leading-[30px] w-[268px]"
                 >
                   How to effectively price for your tickets
@@ -292,7 +292,7 @@ const BlogSlide = () => {
                       <img className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src={Icon} alt="arrow up" />
                   </div> */}
                 <a
-                  data-aos="fade-up"
+                
                   href="#"
                   className="relative w-[24px] h-[28px] cursor-pointer"
                 >
@@ -303,7 +303,7 @@ const BlogSlide = () => {
                   />
                 </a>
               </div>
-              <span data-aos="fade-up" className="txt5 text-[#667085]">
+              <span className="txt5 text-[#667085]">
                 How do you create compelling presentations that wow your
                 colleagues...
               </span>

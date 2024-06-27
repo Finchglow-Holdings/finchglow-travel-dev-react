@@ -1,0 +1,14 @@
+.text-container {
+    color: #E6EAED;
+    font-family: 'Metropolis', sans-serif;
+    animation: slideIn 1s ease-out;
+    z-index: 5;
+}
+
+/* Slide Content */
+.content {
+    z-index: 888;
+    color: #ffff;
+    width: 100%;
+    position: relative;
+}

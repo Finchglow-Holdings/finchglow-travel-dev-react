@@ -45,7 +45,7 @@ const Navbar = ({ openOverlay }) => {
 
   return (
     <nav
-      className={`fixed top-0 z-[88] ${scrolled ? "bg-[#F1F5FC]" : "bg-transparent"} flex justify-center items-center w-full `}
+      className={`fixed top-0 z-[999] ${scrolled ? "bg-[#F1F5FC]" : "bg-transparent"} flex justify-center items-center w-full `}
     >
       <div className="relative flex justify-center items-center w-full  2xl:w-[1280px] px-[15px] py-[20px] at500:px-[40px] my-0 mx-auto">
         <div className="relative w-full mx-auto flex md:flex-row justify-between items-start md:items-center">

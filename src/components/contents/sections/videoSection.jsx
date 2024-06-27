@@ -29,7 +29,7 @@ const VideoSection = () => {
       
         <section className="relative flex flex-col justify-center items-center bg-[#03182E] w-full h-auto overflow-hidden">
             <div className="static w-full flex flex-col justify-center items-center gap-[30px] 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[40px] md:px-[100px] my-0 mx-auto">
-                <h3 data-aos="fade-up" className='text-[#FFFFFF] mt-[25px]'>
+                <h3  className='text-[#FFFFFF] mt-[25px]'>
                     Experience The Finchglow Travels Difference
                 </h3>
 

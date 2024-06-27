@@ -1,38 +1,35 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination,  A11y } from 'swiper/modules';
-import { useSwiper } from 'swiper/react';
+import React from "react";
+import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper/modules";
+import { useSwiper } from "swiper/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import Icon1 from "../contents/images/icons/Group 781.png"; 
-import Icon2 from "../contents/images/icons/Group 782.png"; 
-import Icon3 from "../contents/images/icons/Group 783.png"; 
-import Icon4 from "../contents/images/icons/Group 784.png"; 
-import Icon5 from "../contents/images/icons/Group 785.png"; 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import './swiper/cards.css'
-import './swiper/pagination.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import FadeLink from '../contents/fadeLink';
-
-
-
-
+import Icon1 from "../contents/images/icons/Group 781.png";
+import Icon2 from "../contents/images/icons/Group 782.png";
+import Icon3 from "../contents/images/icons/Group 783.png";
+import Icon4 from "../contents/images/icons/Group 784.png";
+import Icon5 from "../contents/images/icons/Group 785.png";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./swiper/cards.css";
+import "./swiper/pagination.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import FadeLink from "../contents/fadeLink";
 
 const Slideshow = () => {
-
   const swiper = useSwiper();
 
-  useEffect(() => {
-    AOS.init({ duration: 3000, once: true });
-  }, []);
-
+  // useEffect(() => {
+  //   AOS.init({ duration: 3000, once: true });
+  // }, []);
 
   return (
-    <div className=" w-full flex flex-col justify-start items-start   overflow-hidden lg:overflow-visible">
+    <div
+      id="middle"
+      className=" w-full flex flex-col justify-start items-start   overflow-hidden lg:overflow-visible"
+    >
       <Swiper
         className="card_wrapper relative  sm:!py-[30px] !overflow-visible"
         style={{ width: "100%" }}
@@ -62,25 +59,20 @@ const Slideshow = () => {
         <SwiperSlide className=" md:right-[-8px] z-[4]">
           <div className="card   bg-[#FFFFFF] border-b-[#0143A7] border-b-[7px] px-[20px]  ">
             <div className="image-content">
-              <div data-aos="fade-up" className="">
+              <div className="">
                 <img src={Icon1} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
-              <span data-aos="fade-up" className="name">
-                Affiliate Programmes
-              </span>
-              <p data-aos="fade-up" className="discription !font-medium">
+              <span className="name">Affiliate Programmes</span>
+              <p className="discription !font-medium">
                 Partner with us for better commissions, continuous support,
                 industry insights, and tools to attract loyal clients and
                 increase revenue.
               </p>
 
               <FadeLink to="/affiliate">
-                <span
-                  data-aos="fade-up"
-                  className="arrow hover:!text-[#3580F1]"
-                >
+                <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
                 </span>
@@ -92,25 +84,20 @@ const Slideshow = () => {
         <SwiperSlide>
           <div className="card  bg-[#E2F1FF] border-b-[#3580F1] border-b-[7px] px-[20px] pt-[40px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="">
+              <div className="">
                 <img src={Icon2} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
-              <span data-aos="fade-up" className="name">
-                Corporate Travel Management
-              </span>
-              <p data-aos="fade-up" className="discription !font-medium">
+              <span className="name">Corporate Travel Management</span>
+              <p className="discription !font-medium">
                 Why choose between quality and cost? Our seamless business
                 travel solutions offer both, with seamless arrangements, flight
                 and hotel bookings, travel policies, expense management, and
                 dedicated support.
               </p>
               <FadeLink to="/corPorate">
-                <span
-                  data-aos="fade-up"
-                  className="arrow hover:!text-[#3580F1]"
-                >
+                <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
                 </span>
@@ -122,25 +109,20 @@ const Slideshow = () => {
         <SwiperSlide>
           <div className="card  bg-[#F0F4F8] border-b-[#8294A6] border-b-[7px] px-[20px] pt-[0px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="">
+              <div className="">
                 <img src={Icon3} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
-              <span data-aos="fade-up" className="name">
-                Customised Travel Packages
-              </span>
-              <p data-aos="fade-up" className="discription !font-medium">
+              <span className="name">Customised Travel Packages</span>
+              <p className="discription !font-medium">
                 Let our travel experts handle the planning, crafting
                 personalised itineraries for leisure and business, ensuring
                 stylish, comfortable travel that fits your budget and eases your
                 busy schedule.
               </p>
               <FadeLink to="/travelPackages">
-                <span
-                  data-aos="fade-up"
-                  className="arrow hover:!text-[#3580F1]"
-                >
+                <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
                 </span>
@@ -152,25 +134,20 @@ const Slideshow = () => {
         <SwiperSlide className="z-[4]">
           <div className="card  bg-[#E6EFFD] border-b-[#B4BFC9] border-b-[7px] px-[20px] pt-[20px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="">
+              <div className="">
                 <img src={Icon4} alt="flight icon" className="card-img" />
               </div>
             </div>
-            <div data-aos="fade-up" className="card-content">
-              <span data-aos="fade-up" className="name">
-                Ancillary Services
-              </span>
-              <p data-aos="fade-up" className="discription !font-medium">
+            <div className="card-content">
+              <span className="name">Ancillary Services</span>
+              <p className="discription !font-medium">
                 Enjoy personalised ancillary services, from airport transfers to
                 travel insurance, expertly managed for a seamless trip and
                 lasting memories.
               </p>
 
               <FadeLink to="/ancillary">
-                <span
-                  data-aos="fade-up"
-                  className="arrow hover:!text-[#3580F1]"
-                >
+                <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
                 </span>
@@ -182,15 +159,13 @@ const Slideshow = () => {
         <SwiperSlide className=" md:right-[8px] ">
           <div className="card  bg-[#F0F8FF] border-b-[#67A0F5] border-b-[7px] px-[20px] pt-[20px] ">
             <div className="image-content">
-              <div data-aos="fade-up" className="">
+              <div className="">
                 <img src={Icon5} alt="flight icon" className="card-img" />
               </div>
             </div>
             <div className="card-content">
-              <span data-aos="fade-up" className="name">
-                Visa and Immigration Services
-              </span>
-              <p data-aos="fade-up" className="discription !font-medium">
+              <span className="name">Visa and Immigration Services</span>
+              <p className="discription !font-medium">
                 Stress-free visas & immigration. Finchglow Travels: Your
                 Nigerian visa experts. Personalized assistance for leisure,
                 work, or study travel. (We handle Nigerian visas, CERPAC,
@@ -198,10 +173,7 @@ const Slideshow = () => {
               </p>
 
               <FadeLink to="OurVisa">
-                <span
-                  data-aos="fade-up"
-                  className="arrow hover:!text-[#3580F1]"
-                >
+                <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
                 </span>
@@ -223,4 +195,3 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
-

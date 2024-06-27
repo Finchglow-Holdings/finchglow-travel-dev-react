@@ -34,7 +34,7 @@ const ImageSlider = () => {
   ];
 
   return (
-    <div className="slider-container">
+    <div id="top" className="slider-container">
       <Fade>
         {slides.map((slide, index) => (
           <div
@@ -97,13 +97,11 @@ const ImageSlider = () => {
       </Fade>
       <div className="relative flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto z-[8]">
         <div className="relative w-full  z-[555] cursor-pointer ">
-          <a href="#down">
+          <a href="#middle">
             <GoArrowDown className="text-[#FFFFFF] hover:text-[#3580F1] absolute right-0 bottom-[50px]  w-[57.82px] h-[57.82px] object-cover cursor-pointer" />
           </a>
-          
         </div>
       </div>
-      
     </div>
   );
 };

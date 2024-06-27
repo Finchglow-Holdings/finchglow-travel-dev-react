@@ -25,8 +25,7 @@ function footer() {
         <div className="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[15px] at500:px-[64px] my-0 mx-auto ">
           {/* back to top */}
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
+           
             className=" z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full "
           >
             <span className="relative  flex justify-center items-center bottom-[69px] !text-center !right-0 bg-[#697E94] !h-[36px] !w-[158px] !py-[8px] !px-[15px]">
@@ -47,14 +46,14 @@ function footer() {
                 className="text-2xl cursor-pointer w-[130px] h-[36.02px]"
               >
                 <a className="w-full" href="#">
-                  <img data-aos="fade-up"
+                  <img 
                     className="w-full h-auto transition-all duration-300 ease-in-out"
                     src={logo2}
                   />
                 </a>
               </div>
               <p
-                data-aos="fade-up"
+                
                 className="text-[16px] leading-[24px] text-[#506982] "
               >
                 Finchglow Travels Nigeria Limited is a leading travel management
@@ -64,7 +63,7 @@ function footer() {
               <div className="flex">
                 <ul className="ipx:flex justify-center items-center gap-y-4 gap-x-8">
                   <li
-                    data-aos="fade-up"
+                   
                     className=" w-[182.74px] h-[60px] mix-blend-multiply"
                   >
                     <a href="#">
@@ -82,42 +81,42 @@ function footer() {
             <div className="flex  justify-between md:h-[244px] w-full md:w-[385px] gap-[32px]">
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="/about">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         About us
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="/partnerPlus">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Trade Partner Plus
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="/corPorate">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Corporate Travel Management
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Leisure Travel
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="/ancillary">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Ancillary Services
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Products
@@ -129,35 +128,35 @@ function footer() {
               {/* <!----contact Us --> */}
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="/blog">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Blog
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Newsletter
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="/contact">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Contact us
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li >
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         FAQ
                       </span>
                     </FadeLink>
                   </li>
-                  <li data-aos="fade-up">
+                  <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Testimonials
@@ -172,8 +171,7 @@ function footer() {
           <hr className="h-[2px] w-full bg-[#81B0F7]" />
           {/* <!--copyright--> */}
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
+          
             className="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]"
           >
             <div className="flex w-full my-[20px]">

@@ -34,13 +34,13 @@ const AchievementsSection = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-[30px]">
           <div className="relative flex flex-col items-start gap-[17px] w-full">
             <span
-              data-aos="fade-up"
+              
               className="txt2 text-[#0260EE] capitalize mb-[10px]"
             >
               Key Achievements
             </span>
             <h3
-              data-aos="fade-up"
+              
               className="text-[#FFFFFF] !text-[30px] !leading-[1.1] lg:w-[452px] mb-[10px]"
             >
               We’ve mastered connecting our clients with the rest of the world
@@ -48,7 +48,7 @@ const AchievementsSection = () => {
               experiences.
             </h3>
             <p
-              data-aos="fade-up"
+            
               className="leading-[24px] text-[16px] text-[#E6EFFD] lg:w-[452px] mb-[20px]"
             >
               Since we launched in June 2006, we have expanded from one branch
@@ -66,73 +66,73 @@ const AchievementsSection = () => {
 
           <div className="grid at594:grid-cols-2 gap-y-[100px] items-start gap-x-[32px] w-full">
             <div className="flex flex-col justify-start items-start gap-[8px] w-full">
-              <span data-aos="fade-up">
+              <span>
                 <img
                   src={icon1}
                   className="w-[46px] h-auto object-cover"
                   alt="dollor sign"
                 />
               </span>
-              <div data-aos="fade-up" className="counter" ref={nairaRef}>
+              <div  className="counter" ref={nairaRef}>
                 {nairaInView && (
                   <CountUp end={30} suffix="+ Billion" duration={3} />
                 )}
               </div>
-              <span data-aos="fade-up" className="txt3 capitalize">
+              <span className="txt3 capitalize">
                 Naira Annual Turnover
               </span>
             </div>
 
             <div className="flex flex-col justify-center gap-[8px] items-start w-full">
-              <span data-aos="fade-up">
+              <span >
                 <img
                   src={icon2}
                   className="w-[46px] h-auto object-cover"
                   alt="dollor sign"
                 />
               </span>
-              <div data-aos="fade-up" className="counter" ref={tripsRef}>
+              <div  className="counter" ref={tripsRef}>
                 {tripsInView && (
                   <CountUp end={100000} suffix="K+" duration={3} />
                 )}
               </div>
-              <span data-aos="fade-up" className="txt3 capitalize">
+              <span  className="txt3 capitalize">
                 Trips booked
               </span>
             </div>
 
             <div className="flex flex-col justify-center gap-[8px] items-start w-full">
-              <span data-aos="fade-up">
+              <span>
                 <img
                   src={icon3}
                   className="w-[46px] h-auto object-cover"
                   alt="dollor sign"
                 />
               </span>
-              <div data-aos="fade-up" className="counter" ref={consultantsRef}>
+              <div  className="counter" ref={consultantsRef}>
                 {consultantsInView && (
                   <CountUp end={200} suffix="+" duration={3} />
                 )}
               </div>
-              <span data-aos="fade-up" className="txt3 capitalize">
+              <span className="txt3 capitalize">
                 Travel Consultants
               </span>
             </div>
 
             <div className="flex flex-col justify-center gap-[8px] items-start w-full">
-              <span data-aos="fade-up">
+              <span >
                 <img
                   src={icon4}
                   className="w-[46px] h-auto object-cover"
                   alt="dollor sign"
                 />
               </span>
-              <div data-aos="fade-up" className="counter" ref={clientsRef}>
+              <div className="counter" ref={clientsRef}>
                 {clientsInView && (
                   <CountUp end={20000} suffix="+" duration={3} />
                 )}
               </div>
-              <span data-aos="fade-up" className="txt3 capitalize">
+              <span className="txt3 capitalize">
                 Happy clients
               </span>
             </div>

@@ -7,22 +7,22 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
 
   return (
     <div className="overlay1 z-[88] " id="overlay">
-      <AiOutlineClose
-        onClick={closeOverlay}
-        size={30}
-        className=" absolute top-[2%] right-[27%] text-[#9ABFF8] cursor-pointer"
-      />
-
-      <div className="overlay-content  bg-white overflow-hidden ">
-        <div className="form-container overflow-auto">
-          <div className="flex  justify-between items-start w-full  ">
+      <div className="flex justify-center items-center  px-[15px] py-[70px] at500:px-[200px] my-0 mx-auto  w-full h-auto ">
+        <div className="form-container">
+          <div className="flex justify-between items-start w-full ">
             <div>
               <h2>Travels Trade Partner Registration</h2>
               <p>Please fill the form below</p>
             </div>
+            <AiOutlineClose
+              onClick={closeOverlay}
+              size={30}
+              className="  text-[#9ABFF8] cursor-pointer"
+            />
           </div>
-          <div className="flex flex-col gap-[20px] ">
+          <div className="flex flex-col gap-[20px] w-full">
             <form
+              className="w-full"
               action="https://forms.zohopublic.com/finchglowholdings1/form/TravelsTradePartnerRegistration/formperma/g9hFj_hVi5JOGxIHVrkseK3XaZk2ei78smdXQ0-mhLQ/htmlRecords/submit"
               name="form"
               id="form"
@@ -30,7 +30,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
               acceptCharset="UTF-8"
               encType="multipart/form-data"
             >
-              <input type="hidden" name="zf_referrer_name" value="" />{" "}
+              <input type="hidden" name="zf_referrer_name" value="" />
               {/* <!-- To Track referrals , place the referrer name within the " " in the above hidden input field --> */}
               <input type="hidden" name="zf_redirect_url" value="" />
               {/* To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field --> */}
@@ -39,7 +39,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
               <h2 className="hidden">Travels Trade Partner Registration</h2>
               <p></p>
               {/* Name and Last Name*/}
-              <div className="flex space-x-2 w-full">
+              <div className="flex flex-col at500:flex-row justify-center items-center space-x-2 w-full">
                 <div className="w-full">
                   <label>
                     First Name <em style={{ color: "red" }}>*</em>
@@ -65,7 +65,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   />
                 </div>
               </div>
-              <div className="flex space-x-2 w-full">
+              <div className="flex flex-col  justify-center items-center space-x-2 w-full">
                 {/* Email */}
                 <div className="w-full">
                   <label>
@@ -133,7 +133,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   <br />
                 </h2>
               </label>
-              <div className="flex space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center space-x-2 w-full">
                 {/* Single Line */}
                 <div className="w-full">
                   <label> Agency Name </label>
@@ -159,7 +159,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   />
                 </div>
               </div>
-              <div className="flex space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center space-x-2 w-full">
                 {/* Office Email */}
                 <div className="w-full">
                   <label> Office Email </label>
@@ -190,7 +190,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   />
                 </div>
               </div>
-              <div className="flex space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center space-x-2 w-full">
                 {/* State/Region/Province */}
                 <div className="w-full">
                   <label>State/Region/Province</label>
@@ -513,3 +513,5 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
 };
 
 export default OverlayForm;
+
+
