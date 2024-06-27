@@ -132,7 +132,7 @@ const Navbar = ({ openOverlay }) => {
             </li>
           </ul>
 
-          <div className="flex gap-[30px] justify-center items-center silver:hidden cursor-pointer z-[999]">
+          <div className="flex flex-col gap-[10px] justify-end items-end silver:hidden cursor-pointer z-[999]">
             <div>
               {toggle ? (
                 <AiOutlineClose
@@ -148,12 +148,13 @@ const Navbar = ({ openOverlay }) => {
                 />
               )}
             </div>
-            <div className="w-[65px]">
+            <div className="w-full">
               <Button
-                size="small"
+                size="medium"
+                onClick={openOverlay}
                 className={` hover:text-gray-400 ${scrolled ? "bg-[#05284C] text-white" : "bg-white  text-[#05284C]"} `}
               >
-                login
+                Register as Trade Partner
               </Button>
             </div>
           </div>

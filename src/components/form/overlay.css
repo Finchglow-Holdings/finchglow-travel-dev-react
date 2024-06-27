@@ -44,6 +44,7 @@
     overflow-y: auto;
     box-sizing: border-box;
     animation: scale-in 0.3s ease-out;
+    z-index: 888;
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */

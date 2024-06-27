@@ -1,3 +1,56 @@
+form h2 {
+    font-family: 'Metropolis', sans-serif !important;
+    font-size: 18px;
+    font-weight: 500 !important;
+    line-height: 28px;
+    text-align: left;
+    color: #101828;
+    margin-bottom: -px;
+}
+
+form p {
+    font-family: 'Metropolis', sans-serif !important;
+    font-size: 12px;
+    font-weight: 500 !important;
+    line-height: 28px;
+    text-align: left;
+    color: #101828;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+}
+
+form input,
+form select {
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0.89px solid #ccc;
+    border-radius: 7.11px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #0260EE;
+    outline: none;
+}
+
+
 .submit {
     display: flex;
     align-items: center;

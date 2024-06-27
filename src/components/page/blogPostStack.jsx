@@ -12,6 +12,13 @@ import intro from "../props/introContent";
 import Sidebar from "../contents/sections/sideBar";
 import LatestBlogSection from "../contents/sections/latestBlog";
 import OverlayForm from "../form/overlayForm";
+import PageTitle from "../pageTitle/pageTitle";
+
+
+
+
+
+
 
 function createIntro(intro) {
   return (
@@ -70,31 +77,34 @@ function BlogPost() {
   }, []);
 
   return (
-    <div>
-      <Nav openOverlay={openOverlay} />
-      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+    <>
+      <PageTitle title="API Stack" />
+      <div>
+        <Nav openOverlay={openOverlay} />
+        <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
 
-      <section className="flex justify-center items-center w-full mt-[70px]">
-        {contents.filter((content) => content.id === 12).map(createTitle)}
-      </section>
+        <section className="flex justify-center items-center w-full mt-[70px]">
+          {contents.filter((content) => content.id === 12).map(createTitle)}
+        </section>
 
-      <BlogInfoSection linkToCopy={linkToCopy} />
+        <BlogInfoSection linkToCopy={linkToCopy} />
 
-      <section className="relative bg-[#FFFFFF] flex flex-col justify-center items-center w-full  overflow-hidden">
-        <div className="static w-full  flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] my-0 mx-auto">
-          <div className="relative flex flex-col-reverse gap-[50px] lg:flex-row justify-between items-start w-full h-auto">
-            <section className="flex justify-center items-center w-full">
-              {intro.filter((intro) => intro.id === 1).map(createIntro)}
-            </section>
-            <Sidebar />
+        <section className="relative bg-[#FFFFFF] flex flex-col justify-center items-center w-full  overflow-hidden">
+          <div className="static w-full  flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] my-0 mx-auto">
+            <div className="relative flex flex-col-reverse gap-[50px] lg:flex-row justify-between items-start w-full h-auto">
+              <section className="flex justify-center items-center w-full">
+                {intro.filter((intro) => intro.id === 1).map(createIntro)}
+              </section>
+              <Sidebar />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <LatestBlogSection />
+        <LatestBlogSection />
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

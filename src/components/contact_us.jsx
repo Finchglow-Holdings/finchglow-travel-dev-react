@@ -12,7 +12,7 @@ import background from './contents/images/blue-background - Copy.png';
 import MapEmbed from './contents/sections/MapEmbed';
 import GetinTouchForm from './form/getinTouchForm';
 import OverlayForm from "./form/overlayForm";
-
+import PageTitle from './pageTitle/pageTitle';
 
 
 function createTitle(content) {
@@ -56,7 +56,9 @@ function ContactUs() {
 
 
 
-    return (
+  return (
+    <>
+      <PageTitle title="Contact Us | Finchglow Travels" />
       <div>
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
@@ -70,7 +72,7 @@ function ContactUs() {
 
         <section
           className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[321px] w-full h-auto overflow-hidden"
-          style={{ backgroundImage: `url(${background})` }}
+          style={{backgroundImage: `url(${background})` }}
         >
           <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px] my-0 mx-auto">
             <div className="flex flex-col lg:flex-row justify-between gap-[70px] items-start w-full">
@@ -131,7 +133,8 @@ function ContactUs() {
 
         <Footer />
       </div>
-    );
+    </>
+  );
 }
 
 export default ContactUs;

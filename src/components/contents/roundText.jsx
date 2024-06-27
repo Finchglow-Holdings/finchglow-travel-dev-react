@@ -15,6 +15,7 @@ function RoundText(props) {
 
   return (
     <section
+      id="middle"
       className="relative bg-white flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center py-[30px] w-full h-auto overflow-hidden"
       style={{ backgroundImage: `url(${props.imgURL})` }}
     >

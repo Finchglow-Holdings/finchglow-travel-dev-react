@@ -27,7 +27,7 @@ const Slideshow = () => {
 
   return (
     <div
-      id="middle"
+      
       className=" w-full flex flex-col justify-start items-start   overflow-hidden lg:overflow-visible"
     >
       <Swiper

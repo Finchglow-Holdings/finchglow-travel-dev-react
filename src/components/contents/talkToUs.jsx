@@ -10,7 +10,7 @@ import OverlayForm from "../form/overlayForm";
 function TalkToUs(props) {
   const location = useLocation();
   const ispartnerPage = location.pathname === "/partnerPlus";
-  const isaAcillaryPage = location.pathname === "/ancillary";
+  const isAffiliatePage = location.pathname === "/affiliate";
 
 
  const [isOpen, setIsOpen] = useState(false);
@@ -47,11 +47,19 @@ function TalkToUs(props) {
               data-aos="fade-up"
               className="flex flex-col items-center justify-center  h-auto "
             >
-              <FadeLink to={props.pageLink} onClick={props.mail}>
-                <Button size="cdn">
+              <FadeLink to={props.pageLink} onClick={props.signUP} >
+                <Button size="cdn" className={` ${isAffiliatePage ? "!hidden" : ""}`}>
                   <a href={props.links}>{props.buttz}</a>
                 </Button>
               </FadeLink>
+
+              <Button
+                size="cdn"
+                onClick={openOverlay}
+                className={` ${isAffiliatePage ? "block" : "!hidden"}`}
+              >
+                <a href={props.links}>{props.buttz}</a>
+              </Button>
             </div>
           </div>
         </div>

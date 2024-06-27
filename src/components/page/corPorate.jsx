@@ -14,7 +14,7 @@ import TicketingSupport from "../contents/ticketingSupport";
 import ticketing from "../props/ticketing";
 import ExperienceTheDifference from "../contents/experience";
 import experience from "../props/exp";
-import background from "../contents/images/blue-background - Copy.png";
+import PageTitle from "../pageTitle/pageTitle";
 import OverlayForm from "../form/overlayForm";
 
 function createWhyChooseUs(card) {
@@ -85,7 +85,7 @@ function createTalkToUs(talk) {
       buttz={talk.buttz}
       links={talk.links}
       pageLink={talk.pageLink}
-      signUP={talk.signUP}
+      
     />
   );
 }
@@ -100,39 +100,42 @@ function CorPorate() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-      <Nav openOverlay={openOverlay} />
-      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
-      
-      <section className="flex justify-center items-center w-full mt-[70px]">
-        {contents.filter((content) => content.id === 6).map(createTitle)}
-      </section>
+    <>
+      <PageTitle title="Corporate Travel Management | Finchglow Travels" />
+      <div className="flex flex-col justify-center items-center w-full">
+        <Nav openOverlay={openOverlay} />
+        <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
 
-      {/* WhyChooseUs */}
-      <section className="flex justify-center items-center w-full ">
-        {cards.filter((cards) => cards.id === 1).map(createWhyChooseUs)}
-      </section>
+        <section className="flex justify-center items-center w-full mt-[70px]">
+          {contents.filter((content) => content.id === 6).map(createTitle)}
+        </section>
 
-      {/* TicketingSupport */}
-      <section className="flex justify-center items-center w-full ">
-        {ticketing
-          .filter((ticketing) => ticketing.id === 2)
-          .map(createTicketingSupport)}
-      </section>
+        {/* WhyChooseUs */}
+        <section className="flex justify-center items-center w-full ">
+          {cards.filter((cards) => cards.id === 1).map(createWhyChooseUs)}
+        </section>
 
-      <section className="relative bg-[#F9FAFB] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
-        <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
-          {experience
-            .filter((experience) => experience.id === 1)
-            .map(createeExperience)}
-        </div>
-      </section>
+        {/* TicketingSupport */}
+        <section className="flex justify-center items-center w-full ">
+          {ticketing
+            .filter((ticketing) => ticketing.id === 2)
+            .map(createTicketingSupport)}
+        </section>
 
-      <section className="flex justify-center items-center w-full ">
-        {talk.filter((talk) => talk.id === 4).map(createTalkToUs)}
-      </section>
-      <Footer />
-    </div>
+        <section className="relative bg-[#F9FAFB] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
+          <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+            {experience
+              .filter((experience) => experience.id === 1)
+              .map(createeExperience)}
+          </div>
+        </section>
+
+        <section className="flex justify-center items-center w-full ">
+          {talk.filter((talk) => talk.id === 4).map(createTalkToUs)}
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 }
 

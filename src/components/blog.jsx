@@ -9,6 +9,7 @@ import BlogSlider from './slider/blogSection';
 import Footer from './contents/footer';
 import TestimonialSlide from './testimonial/testimonial';
 import OverlayForm from "./form/overlayForm";
+import PageTitle from './pageTitle/pageTitle';
 
 
 function createTitle(content) {
@@ -35,7 +36,9 @@ function Blog() {
 
 
 
-    return (
+  return (
+    <>
+      <PageTitle title="Blog Home | Finchglow Travels  " />
       <div>
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
@@ -54,7 +57,8 @@ function Blog() {
 
         <Footer />
       </div>
-    );
+    </>
+  );
 }
 
 export default Blog;

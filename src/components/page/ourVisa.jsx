@@ -14,6 +14,8 @@ import ExperienceTheDifference from '../contents/experience';
 import experience from '../props/exp';
 import background from '../contents/images/blue-background - Copy.png';
 import OverlayForm from "../form/overlayForm";
+import PageTitle from "../pageTitle/pageTitle";
+
 
 
 // go to props to input contents for the ones u can't input here
@@ -75,7 +77,7 @@ function createTalkToUs(talk) {
       buttz={talk.buttz}
       links={talk.links}
       pageLink={talk.pageLink}
-      signUP={talk.signUP}
+      
     />
   );
 }
@@ -98,52 +100,55 @@ function OurVisaService() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-      <Nav openOverlay={openOverlay} />
-      <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
-      
-      <section className="flex justify-center items-center w-full mt-[70px]">
-        {contents.filter((content) => content.id === 10).map(createTitle)}
-      </section>
+    <>
+      <PageTitle title="Visa and Immigration Services | Finchglow Travels" />
+      <div className="flex flex-col justify-center items-center w-full">
+        <Nav openOverlay={openOverlay} />
+        <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
 
-      {/* We do this by hosting */}
-      <section
-        className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[381px] w-full h-auto overflow-hidden"
-        style={{ backgroundImage: `url(${background})` }}
-      >
-        <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px] my-0 mx-auto">
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-[70px] w-full">
-            <h6
-              data-aos="fade-up"
-              className="!font-semibold text-[#FFFFFF] text-center lg:w-[850px]"
-            >
-              We specialise in visa applications, ensuring all requirements and
-              documents are correctly handled. Whether moving abroad or
-              travelling for work or leisure, we provide personalised assistance
-              for a smooth journey.
-            </h6>
+        <section className="flex justify-center items-center w-full mt-[70px]">
+          {contents.filter((content) => content.id === 10).map(createTitle)}
+        </section>
+
+        {/* We do this by hosting */}
+        <section
+          className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[381px] w-full h-auto overflow-hidden"
+          style={{ backgroundImage: `url(${background})` }}
+        >
+          <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px] my-0 mx-auto">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-[70px] w-full">
+              <h6
+                data-aos="fade-up"
+                className="!font-semibold text-[#FFFFFF] text-center lg:w-[850px]"
+              >
+                We specialise in visa applications, ensuring all requirements
+                and documents are correctly handled. Whether moving abroad or
+                travelling for work or leisure, we provide personalised
+                assistance for a smooth journey.
+              </h6>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* WhyChooseUs */}
-      <section className="flex justify-center items-center w-full ">
-        {cards.filter((cards) => cards.id === 5).map(createWhyChooseUs)}
-      </section>
+        {/* WhyChooseUs */}
+        <section className="flex justify-center items-center w-full ">
+          {cards.filter((cards) => cards.id === 5).map(createWhyChooseUs)}
+        </section>
 
-      <section className="relative bg-[#F9FAFB] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
-        <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
-          {experience
-            .filter((experience) => experience.id === 5)
-            .map(createeExperience)}
-        </div>
-      </section>
+        <section className="relative bg-[#F9FAFB] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
+          <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+            {experience
+              .filter((experience) => experience.id === 5)
+              .map(createeExperience)}
+          </div>
+        </section>
 
-      <section className="flex justify-center items-center w-full">
-        {talk.filter((talk) => talk.id === 5).map(createTalkToUs)}
-      </section>
-      <Footer />
-    </div>
+        <section className="flex justify-center items-center w-full">
+          {talk.filter((talk) => talk.id === 5).map(createTalkToUs)}
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 }
 

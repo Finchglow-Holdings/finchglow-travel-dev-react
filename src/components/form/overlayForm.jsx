@@ -7,7 +7,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
 
   return (
     <div className="overlay1 z-[88] " id="overlay">
-      <div className="flex justify-center items-center  px-[15px] py-[70px] at500:px-[200px] my-0 mx-auto  w-full h-auto ">
+      <div className="flex justify-center items-center  px-[15px] py-[70px] md:px-[200px] my-0 mx-auto  w-full h-auto ">
         <div className="form-container">
           <div className="flex justify-between items-start w-full ">
             <div>
