@@ -35,10 +35,12 @@ const Navbar = ({ openOverlay }) => {
     setToggle(false);
   }
 
-  // function handleLinkClick(link) {
-  //   setActiveLink(link);
-  //   setToggle(false); // Close the menu if a link is clicked (for mobile view)
-  // }
+  const handleButtonClick = () => {
+    window.open(
+      "https://finchglowb2b.amadeusonlinesuite.com/Auth/Login",
+      "_blank"
+    );
+  };
 
   return (
     <nav
@@ -175,7 +177,7 @@ const Navbar = ({ openOverlay }) => {
               <span className="flex  space-x-3">
                 <Button
                   size="medium"
-                  // onClick={showLogIn}
+                  onClick={handleButtonClick}
                   className={`border-[1px] border-solid border-[#F48487]  ${scrolled ? "text-[#05284C] " : "text-white "} `}
                 >
                   Log in
@@ -342,7 +344,7 @@ const Navbar = ({ openOverlay }) => {
                 <span className="flex  space-x-3">
                   <Button
                     size="medium"
-                    // onClick={showLogIn}
+                    onClick={handleButtonClick}
                     className={`border-[1px] border-solid border-[#F48487]  ${scrolled ? "text-[#05284C] " : "text-white "} `}
                   >
                     Log in

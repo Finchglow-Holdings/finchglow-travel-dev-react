@@ -30,6 +30,12 @@ const Nav = ({ openOverlay, showLogIn }) => {
   function closeMenu() {
     setToggle(false);
   }
+   const handleButtonClick = () => {
+     window.open(
+       "https://finchglowb2b.amadeusonlinesuite.com/Auth/Login",
+       "_blank"
+     );
+   };
 
   return (
     <nav className="flex justify-center items-center w-full fixed top-0 z-[88] bg-[#F1F5FC]">
@@ -171,7 +177,7 @@ const Nav = ({ openOverlay, showLogIn }) => {
               <span className="flex  space-x-3">
                 <Button
                   size="medium"
-                  onClick={showLogIn}
+                  onClick={handleButtonClick}
                   className="border-[1px] border-solid border-[#F48487] text-[#05284C]"
                 >
                   Log in
@@ -354,7 +360,7 @@ const Nav = ({ openOverlay, showLogIn }) => {
                 <span className="flex space-x-3">
                   <Button
                     size="medium"
-                    onClick={showLogIn}
+                    onClick={handleButtonClick}
                     className="border-[1px] border-solid border-[#F48487] text-[#05284C]"
                   >
                     Log in

@@ -40,7 +40,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
               {/* To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field --> */}
               <input type="hidden" name="zc_gad" value="" />
               {/* If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM  */}
-              <h2 className="hidden">Travels Trade Partner Registration</h2>
+              <h2 ></h2>
               <p></p>
               {/* Name and Last Name*/}
               <div className="flex flex-col at500:flex-row justify-center items-center at500:space-x-3 w-full">
@@ -75,11 +75,12 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   <label>
                     Email <em style={{ color: "red" }}>*</em>
                   </label>
+
                   <input
                     type="text"
                     maxLength="255"
-                    name="Email"
-                    value=""
+                    name="Email1"
+                    // value="email"
                     fieldtype="9"
                     placeholder="you@company.com"
                   />
@@ -89,16 +90,12 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   <label>
                     Phone <em style={{ color: "red" }}>*</em>
                   </label>
+
                   <input
-                    type="text"
-                    compname="PhoneNumber"
-                    name="PhoneNumber_countrycode"
-                    phoneformat="1"
-                    iscountrycodeenabled="false"
+                    type="tel"
+                    name="Phone"
                     maxLength="20"
-                    value=""
-                    fieldtype="11"
-                    id="international_PhoneNumber_countrycode"
+                    required
                     placeholder="+1 (555) 000-0000"
                   />
                 </div>
@@ -146,7 +143,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   <input
                     type="text"
                     name="SingleLine"
-                    value=""
+                    // value=""
                     fieldtype="1"
                     maxLength="255"
                     placeholder="Agency name"
@@ -173,7 +170,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     type="text"
                     maxLength="255"
                     name="Email1"
-                    value=""
+                    // value=""
                     fieldtype="9"
                     placeholder="Office email"
                   />
@@ -189,7 +186,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     phoneformat="1"
                     iscountrycodeenabled="false"
                     maxLength="20"
-                    value=""
+                    
                     fieldtype="11"
                     id="international_PhoneNumber1_countrycode"
                     placeholder="+1 (555) 000-0000"
@@ -225,7 +222,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   type="text"
                   maxLength="2083"
                   name="Website"
-                  value=""
+                  
                   placeholder=""
                 />
               </div>
@@ -234,9 +231,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                 <label> Sales Contact </label>
                 <input
                   type="text"
-                  name="SingleLine1"
-                  value=""
-                  fieldtype="1"
+                  name="Sales_Contact"
                   maxLength="255"
                   placeholder="Name of your Finchglow Travels contact person"
                 />
@@ -521,5 +516,3 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
 };
 
 export default OverlayForm;
-
-

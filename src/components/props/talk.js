@@ -6,7 +6,7 @@ const talk = [
     title: "Want to speak with us about our services?",
     details: "Speak with a representative about all your travel needs now.",
     buttz: "Chat with us!",
-    links: null,
+    // links: null,
     pageLink: "/contact-us",
     
   },
@@ -62,7 +62,7 @@ const talk = [
     id: 7,
     title:
       "Don't Just Peek, Dive Deep, and Get in on the Secret Sauce! Join over 4,000 other trade partners and maximise your profit.",
-    details: null,
+    // details: null,
     buttz: "Get started",
     pageLink: "/contact-us",
   
