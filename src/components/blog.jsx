@@ -1,16 +1,14 @@
-import React from 'react';
+import React from "react";
 import { useEffect, useState } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Nav from './navigation/nav';
-import Title from './contents/title'; // Correct import statement
-import contents from './props/contents'; // Ensure this is the correct path
-import BlogSlider from './slider/blogSection';
-import Footer from './contents/footer';
-import TestimonialSlide from './testimonial/testimonial';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Nav from "./navigation/nav";
+import Title from "./contents/title"; // Correct import statement
+import contents from "./props/contents"; // Ensure this is the correct path
+import BlogSlider from "./slider/blogSection";
+import Footer from "./contents/footer";
+import TestimonialSlide from "./testimonial/testimonial";
 import OverlayForm from "./form/overlayForm";
-import PageTitle from './pageTitle/pageTitle';
-
 
 function createTitle(content) {
   return (
@@ -25,20 +23,16 @@ function createTitle(content) {
 }
 
 function Blog() {
-    const [isOpen, setIsOpen] = useState(false);
-    const openOverlay = () => setIsOpen(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
-  
-    useEffect(() => {
-        AOS.init({ duration: 3000, once: true });
-    }, []);
 
-
-
+  useEffect(() => {
+    AOS.init({ duration: 3000, once: true });
+  }, []);
 
   return (
     <>
-      <PageTitle title="Blog Home | Finchglow Travels  " />
       <div>
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

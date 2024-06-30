@@ -20,7 +20,6 @@ import icon4 from "../contents/images/icons/corporate-social-responsibility (1) 
 import icon5 from "../contents/images/icons/award 119.png";
 import icon6 from "../contents/images/icons/Check icon.png";
 import OverlayForm from "../form/overlayForm";
-import PageTitle from "../pageTitle/pageTitle";
 
 
 
@@ -34,7 +33,6 @@ function createTalkToUs(talk) {
       buttz={talk.buttz}
       links={talk.links}
       pageLink={talk.pageLink}
-      
     />
   );
 }
@@ -62,9 +60,6 @@ function OurStory() {
 
   return (
     <>
-      <PageTitle
-        title=" Finchglow Travels Story | Your No. 1 Travel Consolidator"
-      />
       <div className="flex flex-col justify-center items-center w-full">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

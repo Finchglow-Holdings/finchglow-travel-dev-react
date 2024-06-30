@@ -14,7 +14,7 @@ import ExperienceTheDifference from '../contents/experience';
 import experience from '../props/exp';
 import background from '../contents/images/blue-background - Copy.png';
 import OverlayForm from "../form/overlayForm";
-import PageTitle from "../pageTitle/pageTitle";
+
 
 
 
@@ -101,7 +101,6 @@ function OurVisaService() {
 
   return (
     <>
-      <PageTitle title="Visa and Immigration Services | Finchglow Travels" />
       <div className="flex flex-col justify-center items-center w-full">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

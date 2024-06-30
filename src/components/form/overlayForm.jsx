@@ -8,16 +8,20 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
   return (
     <div className="overlay1 z-[88] " id="overlay">
       <div className="flex justify-center items-center  px-[15px] py-[70px] md:px-[200px] my-0 mx-auto  w-full h-auto ">
-        <div className="form-container">
-          <div className="flex justify-between items-start w-full ">
-            <div>
-              <h2>Travels Trade Partner Registration</h2>
-              <p>Please fill the form below</p>
+        <div className="form-container !pt-[40px] !px-[50px]">
+          <div className="flex justify-between items-start w-full  ">
+            <div className="flex flex-col ">
+              <h2 className="text-[18px] text-[#101828] !font-medium">
+                Travels Trade Partner Registration
+              </h2>
+              <span className="text-[12px] text-[#101828] font-medium">
+                Please fill the form below
+              </span>
             </div>
             <AiOutlineClose
               onClick={closeOverlay}
               size={30}
-              className="  text-[#9ABFF8] cursor-pointer"
+              className="  text-[#000000] cursor-pointer"
             />
           </div>
           <div className="flex flex-col gap-[20px] w-full">
@@ -39,33 +43,33 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
               <h2 className="hidden">Travels Trade Partner Registration</h2>
               <p></p>
               {/* Name and Last Name*/}
-              <div className="flex flex-col at500:flex-row justify-center items-center space-x-2 w-full">
+              <div className="flex flex-col at500:flex-row justify-center items-center at500:space-x-3 w-full">
                 <div className="w-full">
                   <label>
-                    First Name <em style={{ color: "red" }}>*</em>
+                    First name <em style={{ color: "red" }}>*</em>
                   </label>
                   <input
                     type="text"
                     maxLength="255"
                     name="Name_First"
                     fieldtype="7"
-                    placeholder=""
+                    placeholder="First name"
                   />
                 </div>
                 <div className="w-full">
                   <label>
-                    Last Name <em style={{ color: "red" }}>*</em>
+                    Last name <em style={{ color: "red" }}>*</em>
                   </label>
                   <input
                     type="text"
                     maxLength="255"
                     name="Name_Last"
                     fieldtype="7"
-                    placeholder=""
+                    placeholder="Last name"
                   />
                 </div>
               </div>
-              <div className="flex flex-col  justify-center items-center space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center w-full">
                 {/* Email */}
                 <div className="w-full">
                   <label>
@@ -77,7 +81,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     name="Email"
                     value=""
                     fieldtype="9"
-                    placeholder=""
+                    placeholder="you@company.com"
                   />
                 </div>
                 {/* Phone */}
@@ -95,11 +99,11 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     value=""
                     fieldtype="11"
                     id="international_PhoneNumber_countrycode"
-                    placeholder=""
+                    placeholder="+1 (555) 000-0000"
                   />
                 </div>
               </div>
-              <label className="py-[20px]">
+              <label className="!flex flex-col !gap-[2px] py-[20px]">
                 <h2
                   style={{
                     boxSizing: "border-box",
@@ -129,11 +133,13 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   }}
                   className="forminator-title"
                 >
-                  TRADE PARTNER BUSINESS DETAILS
-                  <br />
+                  Trade Partner Business Details
                 </h2>
+                <span className="text-[12px] text-[#101828] font-medium">
+                  Please fill the form below
+                </span>
               </label>
-              <div className="flex flex-col justify-center items-center space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center w-full">
                 {/* Single Line */}
                 <div className="w-full">
                   <label> Agency Name </label>
@@ -143,11 +149,11 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     value=""
                     fieldtype="1"
                     maxLength="255"
-                    placeholder=""
+                    placeholder="Agency name"
                   />
                 </div>
                 {/* Address */}
-                <div className="w-full">
+                <div className="flex flex-col justify-start items-start w-full">
                   <label>
                     Business Address <em style={{ color: "red" }}>*</em>
                   </label>
@@ -155,11 +161,11 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     type="text"
                     maxLength="255"
                     name="Address_AddressLine1"
-                    placeholder=""
+                    placeholder="Business address"
                   />
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-center space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center  w-full">
                 {/* Office Email */}
                 <div className="w-full">
                   <label> Office Email </label>
@@ -169,7 +175,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     name="Email1"
                     value=""
                     fieldtype="9"
-                    placeholder=""
+                    placeholder="Office email"
                   />
                 </div>
 
@@ -186,11 +192,11 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     value=""
                     fieldtype="11"
                     id="international_PhoneNumber1_countrycode"
-                    placeholder=""
+                    placeholder="+1 (555) 000-0000"
                   />
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-center space-x-2 w-full">
+              <div className="flex flex-col justify-center items-center  w-full">
                 {/* State/Region/Province */}
                 <div className="w-full">
                   <label>State/Region/Province</label>
@@ -198,7 +204,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     type="text"
                     maxLength="255"
                     name="Address_Region"
-                    placeholder=""
+                    placeholder="eg: Lagos"
                   />
                 </div>
                 {/* Street Address */}
@@ -208,7 +214,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     type="text"
                     maxLength="255"
                     name="Address_town"
-                    placeholder=""
+                    placeholder="Street address"
                   />
                 </div>
               </div>
@@ -224,7 +230,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                 />
               </div>
               {/* Sales Contact */}
-              <div>
+              <div className="w-full">
                 <label> Sales Contact </label>
                 <input
                   type="text"
@@ -235,7 +241,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   placeholder="Name of your Finchglow Travels contact person"
                 />
               </div>
-              <div>
+              <div className="w-full">
                 <label>Country</label>
                 <select name="Address_Country">
                   <option value="-Select-">-Select-</option>
@@ -503,7 +509,9 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   <option>Zimbabwe</option>
                 </select>
               </div>
-              <button type="submit">Register</button>
+              <button className="!mt-[20px]" type="submit">
+                Register
+              </button>
             </form>
           </div>
         </div>

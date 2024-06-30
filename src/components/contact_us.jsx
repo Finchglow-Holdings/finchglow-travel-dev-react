@@ -1,18 +1,17 @@
-import React from 'react';
+import React from "react";
 import { useEffect, useState } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Nav from './navigation/nav';
-import Title from './contents/title'; // Correct import statement
-import contents from './props/contents'; // Ensure this is the correct path
-import Footer from './contents/footer';
-import Location from './props/location';
-import OurLocations from './contents/ourLocations';
-import background from './contents/images/blue-background - Copy.png';
-import MapEmbed from './contents/sections/MapEmbed';
-import GetinTouchForm from './form/getinTouchForm';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Nav from "./navigation/nav";
+import Title from "./contents/title"; // Correct import statement
+import contents from "./props/contents"; // Ensure this is the correct path
+import Footer from "./contents/footer";
+import Location from "./props/location";
+import OurLocations from "./contents/ourLocations";
+import background from "./contents/images/blue-background - Copy.png";
+import MapEmbed from "./contents/sections/MapEmbed";
+import GetinTouchForm from "./form/getinTouchForm";
 import OverlayForm from "./form/overlayForm";
-import PageTitle from './pageTitle/pageTitle';
 
 
 function createTitle(content) {
@@ -41,24 +40,17 @@ function createLocation(location) {
   );
 }
 
-
-
-
 function ContactUs() {
   const [isOpen, setIsOpen] = useState(false);
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
-    useEffect(() => {
-        AOS.init({ duration: 3000, once: true });
-    }, []);
-
-
-
+  useEffect(() => {
+    AOS.init({ duration: 3000, once: true });
+  }, []);
 
   return (
     <>
-      <PageTitle title="Contact Us | Finchglow Travels" />
       <div>
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
@@ -72,7 +64,7 @@ function ContactUs() {
 
         <section
           className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[321px] w-full h-auto overflow-hidden"
-          style={{backgroundImage: `url(${background})` }}
+          style={{ backgroundImage: `url(${background})` }}
         >
           <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px] my-0 mx-auto">
             <div className="flex flex-col lg:flex-row justify-between gap-[70px] items-start w-full">

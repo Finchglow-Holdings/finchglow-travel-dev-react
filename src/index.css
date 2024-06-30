@@ -1,6 +1,6 @@
 /* Commented imports (assuming these are handled elsewhere) */
-@import "./assets/fonts/style.css";
-@import url('https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap');
+@import "./assets/fonts/goldFont/stylesheet.css";
+@import url('https: //fonts.googleapis.com/css2?family=Goldplay:wght@400;500;600;700;800;900&display=swap');
 
 
 @tailwind base;
@@ -9,7 +9,7 @@
 
 
 body {
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;
 }
 
 .regale-blue {
@@ -35,9 +35,18 @@ body {
 nav ul li a {
   font-size: 12px;
   font-weight: 600;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;
   line-height: 18px;
   text-align: center;
+}
+.text-change:hover {
+  color: #fff;
+  /* Your desired hover color */
+}
+
+.dark-text-change:hover span {
+  color: #05284C;
+  /* Your desired dark mode hover color */
 }
 
 .back-to-top-box:hover .back-to-top {
@@ -51,12 +60,12 @@ h1 {
   line-height: 64px;
   text-align: center;
   font-weight: 900;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 h2 {
   font-weight: 700;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 h3 {
@@ -64,7 +73,7 @@ h3 {
   line-height: 44px;
   font-weight: 700;
   letter-spacing: -2%;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 h4 {
@@ -78,28 +87,28 @@ h5 {
   font-size: 20px;
   line-height: 32px;
   font-weight: 700;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 h6 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt {
   font-size: 16px;
   line-height: 32px;
   font-weight: 600;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt2 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt3 {
@@ -107,20 +116,20 @@ h6 {
   line-height: 28px;
   font-weight: 500;
   color: #9ABFF8;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt4 {
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt6 {
@@ -128,27 +137,27 @@ h6 {
   line-height: 28px;
   font-weight: 700;
   color: #05284C;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt7 {
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .txt8 {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 
 p {
   font-weight: 400;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 
 }
 
@@ -166,7 +175,7 @@ p {
   transition: all 0.3s ease !important;
   line-height: 24px;
   font-weight: 500;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
 }
 
 .arrow:hover {

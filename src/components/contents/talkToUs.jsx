@@ -9,8 +9,8 @@ import OverlayForm from "../form/overlayForm";
 
 function TalkToUs(props) {
   const location = useLocation();
-  const ispartnerPage = location.pathname === "/partnerPlus";
-  const isAffiliatePage = location.pathname === "/affiliate";
+  const ispartnerPage = location.pathname === "/partnerPlus-connect";
+  const isAffiliatePage = location.pathname === "/affiliate-programme";
 
 
  const [isOpen, setIsOpen] = useState(false);

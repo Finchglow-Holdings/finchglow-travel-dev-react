@@ -12,7 +12,7 @@ import intro from "../props/introContent";
 import Sidebar from "../contents/sections/sideBar";
 import LatestBlogSection from "../contents/sections/latestBlog";
 import OverlayForm from "../form/overlayForm";
-import PageTitle from "../pageTitle/pageTitle";
+
 
 
 
@@ -78,7 +78,6 @@ function BlogPost() {
 
   return (
     <>
-      <PageTitle title="API Stack" />
       <div>
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

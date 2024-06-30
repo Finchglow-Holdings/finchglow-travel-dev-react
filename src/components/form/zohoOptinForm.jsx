@@ -31,7 +31,8 @@ const ZohoOptinForm = () => {
     // Add your custom event handling here before form submission
   };
 
-    const location = useLocation();
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
     const isPartnerPlusPage = location.pathname === "/partnerPlus";
     const isBlogPostPage = location.pathname === "/blogPost";
 
@@ -62,9 +63,10 @@ const ZohoOptinForm = () => {
               <div>
                 <input type="text" placeholder="Enter your email" changeitem="SIGNUP_FORM_FIELD" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL" />
               </div>
-              <p className={`text-[14px] mb-[10px] text-[#375370] ${isBlogPostPage ? ' '  : 'hidden'}`}>Read about our privacy policy</p>
+              <p className={`text-[14px] mb-[10px] text-[#375370] ${isBlogPostPage ? ' ' : 'hidden'}`}>Read about our privacy policy</p>
+              <p className={`text-[14px] mb-[10px] leading-[20px] text-[#375370] ${isHomePage ? ' '  : 'hidden'}`}>We’ll keep your data safe.</p>
               <div>
-                <input className={` ${isPartnerPlusPage ? ' hidden'  : isBlogPostPage ? 'hidden '  : ''}`} type="text" placeholder="Name" changeitem="SIGNUP_FORM_FIELD" name="LASTNAME" id="EMBED_FORM_NAME_LABEL" />
+                <input className={` ${isPartnerPlusPage ? ' hidden'  : isBlogPostPage ? 'hidden '  : isHomePage ? 'hidden '  : ''}`} type="text" placeholder="Name" changeitem="SIGNUP_FORM_FIELD" name="LASTNAME" id="EMBED_FORM_NAME_LABEL" />
               </div>
               <div>
                 <input className={`submit ${isPartnerPlusPage ? 'signUp '  : ''}`} type="submit" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Sign Up Now" />

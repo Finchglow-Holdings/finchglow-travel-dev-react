@@ -8,16 +8,16 @@ import "aos/dist/aos.css";
 
 function Title(props) {
   const location = useLocation();
-  const isBlogPage = location.pathname === "/blog";
-  const isContactPage = location.pathname === "/contact";
-  const isBlogPostPage = location.pathname === "/blogPost";
+  const isBlogPage = location.pathname === "/blog-home";
+  const isContactPage = location.pathname === "/contact-us";
+  const isBlogPostPage = location.pathname === "/blog-read";
 
   return (
     <section className="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full overflow-hidden">
       <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
         <div className="flex flex-col xl:flex-row xl:justify-between justify-start items-start xl:items-center w-full gap-[30px] xl:gap-[168px]">
           <div className="relative flex flex-col justify-center items-start w-full silver:w-[513px] text-left gap-[17px]">
-            <span className="txt2 text-[#0260EE]">{props.title}</span>
+            <span className="txt2 capitalize text-[#0260EE]">{props.title}</span>
             <h3
               className={`text-[#101828]  ${isBlogPage ? "lg:!w-[513px]" : isContactPage ? "lg:!w-[396px]" : "xl:w-[595px]"}`}
             >

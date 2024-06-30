@@ -15,7 +15,11 @@ import background from "./contents/images/blue-background - Copy.png";
 import background2 from "./contents/images/sharing report.jpeg";
 import VideoSection from "./contents/sections/videoSection";
 import OverlayForm from "./form/overlayForm";
-import PageTitle from "./pageTitle/pageTitle";
+
+
+
+
+
 
 function createTalkToUs(talk) {
   return (
@@ -25,7 +29,7 @@ function createTalkToUs(talk) {
       details={talk.details}
       buttz={talk.buttz}
       links={talk.links}
-      signUP={talk.signUP}
+      pageLink={talk.pageLink}
     />
   );
 }
@@ -62,16 +66,18 @@ function About() {
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
+  
+
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <>
-      <PageTitle title=" About Finchglow Travels | Your No. 1 Travel Consolidator" />
       <div className="flex flex-col justify-center items-center w-full ">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+       
 
         <section className="flex justify-center items-center w-full mt-[70px]">
           {contents.filter((content) => content.id === 2).map(createTitle)}

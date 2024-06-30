@@ -7,7 +7,7 @@ import FadeLink from './fadeLink';
 
 function RoundText(props) {
   const location = useLocation();
-  const isServicePage = location.pathname === '/service';
+  const isServicePage = location.pathname === "/our-services";
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });

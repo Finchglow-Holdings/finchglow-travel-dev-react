@@ -16,28 +16,9 @@ import background from "../contents/images/blue-background - Copy.png";
 import EpisodesSlide from "../slideEpisode/prevEpisodes";
 import ZohoOptinForm from "../form/zohoOptinForm";
 import OverlayForm from "../form/overlayForm";
-import PageTitle from "../pageTitle/pageTitle";
-
 
 // go to props to input contents for the ones u can't input here
 
-function createWhyChooseUs(card) {
-  return (
-    <WhyChooseUs
-      key={card.id}
-      imgURL={card.imgURL}
-      title={card.title}
-      subTitle1={card.subTitle1}
-      details1={card.details1}
-      subTitle2={card.subTitle2}
-      details2={card.details2}
-      subTitle3={card.subTitle3}
-      details3={card.details3}
-      subTitle4={card.subTitle4}
-      details4={card.details4}
-    />
-  );
-}
 
 function createTitle(content) {
   return (
@@ -60,7 +41,6 @@ function createTalkToUs(talk) {
       buttz={talk.buttz}
       links={talk.links}
       pageLink={talk.pageLink}
-    
     />
   );
 }
@@ -76,7 +56,6 @@ function PartnerPlusConnect() {
 
   return (
     <>
-      <PageTitle title=" PartnerPlus Connect | Finchglow Travels " />
       <div className="flex flex-col justify-center items-center w-full overflow-hidden">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

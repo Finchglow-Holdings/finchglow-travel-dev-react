@@ -16,7 +16,8 @@ import ExperienceTheDifference from "../contents/experience";
 import experience from "../props/exp";
 import background from "../contents/images/blue-background - Copy.png";
 import OverlayForm from "../form/overlayForm";
-import PageTitle from "../pageTitle/pageTitle";
+
+
 
 
 // go to props to input contents for the ones u can't input here
@@ -78,7 +79,6 @@ function createeExperience(experience) {
       key={experience.id}
       subTitle={experience.subTitle}
       details={experience.details}
-      
     />
   );
 }
@@ -90,7 +90,6 @@ function createTalkToUs(talk) {
       title={talk.title}
       details={talk.details}
       buttz={talk.buttz}
-     
     />
   );
 }
@@ -106,7 +105,6 @@ function AffiliatePrograms() {
 
   return (
     <>
-      <PageTitle title="Affiliate Programme | Finchglow Travels " />
       <div className="flex flex-col justify-center items-center w-full">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

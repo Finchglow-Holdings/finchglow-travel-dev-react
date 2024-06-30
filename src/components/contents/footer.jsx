@@ -24,10 +24,7 @@ function footer() {
       <section className="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
         <div className="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[15px] at500:px-[64px] my-0 mx-auto ">
           {/* back to top */}
-          <div
-           
-            className=" z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full "
-          >
+          <div className=" z-[23] flex justify-center items-center silver:justify-end silver:items-end w-full ">
             <span className="relative  flex justify-center items-center bottom-[69px] !text-center !right-0 bg-[#697E94] !h-[36px] !w-[158px] !py-[8px] !px-[15px]">
               <a
                 href="#top"
@@ -41,31 +38,22 @@ function footer() {
           {/* back to top */}
           <div className="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
             <div className="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
-              <div
-                
-                className="text-2xl cursor-pointer w-[130px] h-[36.02px]"
-              >
+              <div className="text-2xl cursor-pointer w-[130px] h-[36.02px]">
                 <a className="w-full" href="#">
-                  <img 
+                  <img
                     className="w-full h-auto transition-all duration-300 ease-in-out"
                     src={logo2}
                   />
                 </a>
               </div>
-              <p
-                
-                className="text-[16px] leading-[24px] text-[#506982] "
-              >
+              <p className="text-[16px] leading-[24px] text-[#506982] ">
                 Finchglow Travels Nigeria Limited is a leading travel management
                 company headquartered in Nigeria with 8 offices across Lagos,
                 Abuja, Kano and Port Harcourt.
               </p>
               <div className="flex">
                 <ul className="ipx:flex justify-center items-center gap-y-4 gap-x-8">
-                  <li
-                   
-                    className=" w-[182.74px] h-[60px] mix-blend-multiply"
-                  >
+                  <li className=" w-[182.74px] h-[60px] mix-blend-multiply">
                     <a href="#">
                       <img
                         src={logo}
@@ -81,42 +69,42 @@ function footer() {
             <div className="flex  justify-between md:h-[244px] w-full md:w-[385px] gap-[32px]">
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                  <li >
-                    <FadeLink to="/about">
+                  <li>
+                    <FadeLink to="/about-finchglow-travels">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         About us
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
-                    <FadeLink to="/partnerPlus">
+                  <li>
+                    <FadeLink to="/partnerPlus-connect">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Trade Partner Plus
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
-                    <FadeLink to="/corPorate">
+                  <li>
+                    <FadeLink to="/corPorate-travel-management">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Corporate Travel Management
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
-                    <FadeLink to="">
+                  <li>
+                    <FadeLink to="/customised-travel-packages">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Leisure Travel
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
-                    <FadeLink to="/ancillary">
+                  <li>
+                    <FadeLink to="/ancillary-services">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Ancillary Services
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
+                  <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Products
@@ -128,28 +116,28 @@ function footer() {
               {/* <!----contact Us --> */}
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                  <li >
-                    <FadeLink to="/blog">
+                  <li>
+                    <FadeLink to="/blog-home">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Blog
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
+                  <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Newsletter
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
+                  <li>
                     <FadeLink to="/contact">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Contact us
                       </span>
                     </FadeLink>
                   </li>
-                  <li >
+                  <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         FAQ
@@ -170,10 +158,7 @@ function footer() {
           {/* <!--hr line--> */}
           <hr className="h-[2px] w-full bg-[#81B0F7]" />
           {/* <!--copyright--> */}
-          <div
-          
-            className="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]"
-          >
+          <div className="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]">
             <div className="flex w-full my-[20px]">
               <p className="text-[#353F50] leading-[16.8px] text-left text-[16px] !font-semibold">
                 © {currentYear} Finchglow Travels. All rights reserved

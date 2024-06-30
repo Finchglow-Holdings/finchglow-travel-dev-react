@@ -14,7 +14,6 @@ import TicketingSupport from "../contents/ticketingSupport";
 import ticketing from "../props/ticketing";
 import ExperienceTheDifference from "../contents/experience";
 import experience from "../props/exp";
-import PageTitle from "../pageTitle/pageTitle";
 import OverlayForm from "../form/overlayForm";
 
 function createWhyChooseUs(card) {
@@ -85,7 +84,6 @@ function createTalkToUs(talk) {
       buttz={talk.buttz}
       links={talk.links}
       pageLink={talk.pageLink}
-      
     />
   );
 }
@@ -101,7 +99,6 @@ function CorPorate() {
 
   return (
     <>
-      <PageTitle title="Corporate Travel Management | Finchglow Travels" />
       <div className="flex flex-col justify-center items-center w-full">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />

@@ -6,7 +6,8 @@ const talk = [
     title: "Want to speak with us about our services?",
     details: "Speak with a representative about all your travel needs now.",
     buttz: "Chat with us!",
-    links: "/contact",
+    links: null,
+    pageLink: "/contact-us",
     
   },
   {
@@ -24,7 +25,7 @@ const talk = [
     details:
       "Don't just dream about travel—make it happen with Finchglow Travels' customised travel services.",
     buttz: "Contact Us!",
-    pageLink: "/contact",
+    pageLink: "/contact-us",
    
   },
   {
@@ -33,7 +34,7 @@ const talk = [
     details:
       "Let's embark on this transformation where you’ll experience unparalleled service and efficiency.",
     buttz: "Request A Proposal",
-    pageLink: "/contact",
+    pageLink: "/contact-us",
     
   },
   {
@@ -43,7 +44,7 @@ const talk = [
     details:
       "Don't settle for ordinary travel. Enrich your journey with our premium ancillary services designed to exceed your expectations.",
     buttz: "Contact Us!",
-    pageLink: "/contact",
+    pageLink: "/contact-us",
    
   },
   {
@@ -53,7 +54,7 @@ const talk = [
     details:
       "Let Finchglow Travels be your visa and immigration partner, guiding you every step of the way.",
     buttz: "Get started",
-    pageLink: "/contact",
+    pageLink: "/contact-us",
   
   },
 
@@ -63,7 +64,7 @@ const talk = [
       "Don't Just Peek, Dive Deep, and Get in on the Secret Sauce! Join over 4,000 other trade partners and maximise your profit.",
     details: null,
     buttz: "Get started",
-    pageLink: "/contact",
+    pageLink: "/contact-us",
   
   },
 

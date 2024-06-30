@@ -47,7 +47,7 @@ const contents = [
   },
   {
     id: 6,
-    title: "Corporate Travel-Management",
+    title: "Corporate Travel Management",
     subTitle: "Transform Your Corporate Travel Experience with Us!",
     subTitle2: null,
     riteContent: "Every decision matters in today's fast-paced business landscape, especially managing your company's travel needs. That's where we come in – your dedicated travel partner committed to transforming how your team travels.",
@@ -55,7 +55,7 @@ const contents = [
   },
   {
     id: 7,
-    title: "Customised Travel-Packages",
+    title: "Customised Travel Packages",
     subTitle: "Fulfil Your Travel Dreams with our Premier Travel Services",
     subTitle2: null,
     riteContent: "It's time to enter a world of remarkable travel experiences and seamless journeys. At Finchglow Travels, we've crafted several possibilities that cater to your individual or group needs, whether leisurely getaways or strategic business ventures.",
@@ -63,7 +63,7 @@ const contents = [
   },
    {
     id: 8,
-    title: "Affiliate-Programs",
+    title: "Affiliate Programs",
     subTitle: "Empower Your Growth With The PartnerPlus Connect Webinar",
     subTitle2: null,
     riteContent: "As Nigeria's foremost travel consolidator, Finchglow Travels is committed to providing innovative and cost-effective solutions for travel agencies.",
@@ -71,7 +71,7 @@ const contents = [
   },
     {
     id: 9,
-    title: "Ancillary-Services",
+    title: "Ancillary Services",
     subTitle: "Enrich Your Travels with Our Comprehensive Ancillary Services!",
     subTitle2: null,
     riteContent: "Travelling shouldn’t feel like a chore, just one more thing to cross off your to-do list. It is an experience, and we’re here to make every aspect of that experience satisfying and unforgettable. Introducing our premium range of ancillary services – the perfect companions to enrich your travel experience like never before.",
@@ -87,7 +87,7 @@ const contents = [
   },
     {
     id: 11,
-    title: "PartnerPlus-Connect",
+    title: "PartnerPlus Connect",
     subTitle: "Connect With Us Through Our PartnerPlus Connect Webinar",
     subTitle2: null,
     riteContent: "PartnerPlus Connect is more than just an industry-focused monthly webinar — it's a catalyst for growth and innovation in Nigeria's travel industry. Led by Finchglow Travels' top executives, PartnerPlus Connect provides a unique opportunity for agents to learn from industry leaders and peers alike.",

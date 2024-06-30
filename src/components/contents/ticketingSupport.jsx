@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 
 function TicketingSupport(props) {
     const location = useLocation();
-    const isTravelPackagesPage = location.pathname === '/travelPackages';
+    const isTravelPackagesPage = location.pathname === '/customised-travel-packages';
 
     useEffect(() => {
         AOS.init({ duration: 3000 });

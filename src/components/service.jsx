@@ -9,16 +9,16 @@ import RoundText from "./contents/roundText";
 import { FaArrowRight } from "react-icons/fa";
 import round from "./props/round";
 import image1 from "./contents/images/service/tickets.jpeg";
-import icons1 from "./contents/images/service/icon/Group 78.png";
+import icons1 from "./contents/images/icons/Group 781.png";
 import image2 from "./contents/images/service/hello.jpeg";
-import icons2 from "./contents/images/service/icon/Vector 3.png";
+import icons2 from "./contents/images/icons/Group 782.png";
 import image3 from "./contents/images/service/traveller.jpeg";
-import icons3 from "./contents/images/service/icon/Group 78.png";
+import icons3 from "./contents/images/icons/Group 783.png";
 import image4 from "./contents/images/service/business meeting.jpeg";
-import icons4 from "./contents/images/service/icon/Group 78.png";
+import icons4 from "./contents/images/icons/Group 784.png";
 import OverlayForm from "./form/overlayForm";
-import PageTitle from "./pageTitle/pageTitle";
 
+// import LogInForm from "./form/logIn";
 
 
 
@@ -52,14 +52,16 @@ function Service() {
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
-
+  // const [isShow, setIsShow] = useState(false);
+  // const showLogIn = () => setIsShow(true);
+  // const hideLogIn = () => setIsShow(false);
 
   return (
     <>
-      <PageTitle title=" Our Services | Finchglow Travels " />
       <div className="flex flex-col justify-center items-center w-full">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
+        {/* <LogInForm isShow={isShow} hideLogIn={hideLogIn} /> */}
 
         <div className="flex justify-center items-center w-full my-[70px]">
           {contents.filter((content) => content.id === 1).map(createTitle)}
@@ -139,7 +141,7 @@ function Service() {
                   <span className="relative h-[64px] w-[64px] flex justify-center items-center rounded-[50%] bg-[#FAC2C3]">
                     <img
                       src={icons2}
-                      className=" absolute h-[20px] w-[20px] object-cover"
+                      className="h-[64px] w-[64px] object-cover"
                       alt=""
                     />
                   </span>

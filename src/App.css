@@ -6,7 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
  
 
 }
@@ -31,7 +31,7 @@
 /* Text Container */
 .text-container {
   color: #E6EAED;
-  font-family: 'Metropolis', sans-serif;
+  font-family: 'Goldplay', sans-serif;  
   animation: slideIn 1s ease-out;
   z-index: 5;
 }

@@ -1,27 +1,20 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Nav from '../navigation/nav'; // Correct import statement
-import Title from '../contents/title'; // Correct import statement
-import contents from '../props/contents'; // Ensure this is the correct path
-import TalkToUs from '../contents/talkToUs';
-import talk from '../props/talk';
-import Footer from '../contents/footer'
-import WhyChooseUs from '../contents/whyChoodeUs';
-import cards from '../props/cards';
-import TicketingSupport from '../contents/ticketingSupport';
-import ticketing from '../props/ticketing';
-import ExperienceTheDifference from '../contents/experience';
-import experience from '../props/exp';
+import React from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Nav from "../navigation/nav"; // Correct import statement
+import Title from "../contents/title"; // Correct import statement
+import contents from "../props/contents"; // Ensure this is the correct path
+import TalkToUs from "../contents/talkToUs";
+import talk from "../props/talk";
+import Footer from "../contents/footer";
+import WhyChooseUs from "../contents/whyChoodeUs";
+import cards from "../props/cards";
+import TicketingSupport from "../contents/ticketingSupport";
+import ticketing from "../props/ticketing";
+import ExperienceTheDifference from "../contents/experience";
+import experience from "../props/exp";
 import OverlayForm from "../form/overlayForm";
-import PageTitle from "../pageTitle/pageTitle";
-
-
-
-
-
-
 
 function createWhyChooseUs(card) {
   return (
@@ -62,9 +55,6 @@ function createTicketingSupport(ticketing) {
   );
 }
 
-
-
-
 function createTitle(content) {
   return (
     <Title
@@ -83,7 +73,6 @@ function createeExperience(experience) {
       key={experience.id}
       subTitle={experience.subTitle}
       details={experience.details}
-   
     />
   );
 }
@@ -97,29 +86,21 @@ function createTalkToUs(talk) {
       buttz={talk.buttz}
       pageLink={talk.pageLink}
       links={talk.links}
-      
     />
   );
 }
-
-
-
-
-
-
 
 function TravelPackages() {
   const [isOpen, setIsOpen] = useState(false);
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
   return (
     <>
-      <PageTitle title="Customised Travel Packages | Finchglow Travels " />
       <div className="flex flex-col justify-center items-center w-full">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
