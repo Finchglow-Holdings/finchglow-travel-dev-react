@@ -14,6 +14,7 @@ import TestimonialSlider from '../testimonial/testimonial';
 import background from './images/blue-background.png';
 import Button from './Button';
 import FadeLink from './fadeLink';
+import SectionPartner from './sections/partner';
 
 
 function createRoundText(content) {
@@ -64,6 +65,7 @@ function Main() {
 
       <AchievementsSection />
       <SectionWhereWeAre />
+      {/* <SectionPartner /> */}
 
       <section className="relative bg-[#FFFFFF] flex justify-center flex-col items-center w-full h-auto">
         <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px]  at500:px-[40px] md:pl-[80px] md:pr-0  my-0 mx-auto overflow-hidden">

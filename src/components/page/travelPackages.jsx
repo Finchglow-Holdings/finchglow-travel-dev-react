@@ -129,7 +129,7 @@ function TravelPackages() {
           </div>
         </section>
 
-        <section className="flex justify-center items-center w-full mt-[70px]">
+        <section className="flex justify-center items-center w-full ">
           {talk.filter((talk) => talk.id === 3).map(createTalkToUs)}
         </section>
         <Footer />

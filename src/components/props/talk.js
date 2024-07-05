@@ -12,9 +12,8 @@ const talk = [
   },
   {
     id: 2,
-    title: "Start growing your travel business now!",
-    details:
-      "Join over 4000+ partners already trading with us and become a part of our exclusive Trade PartnerPlus program.",
+    title: "Don't miss out on this opportunity to elevate your agency and exceed client expectations.",
+    details:"",
     buttz: "Get started",
    
     
@@ -63,6 +62,15 @@ const talk = [
     title:
       "Don't Just Peek, Dive Deep, and Get in on the Secret Sauce! Join over 4,000 other trade partners and maximise your profit.",
     // details: null,
+    buttz: "Get started",
+    pageLink: "/contact-us",
+  
+  },
+   {
+    id: 8,
+    title:
+      "Don't let visa and immigration processes hinder your travel dreams!",
+    details: "Let Finchglow Travels be your visa and immigration partner, guiding you every step of the way.",
     buttz: "Get started",
     pageLink: "/contact-us",
   

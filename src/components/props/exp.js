@@ -9,7 +9,7 @@ const experience = [
     },
     {
     id: 2,
-    subTitle: "Whether you're a leisure traveller or on a business venture, your journey with us is more than just travel.",
+    subTitle: "Whether you're a leisure traveller or on a<br/>business venture, your journey with us is<br/>more than just travel.",
     // details: null,
   },
     {

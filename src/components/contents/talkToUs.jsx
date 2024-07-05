@@ -23,7 +23,7 @@ function TalkToUs(props) {
 
   return (
     <section
-      className={`relative  flex flex-col justify-center items-center w-full h-auto ${ispartnerPage ? "bg-[#EEF5FF] " : "bg-[#05284C]"}`}
+      className={`relative  flex flex-col justify-center items-center w-full h-auto ${(ispartnerPage | isAffiliatePage ? "bg-[#EEF5FF] " : "bg-[#05284C]")}`}
     >
       <div
         className={`static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ${ispartnerPage ? " py-[60px] " : " pt-[70px] mb-[60px]"}`}
@@ -32,14 +32,14 @@ function TalkToUs(props) {
         <div className="flex flex-col justify-center items-center text-center w-full">
           <h2
             data-aos="fade-up"
-            className={` mb-[10px] text-[38px] sm:text-[48px] leading-[60px]  tracking-[-2%] ${ispartnerPage ? "text-[#05284C] " : "text-[#FFFFFF]"}`}
+            className={` mb-[10px] text-[30px] sm:text-[48px] leading-[60px] tracking-[-2%] ${(ispartnerPage | isAffiliatePage ? "text-[#05284C] text-[25px] sm:text-[30px] leading-[38px] " : "text-[#FFFFFF]")}`}
           >
             {props.title}
           </h2>
           <div className="relative w-full flex flex-col justify-center items-center ">
             <p
               data-aos="fade-up"
-              className="text-[18px] sm:text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] lg:w-[802px] w-full"
+              className="text-[18px] sm:text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] lg:w-[605px] w-full"
             >
               {props.details}
             </p>
@@ -47,9 +47,12 @@ function TalkToUs(props) {
               data-aos="fade-up"
               className="flex flex-col items-center justify-center  h-auto "
             >
-              <FadeLink to={props.pageLink} onClick={props.signUP} >
-                <Button size="cdn" className={` ${isAffiliatePage ? "!hidden" : ""}`}>
-                  <a href={props.links}>{props.buttz}</a>
+              <FadeLink to={props.pageLink} onClick={props.signUP}>
+                <Button
+                  size="cdn"
+                  className={` ${isAffiliatePage ? "!hidden" : ""}`}
+                >
+                  {props.buttz}
                 </Button>
               </FadeLink>
 

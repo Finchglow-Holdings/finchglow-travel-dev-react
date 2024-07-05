@@ -12,6 +12,10 @@ body {
   font-family: 'Goldplay', sans-serif;
 }
 
+.homeBg{
+  background: linear-gradient(338.89deg, #FFE0E1 -19.72%, #FFFFFF 83.61%);
+}
+
 .regale-blue {
   background: linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%);
 
@@ -39,15 +43,7 @@ nav ul li a {
   line-height: 18px;
   text-align: center;
 }
-.text-change:hover {
-  color: #fff;
-  /* Your desired hover color */
-}
 
-.dark-text-change:hover span {
-  color: #05284C;
-  /* Your desired dark mode hover color */
-}
 
 .back-to-top-box:hover .back-to-top {
   position: relative;

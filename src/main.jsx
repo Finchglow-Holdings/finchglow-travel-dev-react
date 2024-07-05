@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 import ErrorPage from "./components/errorMessage/errorPage";
 import "./index.css";
 import App from "./App";
@@ -16,121 +17,209 @@ import AncillaryServices from "./components/page/ancillary";
 import OurVisaService from "./components/page/ourVisa";
 import PartnerPlusConnect from "./components/page/parterPlus";
 import BlogPost from "./components/page/blogPostStack";
-import PageTitle from "./components/pageTitle/pageTitle";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <>
+        <Helmet>
+          <title>Nigeria’s Leading Travel Consolidator</title>
+          <meta name="description" content="Experience the world with our trusted travel consolidator services. Over 18 years of expertise in connecting travelers with the best flights, hotels, and packages. Reliable, efficient, and customer-focused."></meta>
+        </Helmet>
+        <App />
+      </>
+    ),
     errorElement: <ErrorPage />,
   },
   {
-    path: "about-finchglow-travels", // Path should be lowercase and match the link
+    path: "about-finchglow-travels",
     element: (
       <>
-        <PageTitle title=" About Finchglow Travels | Your No. 1 Travel Consolidator" />
+        <Helmet>
+          <title>The Powerhouse of Travel Consolidation</title>
+          <meta
+            name="description"
+            content="Unlock top travel deals, net rates, and cutting-edge technology to boost your bookings and commissions. Leverage our expert consolidator services for unmatched support and industry expertise"
+          />
+        </Helmet>
         <About />
       </>
     ),
   },
   {
-    path: "our-services", // Path should be lowercase and match the link
+    path: "our-services",
     element: (
       <>
-        <PageTitle title=" Our Services | Finchglow Travels " />
+        <Helmet>
+          <title>Expert Travel Services at Your Fingertips</title>
+          <meta
+            name="description"
+            content="Find our comprehensive travel services, designed to cater to every need of travel agents and professionals."
+          />
+        </Helmet>
         <Services />
       </>
     ),
   },
   {
-    path: "blog-home", // Path should be lowercase and match the link
+    path: "blog-home",
     element: (
       <>
-        <PageTitle title="Blog Home | Finchglow Travels  " />
+        <Helmet>
+          <title>Blog Home | Finchglow Travels</title>
+          <meta
+            name="description"
+            content="This is the meta description for this page"
+          />
+        </Helmet>
         <Blog />
       </>
     ),
   },
   {
-    path: "contact-us", // Path should be lowercase and match the link
+    path: "contact-us",
     element: (
       <>
-        <PageTitle title="Contact Us | Finchglow Travels" />
+        <Helmet>
+          <title>Contact Us</title>
+          <meta
+            name="description"
+            content="Need travel expertise? Contact your travel agent's agent! Get personalized support, expert advice, and tailored solutions for all your travel needs."
+          />
+        </Helmet>
         <ContactUs />
       </>
     ),
   },
-
-  // pages
   {
-    path: "affiliate-programme", // Path should be lowercase and match the link
+    path: "affiliate-programme",
     element: (
       <>
-        <PageTitle title="Affiliate Programme | Finchglow Travels " />
+        <Helmet>
+          <title>
+            Travel Agent Partner Program | Join Our Travel Consolidator Network
+            or Affiliate Program
+          </title>
+          <meta
+            name="description"
+            content="
+              A. Boost your commissions as a travel agent with our travel consolidator partner
+              program! Get exclusive deals, competitive pricing, and innovative tools to grow
+              your business. Enjoy dedicated support, industry expertise, and a vast travel
+              inventory to succeed.
+              B. Travel agents, boost commissions with our consolidator partner program! Get
+              exclusive deals, competitive pricing, and innovative tools from a trusted travel
+              agent's agent. Enjoy dedicated support, industry expertise, and a vast travel
+              inventory to grow your business and succeed in the travel industry.
+              "
+          />
+        </Helmet>
         <AffiliatePrograms />
       </>
     ),
   },
   {
-    path: "ancillary-services", // Path should be lowercase and match the link
+    path: "ancillary-services",
     element: (
       <>
-        <PageTitle title=" Ancillary Services | Finchglow Travels " />
+        <Helmet>
+          <title>Ancillary Services</title>
+          <meta
+            name="description"
+            content="Expert protocol services, airport transfers, and travel insurance - book ancillary services with ease for a stress-free trip and unforgettable memories"
+          />
+        </Helmet>
         <AncillaryServices />
       </>
     ),
   },
   {
-    path: "finchglow-travels-story", // Path should be lowercase and match the link
+    path: "finchglow-travels-story",
     element: (
       <>
-        <PageTitle title=" Finchglow Travels Story | Your No. 1 Travel Consolidator" />
+        <Helmet>
+          <title>A Legacy of Strength: Our Story</title>
+          <meta
+            name="description"
+            content=" Discover the story behind the leading travel consolidator in Nigeria. Learn how our expertise, innovative technology, and competitive pricing have empowered travel agents to succeed for over 18 years"
+          />
+        </Helmet>
         <OurStory />
       </>
     ),
   },
   {
-    path: "corPorate-travel-management", // Path should be lowercase and match the link
+    path: "corporate-travel-management",
     element: (
       <>
-        <PageTitle title="Corporate Travel Management | Finchglow Travels" />
+        <Helmet>
+          <title>Corporate Travel Management</title>
+          <meta
+            name="description"
+            content="Make business travel easy. Book, manage, and report on travel plans in minutes."
+          />
+        </Helmet>
         <CorPorate />
       </>
     ),
   },
   {
-    path: "customised-travel-packages", // Path should be lowercase and match the link
+    path: "customised-travel-packages",
     element: (
       <>
-        <PageTitle title="Customised Travel Packages | Finchglow Travels " />
+        <Helmet>
+          <title> Customized Travel Packages</title>
+          <meta
+            name="description"
+            content="Get your dream trip tailored to your style! Custom travel packages for unique experiences."
+          />
+        </Helmet>
         <TravelPackages />
       </>
     ),
   },
-
   {
-    path: "visa-and-immigration-services", // Path should be lowercase and match the link
+    path: "visa-and-immigration-services",
     element: (
       <>
-        <PageTitle title="Visa and Immigration Services | Finchglow Travels" />
+        <Helmet>
+          <title>Visa and Immigration Services</title>
+          <meta
+            name="description"
+            content="A. Simplify your travel plans! Get expert visa and immigration services, including application assistance, document processing, and travel permit solutions."
+          />
+        </Helmet>
         <OurVisaService />
       </>
     ),
   },
   {
-    path: "partnerPlus-connect", // Path should be lowercase and match the link
+    path: "partnerplus-connect",
     element: (
       <>
-        <PageTitle title=" PartnerPlus Connect | Finchglow Travels " />
+        <Helmet>
+          <title> PartnerPlus Connect</title>
+          <meta
+            name="description"
+            content="Connect with the travel industry's best! Join our monthly webinar for exclusive insights, expert knowledge, and valuable connections with our community of travel professionals."
+          />
+        </Helmet>
         <PartnerPlusConnect />
       </>
     ),
   },
   {
-    path: "blog-read", // Path should be lowercase and match the link
+    path: "blog-read",
     element: (
       <>
-        <PageTitle title="Blog Read" />
+        <Helmet>
+          <title>Blog Read | Finchglow Travels</title>
+          <meta
+            name="description"
+            content="This is the meta description for this page"
+          />
+        </Helmet>
         <BlogPost />
       </>
     ),
@@ -139,6 +228,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );

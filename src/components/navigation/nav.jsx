@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { SlArrowUp, SlArrowDown } from "react-icons/sl";
+import { SlArrowUp, SlArrowDown, SlArrowRight } from "react-icons/sl";
 import Button from "../contents/Button"; // Ensure this is the correct import statement
 import logo from "./logos/FT_logo_X5-01.png"; // Ensure this is the correct path
 import FadeLink from "../contents/fadeLink"; // Import the FadeLink component
 import { useLocation } from "react-router-dom";
 
-const Nav = ({ openOverlay, showLogIn }) => {
+const Nav = ({ openOverlay }) => {
   const [toggle, setToggle] = useState(false);
-  const [hovered, setHovered] = useState({});
+  const [isDropdownOpen, setIsDropdownOpen] = useState([false, false]); // Array to manage multiple dropdown states
   const { pathname } = useLocation();
-
   const [activeLink, setActiveLink] = useState(pathname.substring(1));
+
+  const toggleDropdown = (index) => {
+    setIsDropdownOpen((prev) => {
+      const newState = [...prev];
+      newState[index] = !newState[index];
+      return newState;
+    });
+  };
 
   useEffect(() => {
     // Extract the active link from the pathname
@@ -30,12 +37,65 @@ const Nav = ({ openOverlay, showLogIn }) => {
   function closeMenu() {
     setToggle(false);
   }
-   const handleButtonClick = () => {
-     window.open(
-       "https://finchglowb2b.amadeusonlinesuite.com/Auth/Login",
-       "_blank"
-     );
-   };
+  const handleButtonClick = () => {
+    window.open(
+      "https://connectpro.finchglowtravels.com/Auth/Login ",
+      "_blank"
+    );
+  };
+
+  
+  //  const [toggle, setToggle] = useState(false);
+  //  const [isDropdownOpen, setIsDropdownOpen] = useState([false, false]); // Array to manage multiple dropdown states
+  //  const { pathname } = useLocation();
+  //  const [activeLink, setActiveLink] = useState(pathname.substring(1));
+
+  //  const toggleDropdown = (index) => {
+  //    setIsDropdownOpen((prev) => {
+  //      const newState = [...prev];
+  //      newState[index] = !newState[index];
+  //      return newState;
+  //    });
+  //  };
+
+  //  useEffect(() => {
+  //    // Extract the active link from the pathname
+  //    setActiveLink(pathname.substring(1));
+  //  }, [pathname]);
+
+  //  useEffect(() => {
+  //    const path = window.location.pathname;
+  //    if (
+  //      path === "/our-services" ||
+  //      path === "/affiliate-programme" ||
+  //      path === "/ancillary-services" ||
+  //      path === "/corporate-travel-management" ||
+  //      path === "/customised-travel-packages" ||
+  //      path === "/visa-and-immigration-services"
+  //    ) {
+  //      setActiveLink("our-services");
+  //    } else if (
+  //      path === "/about-finchglow-travels" ||
+  //      path === "/finchglow-travels-story"
+  //    ) {
+  //      setActiveLink("about-finchglow-travels");
+  //    }
+  //  }, []);
+
+  //  function openMenu() {
+  //    setToggle(true);
+  //  }
+
+  //  function closeMenu() {
+  //    setToggle(false);
+  //  }
+
+  //  const handleButtonClick = () => {
+  //    window.open(
+  //      "https://connectpro.finchglowtravels.com/Auth/Login ",
+  //      "_blank"
+  //    );
+  //  };
 
   return (
     <nav className="flex justify-center items-center w-full fixed top-0 z-[88] bg-[#F1F5FC]">
@@ -71,13 +131,13 @@ const Nav = ({ openOverlay, showLogIn }) => {
               <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
                 <ul className="flex flex-col ">
                   <li
-                    className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "finchglow-travels-story" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                    className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[1px] dark:hover:bg-[#E6EFFD] hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "finchglow-travels-story" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                   >
                     <FadeLink
                       to="/finchglow-travels-story"
                       onClick={() => setActiveLink("ourstory")}
                     >
-                      <span className="dark-text-change">Our story</span>
+                      <span className="text-[#05284C]">Our story</span>
                     </FadeLink>
                   </li>
                 </ul>
@@ -106,19 +166,29 @@ const Nav = ({ openOverlay, showLogIn }) => {
               <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
                 <ul className="flex flex-col ">
                   <li
-                    className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "affiliate-programme" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                    className={`flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7]  ${activeLink === "affiliate-programme" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                   >
                     <FadeLink
                       to="/affiliate-programme"
                       onClick={() => setActiveLink("affiliate-programme")}
                     >
-                      <span className="dark-text-change">
-                        Affiliate Programs
-                      </span>
+                      <span className="text-[#05284C]">Affiliate Programs</span>
                     </FadeLink>
                   </li>
+
                   <li
-                    className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "corPorate-travel-management" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                    className={`flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ${activeLink === "ancillary-services" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                  >
+                    <FadeLink
+                      to="/ancillary-services"
+                      onClick={() => setActiveLink("ancillary-services")}
+                    >
+                      <span className="text-[#05284C]">Ancillary Services</span>
+                    </FadeLink>
+                  </li>
+
+                  <li
+                    className={`flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ${activeLink === "corPorate-travel-management" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                   >
                     <FadeLink
                       to="/corPorate-travel-management"
@@ -126,13 +196,14 @@ const Nav = ({ openOverlay, showLogIn }) => {
                         setActiveLink("corPorate-travel-management")
                       }
                     >
-                      <span className="dark-text-change">
+                      <span className="text-[#05284C]">
                         Corporate Travel Management
                       </span>
                     </FadeLink>
                   </li>
+
                   <li
-                    className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "customised-travel-packages" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                    className={`flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ${activeLink === "customised-travel-packages" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                   >
                     <FadeLink
                       to="/customised-travel-packages"
@@ -140,13 +211,14 @@ const Nav = ({ openOverlay, showLogIn }) => {
                         setActiveLink("customised-travel-packages")
                       }
                     >
-                      <span className="dark-text-change">
+                      <span className="text-[#05284C]">
                         Customised Travel Packages
                       </span>
                     </FadeLink>
                   </li>
+
                   <li
-                    className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "visa-and-immigration-services" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                    className={`flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ${activeLink === "visa-and-immigration-services" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                   >
                     <FadeLink
                       to="/visa-and-immigration-services"
@@ -154,7 +226,7 @@ const Nav = ({ openOverlay, showLogIn }) => {
                         setActiveLink("visa-and-immigration-services")
                       }
                     >
-                      <span className="dark-text-change">
+                      <span className="text-[#05284C]">
                         Visa and Immigration Services
                       </span>
                     </FadeLink>
@@ -162,7 +234,6 @@ const Nav = ({ openOverlay, showLogIn }) => {
                 </ul>
               </div>
             </li>
-
             <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
             >
@@ -193,7 +264,7 @@ const Nav = ({ openOverlay, showLogIn }) => {
             </li>
           </ul>
 
-          <div className="flex flex-col gap-[10px] justify-end items-end silver:hidden cursor-pointer z-[999]">
+          <div className="flex  gap-[10px] justify-center items-center silver:hidden cursor-pointer z-[999]">
             <div>
               {toggle ? (
                 <AiOutlineClose
@@ -212,10 +283,10 @@ const Nav = ({ openOverlay, showLogIn }) => {
             <div className="w-full">
               <Button
                 size="medium"
-                onClick={openOverlay}
-                className="hover:text-gray-400 bg-[#05284C] text-white"
+                onClick={handleButtonClick}
+                className=" bg-[#05284C] text-white"
               >
-                Register as Trade Partner
+                Log in
               </Button>
             </div>
           </div>
@@ -224,78 +295,116 @@ const Nav = ({ openOverlay, showLogIn }) => {
         {toggle && (
           <div className="silver:hidden flex justify-center items-center absolute top-[73px] transition-all ease-in duration-300 w-full bg-[#F1F5FC] border-b-[3px] border-solid">
             <ul className="flex flex-col justify-start items-start w-full py-[20px] px-[15px] at500:px-[20px] md:px-[79px] space-y-2 z-[30]">
-              <li className="relative flex flex-col justify-start items-start gap-[10px] group">
+              <li className="relative flex flex-col justify-start items-start gap-[10px] w-full">
                 <span
-                  className={`relative flex gap-[10px] items-center text-[#05284C] py-[10px] pr-[10px] ${activeLink === "about-finchglow-travels" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
+                  className={`relative flex justify-between w-full gap-[10px] items-center hover:border-l-[3px] hover:border-l-[#81B0F7] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] py-[7px] px-[10px] ${
+                    activeLink === "about-finchglow-travels"
+                      ? "border-l-[3px] border-l-[#81B0F7]"
+                      : ""
+                  }`}
                 >
                   <FadeLink to="/about-finchglow-travels">About us</FadeLink>
-                  <span className="cursor-pointer z-40">
-                    <SlArrowUp
-                      size={13}
-                      onClick={closeMenu}
-                      className="text-[#05284C] group-hover:hidden"
-                    />
-
-                    <SlArrowDown
-                      size={13}
-                      onClick={openMenu}
-                      className="text-[#05284C] hidden group-hover:inline"
-                    />
+                  <span
+                    className="cursor-pointer z-40 border-solid border-[1px] border-[#000] rounded-sm p-[2px]"
+                    onClick={() => toggleDropdown(0)}
+                  >
+                    {isDropdownOpen[0] ? (
+                      <SlArrowDown size={13} className="text-[#05284C]" />
+                    ) : (
+                      <SlArrowRight size={13} className="text-[#05284C]" />
+                    )}
                   </span>
                 </span>
 
-                <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
+                <div
+                  className={`dropdown cursor-pointer  w-full font-normal  ${
+                    isDropdownOpen[0] ? "block" : "hidden"
+                  }`}
+                >
                   <ul className="flex flex-col ">
                     <li
-                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "finchglow-travels-story" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] hover:border-l-[#81B0F7] text-change ${
+                        activeLink === "finchglow-travels-story"
+                          ? "border-soild border-l-[3px] border-l-[#81B0F7]"
+                          : ""
+                      }`}
                     >
                       <FadeLink
                         to="/finchglow-travels-story"
-                        onClick={() => setActiveLink("ourstory")}
+                        onClick={() => setActiveLink("finchglow-travels-story")}
                       >
-                        <span className="dark-text-change">Our story</span>
+                        <span className="!text-[#05284C]">Our story</span>
                       </FadeLink>
                     </li>
                   </ul>
                 </div>
               </li>
 
-              <li className="relative flex flex-col justify-start items-start gap-[10px] group">
+              <li className="relative flex flex-col w-full justify-start items-start gap-[10px]">
                 <span
-                  className={`relative flex gap-[10px] items-center text-[#05284C] py-[10px] pr-[10px] ${activeLink === "our-services" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
+                  className={`relative flex justify-between w-full gap-[10px] items-center hover:border-l-[3px] hover:border-l-[#81B0F7] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] py-[7px] px-[10px] ${
+                    activeLink === "our-services"
+                      ? "border-l-[3px] border-l-[#81B0F7]"
+                      : ""
+                  }`}
                 >
                   <FadeLink to="/our-services">Services</FadeLink>
-                  <span className="cursor-pointer z-40">
-                    <SlArrowUp
-                      size={13}
-                      onClick={closeMenu}
-                      className="text-[#05284C] group-hover:hidden"
-                    />
-
-                    <SlArrowDown
-                      size={13}
-                      onClick={openMenu}
-                      className="text-[#05284C] hidden group-hover:inline"
-                    />
+                  <span
+                    className="cursor-pointer z-40 border-solid border-[1px] border-[#000] rounded-sm p-[2px]"
+                    onClick={() => toggleDropdown(1)}
+                  >
+                    {isDropdownOpen[1] ? (
+                      <SlArrowDown size={13} className="text-[#05284C]" />
+                    ) : (
+                      <SlArrowRight size={13} className="text-[#05284C]" />
+                    )}
                   </span>
                 </span>
 
-                <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
-                  <ul className="flex flex-col ">
+                <div
+                  className={`dropdown cursor-pointer w-full font-normal ${
+                    isDropdownOpen[1] ? "block" : "hidden"
+                  }`}
+                >
+                  <ul className="flex flex-col">
                     <li
-                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "affiliate-programme" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild  hover:border-l-[3px] hover:border-l-[#81B0F7]  text-change ${
+                        activeLink === "affiliate-programme"
+                          ? "border-soild border-l-[3px] border-l-[#81B0F7]"
+                          : ""
+                      }`}
                     >
                       <FadeLink
                         to="/affiliate-programme"
                         onClick={() => setActiveLink("affiliate-programme")}
                       >
-                        <span className="dark-text-change">
+                        <span className="!text-[#05284C]">
                           Affiliate Programs
                         </span>
                       </FadeLink>
                     </li>
                     <li
-                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "corPorate-travel-management" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] hover:border-l-[#81B0F7]  text-change ${
+                        activeLink === "ancillary-services"
+                          ? "border-soild border-l-[3px] border-l-[#81B0F7]"
+                          : ""
+                      }`}
+                    >
+                      <FadeLink
+                        to="/ancillary-services"
+                        onClick={() => setActiveLink("ancillary-services")}
+                      >
+                        <span className="!text-[#05284C]">
+                          Ancillary Services
+                        </span>
+                      </FadeLink>
+                    </li>
+                    <li
+                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild  hover:border-l-[3px] hover:border-l-[#81B0F7]  text-change ${
+                        activeLink === "corPorate-travel-management"
+                          ? "border-soild border-l-[3px] border-l-[#81B0F7]"
+                          : ""
+                      }`}
                     >
                       <FadeLink
                         to="/corPorate-travel-management"
@@ -303,13 +412,17 @@ const Nav = ({ openOverlay, showLogIn }) => {
                           setActiveLink("corPorate-travel-management")
                         }
                       >
-                        <span className="dark-text-change">
+                        <span className="!text-[#05284C]">
                           Corporate Travel Management
                         </span>
                       </FadeLink>
                     </li>
                     <li
-                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "customised-travel-packages" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] hover:border-l-[#81B0F7]  text-change ${
+                        activeLink === "customised-travel-packages"
+                          ? "border-soild border-l-[3px] border-l-[#81B0F7]"
+                          : ""
+                      }`}
                     >
                       <FadeLink
                         to="/customised-travel-packages"
@@ -317,13 +430,17 @@ const Nav = ({ openOverlay, showLogIn }) => {
                           setActiveLink("customised-travel-packages")
                         }
                       >
-                        <span className="dark-text-change">
+                        <span className="!text-[#05284C]">
                           Customised Travel Packages
                         </span>
                       </FadeLink>
                     </li>
                     <li
-                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild border-b-[2px] dark:hover:bg-gray-600 hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "visa-and-immigration-services" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-center items-center w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] hover:border-l-[#81B0F7]  text-change ${
+                        activeLink === "visa-and-immigration-services"
+                          ? "border-soild border-l-[3px] border-l-[#81B0F7]"
+                          : ""
+                      }`}
                     >
                       <FadeLink
                         to="/visa-and-immigration-services"
@@ -331,7 +448,7 @@ const Nav = ({ openOverlay, showLogIn }) => {
                           setActiveLink("visa-and-immigration-services")
                         }
                       >
-                        <span className="dark-text-change">
+                        <span className="!text-[#05284C]">
                           Visa and Immigration Services
                         </span>
                       </FadeLink>
@@ -341,7 +458,7 @@ const Nav = ({ openOverlay, showLogIn }) => {
               </li>
 
               <li
-                className={`flex flex-col justify-start items-start py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
+                className={`relative flex justify-between w-full gap-[10px] items-center hover:border-l-[3px] hover:border-l-[#81B0F7] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] py-[7px] px-[10px] ${activeLink === "blog" ? "border-l-[3px] border-l-[#81B0F7]" : ""}`}
               >
                 <FadeLink to="/">
                   <span className="text-[#05284C]">Blog</span>
@@ -349,14 +466,14 @@ const Nav = ({ openOverlay, showLogIn }) => {
               </li>
 
               <li
-                className={` flex flex-col justify-start items-start py-[10px] pr-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "contact-us" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
+                className={` relative flex justify-between w-full gap-[10px] items-center hover:border-l-[3px] hover:border-l-[#81B0F7] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] py-[7px] px-[10px] ${activeLink === "contact-us" ? "border-l-[3px] border-l-[#81B0F7]" : ""}`}
               >
                 <FadeLink to="/contact-us">
                   <span className="text-[#05284C]"> Contact us</span>
                 </FadeLink>
               </li>
 
-              <li className="py-[10px] w-[240px] ">
+              <li className="py-[10px] w-full ">
                 <span className="flex space-x-3">
                   <Button
                     size="medium"
@@ -383,3 +500,5 @@ const Nav = ({ openOverlay, showLogIn }) => {
 };
 
 export default Nav;
+
+

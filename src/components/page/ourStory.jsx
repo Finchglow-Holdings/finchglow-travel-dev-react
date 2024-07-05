@@ -198,7 +198,7 @@ function OurStory() {
               <img src={icon5} alt="award" />
               <div className="p-[40px] blueColor ">
                 <h2 className="text-[30px] md:text-[46px] md:leading-[44px] text-[#B3CFFA] lg:w-[633px] text-center md:text-left">
-                  Award-winning travel consolidator{" "}
+                  Award-winning travel consolidator
                   <strong className=" !font-[400] ">
                     helping businesses grow
                   </strong>

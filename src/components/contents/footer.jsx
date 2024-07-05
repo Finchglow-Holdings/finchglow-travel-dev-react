@@ -7,8 +7,9 @@ import {
   FaYoutube,
   FaArrowUp,
 } from "react-icons/fa";
-import logo from "./images/Accredited Agent logo.png";
-import logo2 from "./images/FT_logo_X5-01.png";
+import logo from "./images/FT_logo_X5-01.png";
+import logo1 from "./images/Accredited Agent logo.png";
+import logo2 from "./images/NDPR.png";
 import FadeLink from "./fadeLink";
 
 import "../contents/styles/_footer.css";
@@ -37,16 +38,16 @@ function footer() {
           </div>
           {/* back to top */}
           <div className="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
-            <div className="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
+            <div className="flex flex-col justify-between w-full  md:h-[244px] gap-[42px]  at500:gap-0">
               <div className="text-2xl cursor-pointer w-[130px] h-[36.02px]">
                 <a className="w-full" href="#">
                   <img
                     className="w-full h-auto transition-all duration-300 ease-in-out"
-                    src={logo2}
+                    src={logo}
                   />
                 </a>
               </div>
-              <p className="text-[16px] leading-[24px] text-[#506982] ">
+              <p className="text-[16px] leading-[24px] text-[#506982] md:w-[403px]">
                 Finchglow Travels Nigeria Limited is a leading travel management
                 company headquartered in Nigeria with 8 offices across Lagos,
                 Abuja, Kano and Port Harcourt.
@@ -56,8 +57,17 @@ function footer() {
                   <li className=" w-[182.74px] h-[60px] mix-blend-multiply">
                     <a href="#">
                       <img
-                        src={logo}
+                        src={logo1}
                         className=" w-[182.74px] h-[60px] object-cover"
+                        alt="Accredited Agent logo"
+                      />
+                    </a>
+                  </li>
+                  <li className=" w-[241.68px] h-[60px] mix-blend-multiply">
+                    <a href="#">
+                      <img
+                        src={logo2}
+                        className=" w-[241.68px] h-[60px] object-cover"
                         alt="Accredited Agent logo"
                       />
                     </a>

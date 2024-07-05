@@ -113,6 +113,61 @@ function AffiliatePrograms() {
           {contents.filter((content) => content.id === 8).map(createTitle)}
         </section>
 
+        <section className="relative homeBg flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
+          <div className="static w-full gap-[48px] flex flex-col justify-center items-start 2xl:w-[1280px] px-[15px] py-[90px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+            <h3 className="text-[#05284C] text-left silver:w-[652px]">
+              Join The Trade PartnerPlus Program, Become A Trade Partner
+            </h3>
+            <div className="flex flex-col md:flex-row justify-between gap-[30px] items-start w-full">
+              <span className="txt2 !leading-[26px] w-full silver:w-[250.5px] text-[#506982]">
+                With a dedicated platform to make your travel business
+                activities seamless, regular webinars and industry-focused
+                trainings, great commissions and more, the Trade PartnerPlus
+                program is a brilliant opportunity to take your agency to new
+                heights.
+              </span>
+              <span className="txt2 !leading-[26px] w-full silver:w-[396px] text-[#506982]">
+                As a Trade Partner, you'll enjoy exclusive benefits, including
+                access to our extensive network of suppliers, marketing support,
+                and training resources. You'll access ticket issuance on GDS
+                platforms wherever you are and hardware and software assistance
+                from our world-class global support centre. Other benefits
+                include unbelievable discounts on select products, deals, and
+                packages, access to travel marketing resources, tips & tools,
+                and training through our PartnerPlus Connect webinars, as well
+                as receiving newsletters with definitive flight information,
+                aviation intelligence, and analytics.
+              </span>
+              <span className="txt2 !leading-[26px] w-full silver:w-[250.5px] text-[#506982]">
+                Whether you are a new agent or a seasoned pro, PartnerPlus
+                provides the tools and support you need to succeed. Join over
+                4,000 other travel agents and businesses and let Finchglow
+                Travels be your partner in success.
+              </span>
+            </div>
+          </div>
+        </section>
+
+        {/* TicketingSupport */}
+        <section className="flex justify-center items-center w-full">
+          {ticketing
+            .filter((ticketing) => ticketing.id === 3)
+            .map(createTicketingSupport)}
+        </section>
+
+        {/* WhyChooseUs */}
+        <section className="flex justify-center items-center w-full">
+          {cards.filter((cards) => cards.id === 3).map(createWhyChooseUs)}
+        </section>
+
+        <section className="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
+          <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+            {experience
+              .filter((experience) => experience.id === 3)
+              .map(createeExperience)}
+          </div>
+        </section>
+
         {/* We do this by hosting */}
         <section
           className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[381px] w-full h-auto overflow-hidden"
@@ -132,26 +187,6 @@ function AffiliatePrograms() {
                 businesses effectively.
               </h6>
             </div>
-          </div>
-        </section>
-
-        {/* WhyChooseUs */}
-        <section className="flex justify-center items-center w-full">
-          {cards.filter((cards) => cards.id === 3).map(createWhyChooseUs)}
-        </section>
-
-        {/* TicketingSupport */}
-        <section className="flex justify-center items-center w-full mt-[70px]">
-          {ticketing
-            .filter((ticketing) => ticketing.id === 3)
-            .map(createTicketingSupport)}
-        </section>
-
-        <section className="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
-          <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
-            {experience
-              .filter((experience) => experience.id === 3)
-              .map(createeExperience)}
           </div>
         </section>
 
