@@ -53,7 +53,7 @@ function footer() {
                 Abuja, Kano and Port Harcourt.
               </p>
               <div className="flex">
-                <ul className="ipx:flex justify-center items-center gap-y-4 gap-x-8">
+                <ul className="flex flex-col sm:flex-row justify-center items-start sm:items-center gap-y-4 gap-x-8">
                   <li className=" w-[182.74px] h-[60px] mix-blend-multiply">
                     <a href="#">
                       <img
@@ -68,7 +68,7 @@ function footer() {
                       <img
                         src={logo2}
                         className=" w-[241.68px] h-[60px] object-cover"
-                        alt="Accredited Agent logo"
+                        alt="logo"
                       />
                     </a>
                   </li>

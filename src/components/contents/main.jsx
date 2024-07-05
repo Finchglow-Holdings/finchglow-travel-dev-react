@@ -65,7 +65,7 @@ function Main() {
 
       <AchievementsSection />
       <SectionWhereWeAre />
-      {/* <SectionPartner /> */}
+      <SectionPartner />
 
       <section className="relative bg-[#FFFFFF] flex justify-center flex-col items-center w-full h-auto">
         <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px]  at500:px-[40px] md:pl-[80px] md:pr-0  my-0 mx-auto overflow-hidden">

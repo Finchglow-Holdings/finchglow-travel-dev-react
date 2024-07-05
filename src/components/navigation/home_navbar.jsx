@@ -199,7 +199,7 @@ const Navbar = ({ openOverlay }) => {
             </li>
           </ul>
 
-          <div className="flex  gap-[10px] justify-center items-center silver:hidden cursor-pointer z-[999]">
+          <div className="flex  gap-[10px] justify-center items-center silver:hidden cursor-pointer z-[999] ">
             <div>
               {toggle ? (
                 <AiOutlineClose

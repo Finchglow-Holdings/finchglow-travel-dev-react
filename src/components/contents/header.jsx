@@ -41,7 +41,7 @@ function header() {
             </p>
           </div>
         </div>
-        <div className="relative w-full z-[888] hidden at500:block cursor-pointer ">
+        <div className="relative w-full z-[888] hidden sm:block cursor-pointer ">
           <a href="#middle">
             <GoArrowDown className="text-[#FFFFFF] hover:text-[#3580F1] absolute right-[-46px] sm:right-0 bottom-0  w-[57.82px] h-[57.82px] object-cover cursor-pointer" />
           </a>

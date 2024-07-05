@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "../images/Vector squre.png";
+import Image from "../images/5d4133d9be427e7c6bf664f0496f3e76.jpg";
 import icon from "../images/arrow-up.png";
 import FadeLink from "../fadeLink";
 
@@ -21,15 +21,15 @@ const SectionPartner = () => {
                 PartnerPlus Connect
               </span>
               <h3 data-aos="fade-up" className="text-[#05284C] xl:w-[390px]">
-                We are strategically positioned to serve your business needs
+                The webinar series that empowers you with the knowledge and
+                opportunities you need to thrive in the travel industry.
               </h3>
             </div>
             <span
               data-aos="fade-up"
               className="txt3 !text-[#375370] xl:w-[367px]"
             >
-              We have a strong presence in four states across Nigeria, with nine
-              offices in key locations in Lagos, Port Harcourt, Kano and Abuja.
+              Bridging knowledge gaps for travel agents' success navigation.
             </span>
 
             <FadeLink to="/contact">
