@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HelmetProvider, Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import ErrorPage from "./components/errorMessage/errorPage";
 import "./index.css";
 import App from "./App";
@@ -25,7 +25,10 @@ const router = createBrowserRouter([
       <>
         <Helmet>
           <title>Nigeria’s Leading Travel Consolidator</title>
-          <meta name="description" content="Experience the world with our trusted travel consolidator services. Over 18 years of expertise in connecting travelers with the best flights, hotels, and packages. Reliable, efficient, and customer-focused."></meta>
+          <meta
+            name="description"
+            content="Experience the world with our trusted travel consolidator services. Over 18 years of expertise in connecting travelers with the best flights, hotels, and packages. Reliable, efficient, and customer-focused."
+          />
         </Helmet>
         <App />
       </>
