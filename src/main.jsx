@@ -15,7 +15,7 @@ import TravelPackages from "./components/page/travelPackages";
 import AffiliatePrograms from "./components/page/affiliate";
 import AncillaryServices from "./components/page/ancillary";
 import OurVisaService from "./components/page/ourVisa";
-import PartnerPlusConnect from "./components/page/parterPlus";
+import PartnerplusConnect from "./components/page/parterPlus";
 import BlogPost from "./components/page/blogPostStack";
 
 const router = createBrowserRouter([
@@ -153,7 +153,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "corporate-travel-management",
+    path: "Corporate-travel-management",
     element: (
       <>
         <Helmet>
@@ -202,13 +202,13 @@ const router = createBrowserRouter([
     element: (
       <>
         <Helmet>
-          <title> PartnerPlus Connect</title>
+          <title> Partnerplus Connect</title>
           <meta
             name="description"
             content="Connect with the travel industry's best! Join our monthly webinar for exclusive insights, expert knowledge, and valuable connections with our community of travel professionals."
           />
         </Helmet>
-        <PartnerPlusConnect />
+        <PartnerplusConnect />
       </>
     ),
   },

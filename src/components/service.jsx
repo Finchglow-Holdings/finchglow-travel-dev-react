@@ -8,19 +8,19 @@ import Footer from "./contents/footer";
 import RoundText from "./contents/roundText";
 import { FaArrowRight } from "react-icons/fa";
 import round from "./props/round";
-import image1 from "./contents/images/service/tickets.jpeg";
-import icons1 from "./contents/images/icons/Group 781.png";
-import image2 from "./contents/images/service/hello.jpeg";
-import icons2 from "./contents/images/icons/Group 782.png";
-import image3 from "./contents/images/service/traveller.jpeg";
-import icons3 from "./contents/images/icons/Group 783.png";
-import image4 from "./contents/images/service/business meeting.jpeg";
-import icons4 from "./contents/images/icons/Group 784.png";
+import image1 from "./contents/image/service/Services_affilate program.webp";
+import icons1 from "./contents/image/icons/Group 781-min.png";
+import image2 from "./contents/image/service/services _corporate travel management.webp";
+import icons2 from "./contents/image/icons/Group 782-min.png";
+import image3 from "./contents/image/service/services _ Customized travel packages.webp";
+import icons3 from "./contents/image/icons/Group 783-min.png";
+import image4 from "./contents/image/service/service-ancillary.webp";
+import icons4 from "./contents/image/icons/Group 784-min.png";
+import image5 from "./contents/image/service/Our services visa & immigration .webp";
+import icons5 from "./contents/image/icons/Group 785-min.png";
 import OverlayForm from "./form/overlayForm";
 
 // import LogInForm from "./form/logIn";
-
-
 
 function createRoundText(content) {
   return (
@@ -127,7 +127,7 @@ function Service() {
           </div>
         </section>
 
-        {/* Corporate Travel */}
+        {/* CorPorate Travel */}
         <section className="relative bg-custom-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[692px] overflow-hidden z-[22] lg:overflow-visible">
           <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[55px] lg:pt-[300px] lg:pb-[200px]  at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
             <div className="flex flex-col-reverse lg:flex-row justify-between items-center  w-full h-auto ">
@@ -153,7 +153,7 @@ function Service() {
                     data-aos-anchor-placement="top-bottom"
                     className="text-[#05284C]"
                   >
-                    Corporate Travel Management
+                    CorPorate Travel Management
                   </h3>
                   <span
                     data-aos="fade-up"
@@ -161,7 +161,7 @@ function Service() {
                     data-aos-anchor-placement="top-bottom"
                     className="txt2 text-[#667085] text-left w-full silver:w-[318px]"
                   >
-                    Transform Your Corporate Travel Experience with Us!
+                    Transform Your CorPorate Travel Experience with Us!
                   </span>
                 </div>
                 <span
@@ -175,7 +175,7 @@ function Service() {
                   That's where we come in – your dedicated travel partner
                   committed to transforming how your team travels.
                 </span>
-                <FadeLink to="/corPorate">
+                <FadeLink to="/CorPorate">
                   <span data-aos="fade-up" className="arrow !text-[#0260EE]">
                     Why Choose Us
                     <FaArrowRight />
@@ -336,7 +336,7 @@ function Service() {
             <div className="flex flex-col lg:flex-row justify-between items-center  w-full h-auto ">
               <div className="relative  flex justify-start items-start w-full h-auto mb-[30px] lg:mb-0 ">
                 <img
-                  src={image1}
+                  src={image5}
                   className=" bg-gray-500 w-full h-[300px] lg:w-[559px] lg:h-[656px] object-cover"
                   alt=""
                 />
@@ -349,7 +349,7 @@ function Service() {
                     className="relative w-full h-auto mb-[10px]"
                   >
                     <img
-                      src={icons1}
+                      src={icons5}
                       className="h-[64px] w-[64px] object-cover"
                       alt=""
                     />

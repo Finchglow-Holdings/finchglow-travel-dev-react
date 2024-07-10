@@ -2,9 +2,9 @@ import React from 'react';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ImageMap from '../images/Vector squre.png';
-import ImageLayer from '../images/Layer_1.png'
-import icon from "../images/arrow-up.png";
+import ImageMap from "../image/Vector squre.webp";
+import ImageLayer from "../image/Layer_1.webp";
+import icon from "../image/icons/arrow-up-min.png";
 import FadeLink from '../fadeLink';
 
 

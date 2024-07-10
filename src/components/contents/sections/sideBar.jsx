@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "../images/blog/icon/Featured icon.png";
+import icon from "../image/icons/Featured icon.png";
 import "../styles/_sideBar.css";
 import ZohoOptinForm from "../../form/zohoOptinForm";
 

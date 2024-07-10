@@ -8,7 +8,7 @@ import contents from "./props/contents"; // Ensure this is the correct path
 import Footer from "./contents/footer";
 import Location from "./props/location";
 import OurLocations from "./contents/ourLocations";
-import background from "./contents/images/blue-background - Copy.png";
+import background from "./contents/image/blue-background - Copy.webp";
 import MapEmbed from "./contents/sections/MapEmbed";
 import GetinTouchForm from "./form/getinTouchForm";
 import OverlayForm from "./form/overlayForm";

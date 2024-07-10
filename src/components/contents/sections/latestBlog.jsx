@@ -1,7 +1,7 @@
 import React from "react";
-import Image1 from "../images/blog/image1.jpeg";
-import Image2 from "../images/blog/image2.jpeg";
-import Icon from "../images/blog/icon/Icon wrap.png";
+import Image1 from "../image/blog/image1-min.jpeg";
+import Image2 from "../image/blog/image2-min.jpeg";
+import Icon from "../image/blog/icon/Icon wrap-min.png";
 import FadeLink from "../fadeLink";
 import Button from "../Button";
 

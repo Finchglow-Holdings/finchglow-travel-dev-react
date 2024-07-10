@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import FadeLink from "../fadeLink";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import image from "../images/ladies.jpeg";
+import image from "../image/serious-young-african-american-female-warm-wrap-working-through-finances-night.png";
 
 function Faq() {
   const [toggles, setToggles] = useState([true, ...Array(5).fill(false)]);

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import copyLinkImg from "../images/blog/icon/copy.png";
-import twitterImg from "../images/blog/icon/_Button base.png";
-import facebookImg from "../images/blog/icon/fb_Button base.png";
-import linkedinImg from "../images/blog/icon/linkedinButton.png";
-import FadeLink from "../fadeLink";
+import copyLinkImg from "../image/blog/icon/copy-min.png";
+import twitterImg from "../image/blog/icon/_Button base-min.png";
+import facebookImg from "../image/blog/icon/fb_Button base-min.png";
+import linkedinImg from "../image/blog/icon/linkedinButton-min.png";
+
 
 const BlogInfoSection = () => {
   const [copyMessage, setCopyMessage] = useState("");

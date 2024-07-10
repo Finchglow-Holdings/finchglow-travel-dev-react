@@ -1,13 +1,21 @@
 
-import icon from './service/icon/Check icon - Copy.png';
-import image from './service/tickets.jpeg';
+import icon from '../contents/image/icons/Check icon-min.png';
+import image from '../contents/image/service/sub-pages/Our Services_how trade partner plus works .webp';
+import image1 from '../contents/image/service/sub-pages/modern-man-working-caffe.webp';
+import image2 from '../contents/image/service/sub-pages/businessman-talking-phone.webp';
+
+
+
+
+
+
 
 const ticketing = [
   {
     id: 1,
     title: "Your One-Stop Travel Shop",
     imgURL: icon,
-    imgURL1: image,
+    imgURL1: image1,
     subTitle1: "Flight Ticketing and Reservation",
     details1: "Enjoy competitive fares and amazing deals when you book your local and international flights from our expansive ticket stock on all airlines.",
         //second content
@@ -36,7 +44,7 @@ const ticketing = [
         //third content
     subTitle3: "Technology Advancements",
     details3: "Embracing innovation, we employ cutting-edge technology to provide real-time updates, reporting, and tools that enhance your travel management experience.",
-    imgURL1: image,
+    imgURL1: image2,
   },
 
     {

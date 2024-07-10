@@ -9,10 +9,9 @@ import TalkToUs from "../contents/talkToUs";
 import talk from "../props/talk";
 import TestimonialSlider from "../testimonial/testimonial";
 import Footer from "../contents/footer";
-import WhyChooseUs from "../contents/whyChoodeUs";
-import image1 from "../contents/images/service/duty calls.jpeg";
-import image2 from "../contents/images/service/tickets.jpeg";
-import background from "../contents/images/blue-background - Copy.png";
+import image1 from "../contents/image/medium-shot-woman-with-laptop-home.webp";
+import image2 from "../contents/image/service/sub-pages/person-office-work-day.webp";
+import background from "../contents/image/blue-background - Copy.webp";
 import EpisodesSlide from "../slideEpisode/prevEpisodes";
 import ZohoOptinForm from "../form/zohoOptinForm";
 import OverlayForm from "../form/overlayForm";
@@ -172,7 +171,7 @@ function PartnerPlusConnect() {
                     </span> */}
                     </div>
 
-                    <div className="flex w-full">
+                    <div className=" w-full md:w-[70%]">
                       <ZohoOptinForm />
                     </div>
                   </div>

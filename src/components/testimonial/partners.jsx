@@ -10,16 +10,16 @@ import '../slider/swiper/swiper-bundle.min.css';
 import '../slider/swiper/swiper.min.css';
 import './our_partners.css'
 
-import logo1 from '../contents/images/logos/logo1.png'
-import logo2 from '../contents/images/logos/logo2.png'
-import logo3 from '../contents/images/logos/logo3.png'
-import logo4 from '../contents/images/logos/logo4.png'
-import logo5 from '../contents/images/logos/logo5.png'
-import logo6 from '../contents/images/logos/logo6.png'
-import logo7 from '../contents/images/logos/logo7.png'
-import logo8 from '../contents/images/logos/logo8.png'
-import logo9 from '../contents/images/logos/logo9.png'
-import logo10 from '../contents/images/logos/logo10.png'
+import logo1 from '../contents/image/our_partners/logo1.webp'
+import logo2 from '../contents/image/our_partners/logo2.webp'
+import logo3 from '../contents/image/our_partners/logo3.webp'
+import logo4 from '../contents/image/our_partners/logo4.webp'
+import logo5 from '../contents/image/our_partners/logo5.webp'
+import logo6 from '../contents/image/our_partners/logo6.webp'
+import logo7 from '../contents/image/our_partners/logo7.webp'
+import logo8 from '../contents/image/our_partners/logo8.webp'
+import logo9 from '../contents/image/our_partners/logo9.webp'
+import logo10 from '../contents/image/our_partners/logo10.webp'
 
 
 

@@ -14,7 +14,7 @@ import TicketingSupport from "../contents/ticketingSupport";
 import ticketing from "../props/ticketing";
 import ExperienceTheDifference from "../contents/experience";
 import experience from "../props/exp";
-import background from "../contents/images/blue-background - Copy.png";
+import background from "../contents/image/blue-background - Copy.webp";
 import OverlayForm from "../form/overlayForm";
 
 

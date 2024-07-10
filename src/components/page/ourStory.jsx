@@ -9,20 +9,17 @@ import TestimonialSlider from "../testimonial/testimonial";
 import TalkToUs from "../contents/talkToUs";
 import talk from "../props/talk";
 import Footer from "../contents/footer";
-import background from "../contents/images/blue-background - Copy.png";
-import background2 from "../contents/images/sharing report.jpeg";
-import background3 from "../contents/images/circle.png";
-import background4 from "../contents/images/blue-background - Copy.png";
-import icon1 from "../contents/images/icons/rocket (1) 1.png";
-import icon2 from "../contents/images/icons/handshake (1) 1.png";
-import icon3 from "../contents/images/icons/loca.png";
-import icon4 from "../contents/images/icons/corporate-social-responsibility (1) 1.png";
-import icon5 from "../contents/images/icons/award 119.png";
-import icon6 from "../contents/images/icons/Check icon.png";
+import background from "../contents/image/blue-background - Copy.webp";
+import background2 from "../contents/image/sharing report.webp";
+import background3 from "../contents/image/circle.webp";
+import background4 from "../contents/image/blue-background - Copy.webp";
+import icon1 from "../contents/image/icons/rocket (1) 1-min.png";
+import icon2 from "../contents/image/icons/handshake (1) 1-min.png";
+import icon3 from "../contents/image/icons/loca-min.png";
+import icon4 from "../contents/image/icons/corporate-social-responsibility (1) 1-min.png";
+import icon5 from "../contents/image/icons/award 119-min.png";
+import icon6 from "../contents/image/icons/Check icon-min.png";
 import OverlayForm from "../form/overlayForm";
-
-
-
 
 function createTalkToUs(talk) {
   return (
@@ -88,7 +85,7 @@ function OurStory() {
                 >
                   Finchglow Travels is an award-winning regional provider of
                   innovative and cost-effective travel solutions for emerging
-                  travel agencies, corporate businesses and clients,
+                  travel agencies, CorPorate businesses and clients,
                   high-networth individuals, and burgeoning travellers.
                 </h2>
 
@@ -154,7 +151,7 @@ function OurStory() {
                     Proud members of foremost travel associations - NANTA
                     (National Association of Nigeria Travel Agency), IATA
                     (International Air Transport Association), and ACTE
-                    (Association of Corporate Travel Executives).
+                    (Association of CorPorate Travel Executives).
                   </span>
                 </div>
               </div>

@@ -2,8 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "../images/5d4133d9be427e7c6bf664f0496f3e76.jpg";
-import icon from "../images/arrow-up.png";
+import Image from "../image/5d4133d9be427e7c6bf664f0496f3e76.webp";
+import icon from "../image/icons/arrow-up-min.png";
 import FadeLink from "../fadeLink";
 
 const SectionPartner = () => {
@@ -32,9 +32,9 @@ const SectionPartner = () => {
               Bridging knowledge gaps for travel agents' success navigation.
             </span>
 
-            <FadeLink to="/contact">
+            <FadeLink to="/partnerplus-connect">
               <span className="arrow !text-[#0260EE]">
-                Contact us
+                Learn more
                 <img src={icon} alt="" />
               </span>
             </FadeLink>

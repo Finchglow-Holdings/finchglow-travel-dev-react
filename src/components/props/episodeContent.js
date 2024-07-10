@@ -3,7 +3,7 @@
 // in the rating u can reduce thr amont of starts given if you want just change the number
 // if u incounter any problem like error when inputting content with punctuation mark, ensure you change this ('') to ("")
 // and make sure there are no space whwn inputting <br>
-import episodeImage from './blog/episode.png';
+import episodeImage from './blog/episode-min.png';
 
 
 

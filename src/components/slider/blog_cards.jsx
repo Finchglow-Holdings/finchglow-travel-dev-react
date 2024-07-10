@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination,  A11y } from 'swiper/modules';
 import { useSwiper } from 'swiper/react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import Image1 from './blog-img/ladies.jpeg'
-import Image2 from './blog-img/working-man.jpeg'
-import Image3 from './blog-img/tech.jpeg'
+import Image1 from "../contents/image/postImage 1.webp";
+import Image2 from "../contents/image/postImage 2.webp";
+import Image3 from "../contents/image/postImage 3.webp";
 import Icon from "./blog-img/arrow-up.png"
 import FadeLink from '../contents/fadeLink';
 import 'swiper/css';

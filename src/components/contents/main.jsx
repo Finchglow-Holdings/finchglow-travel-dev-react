@@ -11,7 +11,7 @@ import OurPartners from '../testimonial/partners';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialSlider from '../testimonial/testimonial';
-import background from './images/blue-background.png';
+import background from "./image/blue-background.webp";
 import Button from './Button';
 import FadeLink from './fadeLink';
 import SectionPartner from './sections/partner';

@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { useSwiper } from "swiper/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import Icon1 from "../contents/images/icons/Group 781.png";
-import Icon2 from "../contents/images/icons/Group 782.png";
-import Icon3 from "../contents/images/icons/Group 783.png";
-import Icon4 from "../contents/images/icons/Group 784.png";
-import Icon5 from "../contents/images/icons/Group 785.png";
+import Icon1 from "../contents/image/icons/Group 781-min.png";
+import Icon2 from "../contents/image/icons/Group 782-min.png";
+import Icon3 from "../contents/image/icons/Group 783-min.png";
+import Icon4 from "../contents/image/icons/Group 784-min.png";
+import Icon5 from "../contents/image/icons/Group 785-min.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -86,14 +86,14 @@ const Slideshow = () => {
               </div>
             </div>
             <div className="card-content">
-              <span className="name">Corporate Travel Management</span>
+              <span className="name">CorPorate Travel Management</span>
               <p className="discription !font-medium">
                 Why choose between quality and cost? Our seamless business
                 travel solutions offer both, with seamless arrangements, flight
                 and hotel bookings, travel policies, expense management, and
                 dedicated support.
               </p>
-              <FadeLink to="/corPorate">
+              <FadeLink to="/CorPorate">
                 <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />

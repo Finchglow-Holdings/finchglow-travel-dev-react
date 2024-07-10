@@ -135,11 +135,21 @@ const Navbar = ({ openOverlay }) => {
                   </li>
                   <li className="flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
                     <FadeLink
-                      to="/corPorate-travel-management"
+                      to="/Corporate-travel-management"
                       className="flex w-full px-4"
                     >
                       <span className="text-[#05284C]">
                         Corporate Travel Management
+                      </span>
+                    </FadeLink>
+                  </li>
+                  <li className="flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
+                    <FadeLink
+                      to="/partnerplus-connect"
+                      className="flex w-full px-4"
+                    >
+                      <span className="text-[#05284C]">
+                        Partnerplus Connect
                       </span>
                     </FadeLink>
                   </li>
@@ -150,6 +160,16 @@ const Navbar = ({ openOverlay }) => {
                     >
                       <span className="text-[#05284C]">
                         Customised Travel Packages
+                      </span>
+                    </FadeLink>
+                  </li>
+                  <li className="flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
+                    <FadeLink
+                      to="/partnerplus-connect"
+                      className="flex w-full px-4"
+                    >
+                      <span className="text-[#05284C]">
+                        Partnerplus Connect
                       </span>
                     </FadeLink>
                   </li>
@@ -342,13 +362,24 @@ const Navbar = ({ openOverlay }) => {
                       </FadeLink>
                     </li>
                     <li className="flex justify-center items-center w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] group text-change">
-                      <FadeLink to="/corporate-travel-management">
+                      <FadeLink to="/Corporate-travel-management">
                         <span
                           className={`group-hover:text-[#05284C] ${
                             scrolled ? "text-[#05284C]" : "text-white"
                           } `}
                         >
-                          Corporate Travel Management
+                          CorPorate Travel Management
+                        </span>
+                      </FadeLink>
+                    </li>
+                    <li className="flex justify-center items-center w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] group text-change">
+                      <FadeLink to="/partnerplus-connect">
+                        <span
+                          className={`group-hover:text-[#05284C] ${
+                            scrolled ? "text-[#05284C]" : "text-white"
+                          } `}
+                        >
+                          Partnerplus Connect
                         </span>
                       </FadeLink>
                     </li>

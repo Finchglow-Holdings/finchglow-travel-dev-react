@@ -7,9 +7,9 @@ import {
   FaYoutube,
   FaArrowUp,
 } from "react-icons/fa";
-import logo from "./images/FT_logo_X5-01.png";
-import logo1 from "./images/Accredited Agent logo.png";
-import logo2 from "./images/NDPR.png";
+import logo from "./image/logo/FT_logo_X5-01.png";
+import logo1 from "./image/logo/Accredited Agent logo.png";
+import logo2 from "./image/logo/NDPR.png";
 import FadeLink from "./fadeLink";
 
 import "../contents/styles/_footer.css";
@@ -37,8 +37,8 @@ function footer() {
             </span>
           </div>
           {/* back to top */}
-          <div className="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
-            <div className="flex flex-col justify-between w-full  md:h-[244px] gap-[42px]  at500:gap-0">
+          <div className="w-full flex flex-col silver:flex-row gap-[48px] justify-between items-start silver:items-center mb-[30px]">
+            <div className="flex flex-col justify-between  w-full  silver:h-[244px] gap-[42px]  at500:gap-[8px]">
               <div className="text-2xl cursor-pointer w-[130px] h-[36.02px]">
                 <a className="w-full" href="#">
                   <img
@@ -53,7 +53,7 @@ function footer() {
                 Abuja, Kano and Port Harcourt.
               </p>
               <div className="flex">
-                <ul className="flex flex-col sm:flex-row justify-center items-start sm:items-center gap-y-4 gap-x-8">
+                <ul className="flex flex-col sm:flex-row justify-center items-start sm:items-center gap-[20px]">
                   <li className=" w-[182.74px] h-[60px] mix-blend-multiply">
                     <a href="#">
                       <img
@@ -76,7 +76,7 @@ function footer() {
               </div>
             </div>
 
-            <div className="flex  justify-between md:h-[244px] w-full md:w-[385px] gap-[32px]">
+            <div className="flex  justify-between silver:h-[244px] w-full md:w-[385px] gap-[32px]">
               <div className="w-full md:w-[176.5px]">
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                   <li>
@@ -87,16 +87,16 @@ function footer() {
                     </FadeLink>
                   </li>
                   <li>
-                    <FadeLink to="/partnerPlus-connect">
+                    <FadeLink to="/partnerplus-connect">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Trade Partner Plus
                       </span>
                     </FadeLink>
                   </li>
                   <li>
-                    <FadeLink to="/corPorate-travel-management">
+                    <FadeLink to="/Corporate-travel-management">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
-                        Corporate Travel Management
+                        CorPorate Travel Management
                       </span>
                     </FadeLink>
                   </li>
@@ -226,6 +226,3 @@ function footer() {
 }
 
 export default footer;
-
-
-

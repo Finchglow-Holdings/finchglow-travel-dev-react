@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import icon from '../images/icons/Check icon.png'
+import icon from "../image/icons/Check icon-min.png";
 
 const ExploreOurServices = () => {
   useEffect(() => {

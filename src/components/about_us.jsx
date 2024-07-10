@@ -11,15 +11,10 @@ import TestimonialSlider from "./testimonial/testimonial";
 import TalkToUs from "./contents/talkToUs";
 import talk from "./props/talk";
 import Footer from "../components/contents/footer";
-import background from "./contents/images/blue-background - Copy.png";
-import background2 from "./contents/images/sharing report.jpeg";
-import VideoSection from "./contents/sections/videoSection";
+import background from "./contents/image/blue-background - Copy.webp";
+import background2 from "./contents/image/c2cc3462de3a57be65f8b9e178067365.webp";
+// import VideoSection from "./contents/sections/videoSection";
 import OverlayForm from "./form/overlayForm";
-
-
-
-
-
 
 function createTalkToUs(talk) {
   return (
@@ -66,8 +61,6 @@ function About() {
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
-  
-
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
@@ -77,7 +70,6 @@ function About() {
       <div className="flex flex-col justify-center items-center w-full ">
         <Nav openOverlay={openOverlay} />
         <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
-       
 
         <section className="flex justify-center items-center w-full mt-[70px]">
           {contents.filter((content) => content.id === 2).map(createTitle)}
@@ -116,7 +108,7 @@ function About() {
                     className="txt3 !text-[#FFFFFF] xl:w-[739px]"
                   >
                     This commitment to continuous improvement ensures our
-                    customers (whether travel agents or corporate, independent,
+                    customers (whether travel agents or CorPorate, independent,
                     and VIP travellers) always have access to the best travel
                     standards. We are constantly evolving and adapting to the
                     opportunities that lie ahead.
@@ -179,7 +171,7 @@ function About() {
           </div>
         </section>
 
-        <VideoSection />
+        {/* <VideoSection /> */}
 
         <section className="relative flex flex-col justify-center items-center bg-[#E6EAED] md:h-[384px] w-full h-auto overflow-hidden">
           <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[50px]  at500:px-[55px]  my-0 mx-auto overflow-hidden">

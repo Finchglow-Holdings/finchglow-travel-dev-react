@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import iconLocaton from './images/icons/Group 78.png'
-import iconCall from './images/icons/call icon.png'
+import iconLocaton from "./image/icons/Group 78-min.png";
+import iconCall from './image/icons/call icon-min.png'
 
 
 

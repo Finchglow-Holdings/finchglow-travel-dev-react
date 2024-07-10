@@ -5,12 +5,12 @@ import FadeLink from '../fadeLink';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/_count.css';
-import background from '../images/blue-background.png';
-import icon1 from '../images/icons/dollor.png';
-import icon2 from '../images/icons/airoplane.png';
-import icon3 from '../images/icons/inbox.png';
-import icon4 from '../images/icons/customer.png';
-import icon from "../images/arrow-up.png";
+import background from "../image/blue-background.webp";
+import icon1 from '../image/icons/dollor-min.png';
+import icon2 from '../image/icons/airoplane-min.png';
+import icon3 from '../image/icons/inbox-min.png';
+import icon4 from '../image/icons/customer-min.png';
+import icon from "../image/icons/arrow-up-min.png";
 
 
 
@@ -75,11 +75,11 @@ const AchievementsSection = () => {
               </span>
               <div  className="counter" ref={nairaRef}>
                 {nairaInView && (
-                  <CountUp end={30} suffix="+ Billion" duration={3} />
+                  <CountUp end={20} suffix="+ million" duration={3} />
                 )}
               </div>
               <span className="txt3 capitalize">
-                Naira Annual Turnover
+                Travel Partners worldwide
               </span>
             </div>
 
@@ -93,7 +93,7 @@ const AchievementsSection = () => {
               </span>
               <div  className="counter" ref={tripsRef}>
                 {tripsInView && (
-                  <CountUp end={100000} suffix="K+" duration={3} />
+                  <CountUp end={100} suffix="K+" duration={3} />
                 )}
               </div>
               <span  className="txt3 capitalize">
@@ -129,7 +129,7 @@ const AchievementsSection = () => {
               </span>
               <div className="counter" ref={clientsRef}>
                 {clientsInView && (
-                  <CountUp end={20000} suffix="+" duration={3} />
+                  <CountUp end={20} suffix="k+" duration={3} />
                 )}
               </div>
               <span className="txt3 capitalize">

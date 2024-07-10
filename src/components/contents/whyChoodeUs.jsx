@@ -31,8 +31,7 @@ function WhyChooseUs(props) {
             {props.title}
           </h3>
 
-          <div
-            className={`gap-x-5 gap-y-5 w-full mb-[30px] ${isAffiliatePage ? "!flex !flex-col !justify-center !items-center !w-full" : isAncillaryPage ? "grid md:grid-cols-3 items-start md:w-full " : isVisaPage ? "grid md:grid-cols-2 items-start md:w-[80%] gap-x-5 gap-y-5" : "grid md:grid-cols-2 items-start md:w-[80%] "}`}
+          <div className={`gap-x-5 gap-y-5 w-full mb-[30px] ${isAffiliatePage ? "!flex !flex-col !justify-center !items-center !w-full" : isAncillaryPage ? "grid md:grid-cols-3 items-start md:w-full " : isVisaPage ? "grid md:grid-cols-2 items-start md:w-[80%] gap-x-5 gap-y-5" : "grid md:grid-cols-2 items-start md:w-[80%] "}`}
           >
             <div className="flex flex-col justify-center items-center w-full  gap-[20px]">
               <img
@@ -85,8 +84,7 @@ function WhyChooseUs(props) {
               </div>
             </div>
 
-            <div
-              className={`flex flex-col justify-center items-center w-full  gap-[20px] ${isAncillaryPage ? "lg:w-[284px]" : " hidden"}`}
+            <div className={`flex flex-col justify-center items-center w-full  gap-[20px] ${isAncillaryPage ? "lg:w-[284px]" : " hidden"}`}
             >
               <img
                 data-aos="fade-up"
@@ -114,8 +112,7 @@ function WhyChooseUs(props) {
             </div>
           </div>
 
-          <div
-            className={`flex gap-x-5 gap-y-5 w-full   ${isAffiliatePage ? "flex-col  justify-center items-center" : isAncillaryPage ? "hidden " : isVisaPage ? "grid md:grid-cols-2 items-start md:w-[85%]  gap-x-5 gap-y-5 " : "justify-between items-start  md:flex-row md:w-[85%] "}`}
+          <div className={`flex gap-x-5 gap-y-5 w-full   ${isAffiliatePage ? "flex-col  justify-center items-center" : isAncillaryPage ? "hidden " : isVisaPage ? "grid md:grid-cols-2 items-start md:w-[85%]  gap-x-5 gap-y-5 " : "justify-between items-start flex-col md:flex-row md:w-[85%] "}`}
           >
             <div className="flex flex-col justify-center items-center w-full  gap-[20px] ">
               <img

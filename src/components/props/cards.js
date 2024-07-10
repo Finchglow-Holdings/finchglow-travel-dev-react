@@ -1,4 +1,4 @@
-import image from "./service/icon/Check icon.png";
+import image from "../contents/image/icons/Check-red icon-min.png";
 
 const cards = [
   {
@@ -36,7 +36,7 @@ const cards = [
     //third content
     subTitle3: "Seamless Business Ventures",
     details3:
-      "For corporate nomads, our business travel services promise effortless journeys. Navigate meetings, conferences, and opportunities with precision and grace, backed by our logistical mastery.",
+      "For CorPorate nomads, our business travel services promise effortless journeys. Navigate meetings, conferences, and opportunities with precision and grace, backed by our logistical mastery.",
     // fort content
     subTitle4: "Stay Within Budget",
     details4:

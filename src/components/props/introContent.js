@@ -1,5 +1,5 @@
-import image1 from "./blog/chair.jpeg";
-import image2 from "./blog/sharing ideas.jpeg";
+import image1 from "./blog/chair-min.jpeg";
+import image2 from "./blog/sharing ideas-min.jpeg";
 
 const intro = [
     {

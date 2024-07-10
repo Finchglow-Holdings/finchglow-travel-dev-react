@@ -32,7 +32,7 @@ const ZohoOptinForm = () => {
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  const isPartnerPlusPage = location.pathname === "/partnerPlus-connect";
+  const isPartnerPlusPage = location.pathname === "/partnerplus-connect";
   const isBlogPostPage = location.pathname === "/blog-read";
 
   return (
@@ -116,7 +116,7 @@ const ZohoOptinForm = () => {
               >
                 We’ll keep your data safe.
               </p>
-              <div>
+              <div className="w-full">
                 <input
                   className={` ${isPartnerPlusPage ? " hidden" : isBlogPostPage ? "hidden " : isHomePage ? "hidden " : ""}`}
                   type="text"
@@ -126,7 +126,7 @@ const ZohoOptinForm = () => {
                   id="EMBED_FORM_NAME_LABEL"
                 />
               </div>
-              <div>
+              <div className="w-full">
                 <input
                   className={`submit ${isPartnerPlusPage ? "signUp " : ""}`}
                   type="submit"

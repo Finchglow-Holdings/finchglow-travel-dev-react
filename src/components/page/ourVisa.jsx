@@ -12,7 +12,7 @@ import WhyChooseUs from '../contents/whyChoodeUs';
 import cards from '../props/cards';
 import ExperienceTheDifference from '../contents/experience';
 import experience from '../props/exp';
-import background from '../contents/images/blue-background - Copy.png';
+import background from "../contents/image/blue-background - Copy.webp";
 import OverlayForm from "../form/overlayForm";
 
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../navigation/home_navbar";
 import OverlayForm from "../form/overlayForm";
-import image from "../contents/images/background-img.jpeg";
+import image from "../contents/image/background-img.webp";
 import "./styles/cas.css";
 import { GoArrowDown } from "react-icons/go";
 import NewsLetter from "../form/newsletter";
