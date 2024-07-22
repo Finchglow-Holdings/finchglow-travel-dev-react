@@ -42,31 +42,22 @@ function createLocation(location) {
 function ContactUs() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
 
-    const handleScroll = () => {
-      // Scroll to the element with ID if the "scrollTo" parameter is present in the URL
-      const params = new URLSearchParams(location.search);
-      const scrollTo = params.get("scrollTo");
-      if (scrollTo) {
-        const element = document.getElementById(scrollTo);
-        if (element) {
-          setTimeout(() => {
-            element.scrollIntoView({ behavior: "smooth" });
-          }, 500); // Adjust the delay if necessary
-        }
+    // Handle scrolling to the section specified in the URL
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+    if (scrollTo) {
+      const element = document.getElementById(scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
       }
-    };
-
-    window.onload = handleScroll;
-
-    return () => {
-      window.onload = null;
-    };
+    }
   }, [location]);
 
   return (
@@ -83,7 +74,7 @@ function ContactUs() {
         <GetinTouchForm id="getinTouchSection" />
 
         <section
-          className="relative flex flex-col justify-center items-center bg-[#03182E] bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[321px] w-full h-auto overflow-hidden"
+          className="relative flex flex-col justify-center items-center  bg-[#03182E]  bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[321px] w-full h-auto overflow-hidden"
           style={{ backgroundImage: `url(${background})` }}
         >
           <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px] my-0 mx-auto">
@@ -101,7 +92,7 @@ function ContactUs() {
               </div>
 
               <div className="relative flex flex-col justify-center items-start gap-[40px] w-full h-auto text-left mb-[30px]">
-                <div className="relative flex flex-col justify-center items-start w-full h-auto text-left">
+                <div className="relative flex flex-col justify-center items-start  w-full h-auto text-left">
                   <span
                     data-aos="fade-up"
                     className="txt2 text-[#B3CFFA] lg:w-[333px]"
@@ -116,10 +107,10 @@ function ContactUs() {
           </div>
         </section>
 
-        <section className="relative flex flex-col justify-center items-center bg-[#FFFFFF] w-full h-auto overflow-hidden">
+        <section className="relative flex flex-col justify-center items-center  bg-[#FFFFFF]   w-full h-auto overflow-hidden">
           <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[80px] my-0 mx-auto">
             <div className="flex flex-col justify-center items-center w-full gap-[10px] text-center">
-              <h3 data-aos="fade-up" className="text-[#05284C] lg:w-[613px]">
+              <h3 data-aos="fade-up" className=" text-[#05284C] lg:w-[613px]">
                 Looking for a regional travel solution in Nigeria?
               </h3>
               <span
@@ -135,9 +126,9 @@ function ContactUs() {
           </div>
         </section>
 
-        <section className="relative flex flex-col justify-center items-center bg-[#F3F8FF] w-full h-auto overflow-hidden">
+        <section className="relative flex flex-col justify-center items-center  bg-[#F3F8FF]   w-full h-auto overflow-hidden">
           <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[80px] my-0 mx-auto">
-            <div className="grid items-start grid-cols-1 md:grid-cols-2 silver:grid-cols-3 gap-x-9 gap-y-20 w-full">
+            <div className="grid  items-start grid-cols-1 md:grid-cols-2 silver:grid-cols-3 gap-x-9 gap-y-9 w-full">
               {Location.map(createLocation)}
             </div>
           </div>

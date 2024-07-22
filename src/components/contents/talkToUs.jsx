@@ -59,10 +59,7 @@ function TalkToUs(props) {
                   {props.buttz}
                 </Button>
               </FadeLink> */}
-              <FadeLink
-                to={`${props.pageLink}?scrollTo=getinTouchSection`}
-                onClick={props.signUP}
-              >
+              <FadeLink to="/contact-us?scrollTo=getinTouchSection">
                 <Button
                   size="cdn"
                   className={` ${isAffiliatePage ? "!hidden" : ""}`}
