@@ -134,7 +134,7 @@ function About() {
               data-aos="fade-up"
               className="text-[#05284C]  text-left w-full mb-[30px]"
             >
-              Your No 1 Travel Consolidator
+              Your No. 1 Travel Consolidator
             </h3>
             <div className="flex flex-col lg:flex-row justify-between gap-[20px] items-start w-full">
               <div className="relative flex flex-col justify-start items-start gap-[6px] w-full h-auto text-left">

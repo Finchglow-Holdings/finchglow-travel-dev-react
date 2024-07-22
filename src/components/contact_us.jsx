@@ -58,6 +58,21 @@ function ContactUs() {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
+
+    // Event listener for scrolling to the element on unload
+    const handleBeforeUnload = () => {
+      const element = document.getElementById("getinTouchSection");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
   }, [location]);
 
   return (

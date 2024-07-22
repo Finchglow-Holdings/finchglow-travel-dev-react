@@ -165,16 +165,6 @@ const Navbar = ({ openOverlay }) => {
                   </li>
                   <li className="flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
                     <FadeLink
-                      to="/partnerplus-connect"
-                      className="flex w-full px-4"
-                    >
-                      <span className="text-[#05284C]">
-                        Partnerplus Connect
-                      </span>
-                    </FadeLink>
-                  </li>
-                  <li className="flex justify-center items-center w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
-                    <FadeLink
                       to="/visa-and-immigration-services"
                       className="flex w-full px-4"
                     >

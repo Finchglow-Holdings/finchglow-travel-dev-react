@@ -115,7 +115,7 @@ function Service() {
                     our esteemed affiliate program, Trade Partner Plus, and say
                     hello to a tomorrow of limitless possibilities.
                   </span>
-                  <FadeLink to="/affiliate">
+                  <FadeLink to="/affiliate-programme">
                     <span data-aos="fade-up" className="arrow !text-[#0260EE]">
                       Why Partner With Us
                       <FaArrowRight />
@@ -127,7 +127,7 @@ function Service() {
           </div>
         </section>
 
-        {/* CorPorate Travel */}
+        {/* Corporate Travel */}
         <section className="relative bg-custom-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[692px] overflow-hidden z-[22] lg:overflow-visible">
           <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[55px] lg:pt-[300px] lg:pb-[200px]  at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
             <div className="flex flex-col-reverse lg:flex-row justify-between items-center  w-full h-auto ">
@@ -153,7 +153,7 @@ function Service() {
                     data-aos-anchor-placement="top-bottom"
                     className="text-[#05284C]"
                   >
-                    CorPorate Travel Management
+                    Corporate Travel Management
                   </h3>
                   <span
                     data-aos="fade-up"
@@ -161,7 +161,7 @@ function Service() {
                     data-aos-anchor-placement="top-bottom"
                     className="txt2 text-[#667085] text-left w-full silver:w-[318px]"
                   >
-                    Transform Your CorPorate Travel Experience with Us!
+                    Transform Your Corporate Travel Experience with Us!
                   </span>
                 </div>
                 <span
@@ -175,7 +175,7 @@ function Service() {
                   That's where we come in – your dedicated travel partner
                   committed to transforming how your team travels.
                 </span>
-                <FadeLink to="/CorPorate">
+                <FadeLink to="/Corporate-travel-management">
                   <span data-aos="fade-up" className="arrow !text-[#0260EE]">
                     Why Choose Us
                     <FaArrowRight />
@@ -250,7 +250,7 @@ function Service() {
                     needs, whether leisurely getaways or strategic business
                     ventures.
                   </span>
-                  <FadeLink to="/travelPackages">
+                  <FadeLink to="/customised-travel-packages">
                     <span data-aos="fade-up" className="arrow !text-[#0260EE]">
                       Why Choose Us
                       <FaArrowRight />
@@ -311,7 +311,7 @@ function Service() {
                   services – the perfect companions to enrich your travel
                   experience like never before.
                 </span>
-                <FadeLink to="/ancillary">
+                <FadeLink to="/ancillary-services">
                   <span data-aos="fade-up" className="arrow !text-[#0260EE]">
                     Why Choose Our Ancillary Services
                     <FaArrowRight />
@@ -362,8 +362,8 @@ function Service() {
                       data-aos="fade-up"
                       className="txt2 text-[#667085] text-left w-full silver:w-[358px]"
                     >
-                      Simplify your Visa Experience with Finchglow Travels as
-                      your Visa and Immigration Partner
+                      Simplify your visa Experience with Finchglow Travels as
+                      your visa and immigration partner
                     </span>
                   </div>
                   <span
@@ -377,7 +377,7 @@ function Service() {
                     or travelling for work or leisure, we provide personalised
                     assistance for a smooth journey.
                   </span>
-                  <FadeLink to="/OurVisa">
+                  <FadeLink to="/visa-and-immigration-services">
                     <span data-aos="fade-up" className="arrow !text-[#0260EE]">
                       Why Choose Our Visa and Immigration Services?
                       <FaArrowRight />

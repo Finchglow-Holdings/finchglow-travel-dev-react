@@ -29,11 +29,11 @@ function PrevEpisodes() {
         style={{ width: "100%" }}
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
-        // loop={true}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
+        loop={true}
+        autoplay={{
+          delay: 9000,
+          disableOnInteraction: false,
+        }}
         slidesPerView={1}
         navigation={{
           nextEl: ".swiper-button-next-episo",

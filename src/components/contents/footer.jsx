@@ -96,14 +96,14 @@ function footer() {
                   <li>
                     <FadeLink to="/Corporate-travel-management">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
-                        CorPorate Travel Management
+                        Corporate Travel Management
                       </span>
                     </FadeLink>
                   </li>
                   <li>
                     <FadeLink to="/customised-travel-packages">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
-                        Leisure Travel
+                        Customized Travel Packages
                       </span>
                     </FadeLink>
                   </li>

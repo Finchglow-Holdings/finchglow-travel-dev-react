@@ -9,10 +9,7 @@ const GetinTouchForm = () => {
   
 
   return (
-    <section
-      
-      className="flex flex-col justify-center items-center w-full h-auto py-12 bg-white"
-    >
+    <section className="flex flex-col justify-center items-center w-full h-auto py-12 bg-white">
       <div className="max-w-[600px] text-center w-full px-4">
         <span
           data-aos="fade-up"
@@ -30,7 +27,7 @@ const GetinTouchForm = () => {
           data-aos="fade-up"
           className="text-center txt2 !leading-[26px] text-[#697E94] mb-8"
         >
-          We'd love to hear from you. Please fill out this form.
+          We’d love to hear from you. Please fill out this form.
         </p>
 
         <form
