@@ -16,10 +16,11 @@ function EpisodesSlide(props) {
       </div>
 
       <div className="flex flex-col silver:flex-row justify-between gap-[32px] items-start w-full">
-        <div className="flex flex-col justify-center items-start gap-[30px] lg:w-[419px]">
+        <div className="flex flex-col justify-center items-start gap-[30px] lg:w-[468px]">
           <h3 data-aos="fade-up" className="text-[#05284C]">
             {props.episodeTitle}
           </h3>
+
           <div className="flex flex-col justify-center items-start pl-[20px] border-l-[1px] border-l-[#ED3237]">
             <span data-aos="fade-up" className="txt3 !text-[#F15B5F]">
               {props.topicLabel}
@@ -27,16 +28,15 @@ function EpisodesSlide(props) {
             <span
               data-aos="fade-up"
               className="txt8 text-[#506982] !leading-[27px]"
-            >
-              {props.topicText}
-            </span>
+              dangerouslySetInnerHTML={{ __html: props.topicText }}
+            ></span>
             <span
               data-aos="fade-up"
               className="txt2 !leading-[26px] text-[#667085]"
-            >
-              {props.topicSubtext}
-            </span>
+              dangerouslySetInnerHTML={{ __html: props.topicSubtext }}
+            ></span>
           </div>
+
           <div className="flex flex-col justify-center items-start pl-[20px] border-l-[1px] border-l-[#ED3237]">
             <span data-aos="fade-up" className="txt3 !text-[#F15B5F]">
               {props.speaker1Label}
@@ -50,10 +50,10 @@ function EpisodesSlide(props) {
             <span
               data-aos="fade-up"
               className="txt2 !leading-[26px] text-[#667085]"
-            >
-              {props.speaker1Info}
-            </span>
+              dangerouslySetInnerHTML={{ __html: props.speaker1Info }}
+            ></span>
           </div>
+
           <div className="flex flex-col justify-center items-start pl-[20px] border-l-[1px] border-l-[#ED3237]">
             <span data-aos="fade-up" className="txt3 !text-[#F15B5F]">
               {props.speaker2Label}
@@ -67,9 +67,8 @@ function EpisodesSlide(props) {
             <span
               data-aos="fade-up"
               className="txt2 !leading-[26px] text-[#667085]"
-            >
-              {props.speaker2Info}
-            </span>
+              dangerouslySetInnerHTML={{ __html: props.speaker2Info }}
+            ></span>
           </div>
         </div>
 

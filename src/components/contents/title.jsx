@@ -17,7 +17,9 @@ function Title(props) {
       <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
         <div className="flex flex-col xl:flex-row xl:justify-between justify-start items-start xl:items-center w-full gap-[30px] xl:gap-[168px]">
           <div className="relative flex flex-col justify-center items-start w-full silver:w-[513px] text-left gap-[17px]">
-            <span className="txt2 capitalize text-[#0260EE]">{props.title}</span>
+            <span className="txt2 capitalize text-[#0260EE]">
+              {props.title}
+            </span>
             <h3
               className={`text-[#101828]  ${isBlogPage ? "lg:!w-[513px]" : isContactPage ? "lg:!w-[396px]" : "xl:w-[595px]"}`}
             >
@@ -40,7 +42,7 @@ function Title(props) {
         </div>
       </div>
       <div
-        className={`relative flex flex-col justify-center items-center at500:bg-fixed bg-no-repeat bg-cover bg-center h-[474px] py-[70px] w-full overflow-hidden  ${isContactPage ? "hidden" : "block"}`}
+        className={`relative flex flex-col justify-center items-center at500:bg-fixed bg-no-repeat bg-cover bg-top h-[474px] py-[90px] w-full overflow-hidden  ${isContactPage ? "hidden" : "block"}`}
         style={{ backgroundImage: `url(${props.imgURL})` }}
       ></div>
     </section>

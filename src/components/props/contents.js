@@ -59,7 +59,7 @@ const contents = [
   {
     id: 6,
     title: "Corporate Travel Management",
-    subTitle: "Transform Your CorPorate Travel Experience with Us!",
+    subTitle: "Transform Your Corporate Travel Experience with Us!",
     // subTitle2: null,
     riteContent: "Every decision matters in today's fast-paced business landscape, especially managing your company's travel needs. That's where we come in – your dedicated travel partner committed to transforming how your team travels.",
     imgURL: image6,
@@ -99,9 +99,9 @@ const contents = [
     {
     id: 11,
     title: "Partnerplus Connect",
-    subTitle: "Connect With Us Through Our PartnerPlus Connect Webinar",
+    subTitle: "Connect With Us Through Our Partnerplus Connect Webinar",
     // subTitle2: null,
-    riteContent: "PartnerPlus Connect is more than just an industry-focused monthly webinar — it's a catalyst for growth and innovation in Nigeria's travel industry. Led by Finchglow Travels' top executives, PartnerPlus Connect provides a unique opportunity for agents to learn from industry leaders and peers alike.",
+    riteContent: "Partnerplus Connect is more than just an industry-focused monthly webinar — it's a catalyst for growth and innovation in Nigeria's travel industry. Led by Finchglow Travels' top executives, PartnerPlus Connect provides a unique opportunity for agents to learn from industry leaders and peers alike.",
     imgURL: image11,
   },
      {

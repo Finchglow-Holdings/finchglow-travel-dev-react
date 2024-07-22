@@ -29,7 +29,6 @@ function PrevEpisodes() {
         style={{ width: "100%" }}
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
-        
         // loop={true}
         // autoplay={{
         //   delay: 5000,
@@ -58,7 +57,7 @@ function PrevEpisodes() {
               speaker2Name={episodes.speaker2Name}
               speaker2Info={episodes.speaker2Info}
               imgURL={episodes.imgURL}
-              imageDescription={episodes.rating}
+              imageDescription={episodes.imageDescription}
             />
           </SwiperSlide>
         ))}

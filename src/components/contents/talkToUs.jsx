@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import FadeLink from "./fadeLink";
 import Button from "./Button";
 import AOS from "aos";
@@ -8,13 +8,17 @@ import "aos/dist/aos.css";
 import OverlayForm from "../form/overlayForm";
 
 function TalkToUs(props) {
-  const location = useLocation();
-  const ispartnerPage = location.pathname === "/partnerplus-connect";
-  const isAffiliatePage = location.pathname === "/affiliate-programme";
+ const location = useLocation();
+ const ispartnerPage = location.pathname === "/partnerplus-connect";
+ const isAffiliatePage = location.pathname === "/affiliate-programme";
 
-  const [isOpen, setIsOpen] = useState(false);
-  const openOverlay = () => setIsOpen(true);
-  const closeOverlay = () => setIsOpen(false);
+ const [isOpen, setIsOpen] = useState(false);
+ const openOverlay = () => setIsOpen(true);
+ const closeOverlay = () => setIsOpen(false);
+
+ useEffect(() => {
+   AOS.init({ duration: 3000, once: true });
+ }, []);
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
@@ -46,7 +50,19 @@ function TalkToUs(props) {
               data-aos="fade-up"
               className="flex flex-col items-center justify-center  h-auto "
             >
-              <FadeLink to={props.pageLink} onClick={props.signUP}>
+              {/* <FadeLink to={props.pageLink} onClick={props.signUP}>
+                <Button
+                  size="cdn"
+                  onClick={() => window.scrollTo({ bottom: 0, behavior: "smooth" })}
+                  className={` ${isAffiliatePage ? "!hidden" : ""}`}
+                >
+                  {props.buttz}
+                </Button>
+              </FadeLink> */}
+              <FadeLink
+                to={`${props.pageLink}?scrollTo=getinTouchSection`}
+                onClick={props.signUP}
+              >
                 <Button
                   size="cdn"
                   className={` ${isAffiliatePage ? "!hidden" : ""}`}
@@ -60,7 +76,7 @@ function TalkToUs(props) {
                 onClick={openOverlay}
                 className={` ${isAffiliatePage ? "block" : "!hidden"}`}
               >
-                <a href={props.links}>{props.buttz}</a>
+                {props.buttz}
               </Button>
             </div>
           </div>
@@ -72,3 +88,6 @@ function TalkToUs(props) {
 }
 
 export default TalkToUs;
+
+
+

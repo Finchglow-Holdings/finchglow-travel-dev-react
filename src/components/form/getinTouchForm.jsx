@@ -4,11 +4,15 @@ import "./_getinTouchForm.css";
 
 
 
+
 const GetinTouchForm = () => {
   
 
   return (
-    <section className="flex flex-col justify-center items-center w-full h-auto py-12 bg-white">
+    <section
+      
+      className="flex flex-col justify-center items-center w-full h-auto py-12 bg-white"
+    >
       <div className="max-w-[600px] text-center w-full px-4">
         <span
           data-aos="fade-up"
