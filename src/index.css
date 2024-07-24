@@ -43,6 +43,13 @@ nav ul li a {
   line-height: 18px;
   text-align: center;
 }
+nav ul li span {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Goldplay', sans-serif;
+  line-height: 18px;
+  text-align: center;
+}
 
 
 .back-to-top-box:hover .back-to-top {

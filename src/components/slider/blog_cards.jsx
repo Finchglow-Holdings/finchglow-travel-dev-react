@@ -139,7 +139,7 @@ const BlogSlide = () => {
                   Building your API Stack
                 </h5>
                 <span className="relative w-[24px] h-[28px] cursor-pointer">
-                  <FadeLink to="/blog-read">
+                  <FadeLink to="/">
                     <img
                       className="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out"
                       src={Icon}

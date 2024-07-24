@@ -51,7 +51,6 @@ function Faq() {
           </div>
 
           <div className="flex flex-col justify-end items-end w-full">
-
             <div
               className={`hover:bg-[#E6EFFD] cursor-pointer flex flex-col justify-center items-start rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-in mb-[8px] ${toggles[0] ? "bg-[#E6EFFD]" : ""}`}
               onClick={() => toggleDropdown(0)}
@@ -181,7 +180,7 @@ function Faq() {
                     immigration services etc. See a full breakdown of all our
                     services
                   </p>
-                  <FadeLink to="/services">
+                  <FadeLink to="/our-services">
                     <span className="arrow hover:!text-[#667085]">
                       Here
                       <FaArrowRight className="mt-[4px] ml-[10px] transition-all duration-300 ease-linear" />
@@ -195,7 +194,7 @@ function Faq() {
               className={`hover:bg-[#E6EFFD] cursor-pointer flex flex-col justify-center items-start rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-in mb-[8px] ${toggles[4] ? "bg-[#E6EFFD]" : ""}`}
               onClick={() => toggleDropdown(4)}
             >
-              <div  className="flex justify-between w-full">
+              <div className="flex justify-between w-full">
                 <span className="text-[16px] font-semibold leading-[24px] text-[#101828]">
                   How do I know what visa is required for travel?
                 </span>
@@ -220,7 +219,7 @@ function Faq() {
                     across different regions. See our growing list of airline
                     partners
                   </p>
-                  <FadeLink to="/partnerPlus">
+                  <FadeLink to="/partnerplus-connect">
                     <span className="arrow hover:!text-[#667085]">
                       Here
                       <FaArrowRight className="mt-[4px] ml-[10px] transition-all duration-300 ease-linear" />
@@ -234,7 +233,7 @@ function Faq() {
               className={`hover:bg-[#E6EFFD] cursor-pointer flex flex-col justify-center items-start rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-in mb-[8px] ${toggles[5] ? "bg-[#E6EFFD]" : ""}`}
               onClick={() => toggleDropdown(5)}
             >
-              <div  className="flex justify-between w-full">
+              <div className="flex justify-between w-full">
                 <span className="text-[16px] font-semibold leading-[24px] text-[#101828]">
                   How do I get an airport protocol service?
                 </span>
@@ -265,7 +264,6 @@ function Faq() {
               )}
             </div>
           </div>
-          
         </div>
       </div>
     </section>

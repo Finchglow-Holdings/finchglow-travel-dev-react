@@ -36,7 +36,7 @@ const SectionWhereWeAre = () => {
               offices in key locations in Lagos, Port Harcourt, Kano and Abuja.
             </span>
 
-            <FadeLink to="/contact">
+            <FadeLink to="/contact-us">
               <span className="arrow !text-[#0260EE]">
                 Contact us
                 <img src={icon} alt="" />

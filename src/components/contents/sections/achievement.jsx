@@ -44,10 +44,10 @@ const AchievementsSection = () => {
             <p className="leading-[24px] text-[16px] text-[#E6EFFD] lg:w-[452px] mb-[20px]">
               Since we launched in June 2006, we have expanded from one branch
               to nine branches across Nigeria, won over 20 industry awards, and
-              serviced over 20,000 clients. We are dedicated to offering the
-              best possible service across all our touch points.
+              worked with over 20,000 clients, dedicating ourselves to
+              exceptional service and customer satisfaction.
             </p>
-            <FadeLink to="/ourstory">
+            <FadeLink to="/finchglow-travels-story">
               <span className="arrow !text-[#0260EE]">
                 Learn more
                 <img src={icon} alt="" />
@@ -65,11 +65,13 @@ const AchievementsSection = () => {
                 />
               </span>
               <div className="counter" ref={nairaRef}>
-                {nairaInView && (
-                  <CountUp end={30} suffix="+ Billion" duration={3} />
-                )}
+                {nairaInView && <CountUp end={2} suffix="M+" duration={3} />}
               </div>
-              <span className="txt3 capitalize">Naira Annual Turnover</span>
+              <span className="txt3 capitalize">
+                Travel Partners
+                <br />
+                worldwide
+              </span>
             </div>
 
             <div className="flex flex-col justify-center gap-[8px] items-start w-full">
@@ -81,7 +83,7 @@ const AchievementsSection = () => {
                 />
               </span>
               <div className="counter" ref={tripsRef}>
-                {tripsInView && <CountUp end={100} suffix="K+" duration={3} />}
+                {tripsInView && <CountUp end={100} suffix="M+" duration={3} />}
               </div>
               <span className="txt3 capitalize">Trips booked</span>
             </div>

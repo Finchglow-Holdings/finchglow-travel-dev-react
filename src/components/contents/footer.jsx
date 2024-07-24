@@ -89,7 +89,7 @@ function footer() {
                   <li>
                     <FadeLink to="/partnerplus-connect">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
-                        Trade Partner Plus
+                        Trade PartnerPlus
                       </span>
                     </FadeLink>
                   </li>
@@ -107,6 +107,19 @@ function footer() {
                       </span>
                     </FadeLink>
                   </li>
+
+                  {/* <li>
+                    <FadeLink to="">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                        Products
+                      </span>
+                    </FadeLink>
+                  </li> */}
+                </ul>
+              </div>
+              {/* <!----contact Us --> */}
+              <div className="w-full md:w-[176.5px]">
+                <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                   <li>
                     <FadeLink to="/ancillary-services">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
@@ -115,52 +128,47 @@ function footer() {
                     </FadeLink>
                   </li>
                   <li>
-                    <FadeLink to="">
+                    <FadeLink to="/visa-and-immigration-services">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
-                        Products
+                        Visa and Immigration Services
                       </span>
                     </FadeLink>
                   </li>
-                </ul>
-              </div>
-              {/* <!----contact Us --> */}
-              <div className="w-full md:w-[176.5px]">
-                <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                  <li>
+                  {/* <li>
                     <FadeLink to="/blog-home">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Blog
                       </span>
                     </FadeLink>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Newsletter
                       </span>
                     </FadeLink>
-                  </li>
+                  </li> */}
                   <li>
-                    <FadeLink to="/contact">
+                    <FadeLink to="/contact-us">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Contact us
                       </span>
                     </FadeLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         FAQ
                       </span>
                     </FadeLink>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <FadeLink to="">
                       <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
                         Testimonials
                       </span>
                     </FadeLink>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

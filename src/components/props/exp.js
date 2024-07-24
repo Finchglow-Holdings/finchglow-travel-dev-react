@@ -5,7 +5,7 @@ const experience = [
   {
     id: 1,
     subTitle: "Experience the Difference",
-    details: "Let us handle the intricacies of CorPorate travel so you can focus on what you do best – driving your business forward. As your travel partner, we are committed to your success, dedicated to exceeding your expectations, and passionate about ensuring every journey is seamless and rewarding.",
+    details: "Let us handle the intricacies of your corporate travel so you can focus on what you do best – driving your business forward. As your travel partner, we are committed to your success, dedicated to exceeding your expectations, and passionate about ensuring every journey is seamless and rewarding.",
     },
     {
     id: 2,

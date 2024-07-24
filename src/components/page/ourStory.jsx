@@ -214,13 +214,13 @@ function OurStory() {
               <ul className="flex flex-col gap-[15px] justify-center items-start w-[80%] list-disc text-[#697E94] text-[20px] text-left">
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
-                    2023 British Airways Top Agent
+                    Delta Airlines 15 years award for Excellence Platinum agent.
+                    - 2022.
                   </span>
                 </li>
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
-                    Delta Airlines 15 years award for Excellence Platinum agent
-                    - 2022.
+                    2023 British Airways Top Agent.
                   </span>
                 </li>
                 <li>
@@ -236,7 +236,7 @@ function OurStory() {
                 </li>
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
-                    2019 British Airways Top Agent
+                    2019 British Airways Top Agent.
                   </span>
                 </li>
                 <li>

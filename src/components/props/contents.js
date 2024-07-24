@@ -75,7 +75,7 @@ const contents = [
    {
     id: 8,
     title: "Affiliate Programs",
-    subTitle: "Empower Your Growth With The PartnerPlus Connect Webinar",
+    subTitle: "Empower Your Growth with Our Trade PartnerPlus Program",
     // subTitle2: null,
     riteContent: "As Nigeria's foremost travel consolidator, Finchglow Travels is committed to providing innovative and cost-effective solutions for travel agencies.",
     imgURL: image8,

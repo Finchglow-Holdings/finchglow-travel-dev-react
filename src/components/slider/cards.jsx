@@ -68,7 +68,7 @@ const Slideshow = () => {
                 increase revenue.
               </p>
 
-              <FadeLink to="/affiliate">
+              <FadeLink to="/affiliate-programme">
                 <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
@@ -86,14 +86,14 @@ const Slideshow = () => {
               </div>
             </div>
             <div className="card-content">
-              <span className="name">CorPorate Travel Management</span>
+              <span className="name">Corporate Travel <br />Management</span>
               <p className="discription !font-medium">
                 Why choose between quality and cost? Our seamless business
                 travel solutions offer both, with seamless arrangements, flight
                 and hotel bookings, travel policies, expense management, and
                 dedicated support.
               </p>
-              <FadeLink to="/CorPorate">
+              <FadeLink to="/Corporate-travel-management">
                 <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
@@ -111,14 +111,14 @@ const Slideshow = () => {
               </div>
             </div>
             <div className="card-content">
-              <span className="name">Customised Travel Packages</span>
+              <span className="name">Customised Travel <br />Packages</span>
               <p className="discription !font-medium">
                 Let our travel experts handle the planning, crafting
                 personalised itineraries for leisure and business, ensuring
                 stylish, comfortable travel that fits your budget and eases your
                 busy schedule.
               </p>
-              <FadeLink to="/travelPackages">
+              <FadeLink to="/customised-travel-packages">
                 <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
@@ -143,7 +143,7 @@ const Slideshow = () => {
                 lasting memories.
               </p>
 
-              <FadeLink to="/ancillary">
+              <FadeLink to="/ancillary-services">
                 <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />
@@ -169,7 +169,7 @@ const Slideshow = () => {
                 quotas, VIP & more!)
               </p>
 
-              <FadeLink to="OurVisa">
+              <FadeLink to="/visa-and-immigration-services">
                 <span className="arrow hover:!text-[#3580F1]">
                   Read more
                   <FaArrowRight className="fa-solid fa-arrow-right text-[#3580F1] hover:text-[#3580F1]" />

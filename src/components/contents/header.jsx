@@ -15,17 +15,17 @@ function header() {
 
   return (
     <div
-      className="relative flex flex-col justify-center items-center bg-gray-600 bg-blend-multiply bg-no-repeat bg-cover bg-center h-screen py-[70px] w-full overflow-hidden"
+      className="relative flex flex-col justify-center items-center bg-gray-600 bg-blend-multiply bg-no-repeat bg-cover bg-center h-[70vh] sm:h-screen py-[70px] w-full overflow-hidden"
       style={{ backgroundImage: `url(${image})` }}
     >
       <Navbar openOverlay={openOverlay} />
       <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
       <NewsLetter />
-      <div className=" absolute bottom-[-154px]  flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto h-full">
+      <div className=" absolute bottom-[-77px] sm:bottom-[-154px]  flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto h-full">
         <div className="content">
-          <div className="text-container flex flex-col text-left w-full">
+          <div className="text-container flex flex-col text-left w-full mb-[30px]">
             <h1
-              className=" font-metropolis uppercase text-[#E6EAED] text-[29px] leading-[38px] at500:text-[39px] at500:leading-[48px] md:text-[55px] md:leading-[60px]"
+              className=" font-metropolis uppercase text-[#E6EAED] text-[20px] leading-[38px] at500:text-[39px] at500:leading-[48px] md:text-[55px] md:leading-[60px]"
               style={{ textAlign: "left", fontWeight: "900" }}
             >
               Turning <br />
@@ -33,11 +33,11 @@ function header() {
               into reality
             </h1>
             <p
-              className=" font-metropolis  text-[#E6EAED] text-[14px] leading-[18px] at500:text-[20px] at500:leading-[24px] w-[286px] sm:w-[521px]"
+              className=" font-metropolis  text-[#E6EAED] text-[12px] leading-[18px] at500:text-[20px] at500:leading-[24px] w-[286px] sm:w-[521px]"
               style={{ textAlign: "left", fontWeight: "600" }}
             >
-              The leading travel consolidator, connecting travellers with the
-              world for over 18 years.
+              Nigeria’s leading travel consolidator, connecting travellers with
+              the world for over 18 years.
             </p>
           </div>
         </div>

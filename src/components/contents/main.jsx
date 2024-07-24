@@ -52,7 +52,7 @@ function Main() {
               data-aos="fade-up"
               className="txt2 text-[#0260EE] gap-y-[17px]"
             >
-              What we do
+              What We Do
             </span>
             <h3 data-aos="fade-up" className="text-[#101828] lg:w-[689px]">
               We are the leading travel Consolidator in Nigeria’s travel
@@ -66,8 +66,8 @@ function Main() {
       <AchievementsSection />
       <SectionWhereWeAre />
       <SectionPartner />
-
-      <section className="relative bg-[#FFFFFF] flex justify-center flex-col items-center w-full h-auto">
+      {/* our blog section */}
+      {/* <section className="relative bg-[#FFFFFF] flex justify-center flex-col items-center w-full h-auto">
         <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px]  at500:px-[40px] md:pl-[80px] md:pr-0  my-0 mx-auto overflow-hidden">
           <div className="relative flex flex-col justify-center items-start w-full text-left mb-[20px] lg:mb-[30px]">
             <div className="relative flex flex-col gap-[17px] justify-between items-start w-full text-left ">
@@ -75,7 +75,7 @@ function Main() {
                 data-aos="fade-up"
                 className="txt2 text-[#0260EE] gap-y-[17px]"
               >
-                Our blog
+                Our Blog
               </span>
               <h3 data-aos="fade-up" className="text-[#101828] ">
                 Latest Blog Posts
@@ -91,7 +91,7 @@ function Main() {
                 tales and insider tips.
               </span>
               <div>
-                <FadeLink to="/blog">
+                <FadeLink to="/">
                   <Button
                     size="medium"
                     className=" shadow-[#1018280D] !border-[#0260EE] !border-solid !border-[1px] !w-[122px] !h-[48px] text-[#05284C]"
@@ -104,7 +104,7 @@ function Main() {
           </div>
           <BlogSlide />
         </div>
-      </section>
+      </section> */}
 
       <section
         className="relative flex flex-col justify-center items-center bg-[#03182E] bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[384px] w-full h-auto overflow-hidden"
