@@ -5,7 +5,7 @@ import { SlArrowUp, SlArrowDown, SlArrowRight } from "react-icons/sl";
 import Button from "../contents/Button";
 import logo from "./logos/finchglow-logo.png";
 import logo2 from "./logos/FT_logo_X5-01.png";
-import FadeLink from "../contents/fadeLink"; // Import the FadeLink component
+import FadeLink from "../contents/FadeLink"; // Import the FadeLink component
 
 const Navbar = ({ openOverlay }) => {
   const [toggle, setToggle] = useState(false);
@@ -182,11 +182,11 @@ const Navbar = ({ openOverlay }) => {
               </div>
             </li>
 
-            <li
+            {/* <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""} ${scrolled ? "text-[#05284C]" : "text-white"}`}
             >
               <FadeLink to="/">Blog</FadeLink>
-            </li>
+            </li> */}
 
             <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "contact" ? "border-b-[5px] border-b-[#81B0F7]" : ""} ${scrolled ? "text-[#05284C]" : "text-white"}`}
@@ -415,11 +415,11 @@ const Navbar = ({ openOverlay }) => {
                 </div>
               </li>
 
-              <li
+              {/* <li
                 className={`w-full py-[10px] px-[10px] hover:border-l-[3px] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] ${scrolled ? "text-[#05284C]" : "text-white"}`}
               >
                 <FadeLink to="/">Blog</FadeLink>
-              </li>
+              </li> */}
 
               <li
                 className={`w-full py-[10px] px-[10px] hover:border-l-[3px] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] ${scrolled ? "text-[#05284C]" : "text-white"}`}

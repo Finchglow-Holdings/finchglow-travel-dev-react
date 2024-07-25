@@ -146,7 +146,7 @@ function PartnerPlusConnect() {
         </section>
 
         {/* newsletter */}
-        <section className="relative bg-custom2-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[430px] overflow-hidden z-[3] lg:overflow-visible">
+        {/* <section className="relative bg-custom2-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[430px] overflow-hidden z-[3] lg:overflow-visible">
           <div className="static w-full sm:w-[90%] flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[40px]  md:px-[80px] my-0 mx-auto">
             <div className="relative lg:bottom-[60px] flex bg-[#05284C] flex-col-reverse lg:flex-row justify-center items-center w-full h-auto lg:h-[426.67px] rounded-[21.33px] p-[20px] at500:p-[30px] md:pt-[40px] md:pb-[10px] md:px-[60px] overflow-hidden">
               <div className="flex flex-col-reverse lg:flex-row justify-center items-start  w-full">
@@ -166,9 +166,9 @@ function PartnerPlusConnect() {
                         PartnerPlus Connect and other juicy training
                         opportunities.
                       </span>
-                      {/* <span data-aos="fade-up" className="txt3 text-[#E6EAED]">
+                      <span data-aos="fade-up" className="txt3 text-[#E6EAED]">
                       You’ll definitely be better off for it
-                    </span> */}
+                    </span> 
                     </div>
 
                     <div className=" w-full md:w-[70%]">
@@ -187,7 +187,7 @@ function PartnerPlusConnect() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full h-auto  overflow-hidden ">
           <div className="static w-full sm:w-[85%] flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] pt-[70px] pb-[10px] at500:px-[40px]  md:px-[80px] my-0 mx-auto">

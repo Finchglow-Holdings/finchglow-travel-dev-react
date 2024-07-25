@@ -214,13 +214,24 @@ function OurStory() {
               <ul className="flex flex-col gap-[15px] justify-center items-start w-[80%] list-disc text-[#697E94] text-[20px] text-left">
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
-                    Delta Airlines 15 years award for Excellence Platinum agent.
-                    - 2022.
+                    Delta Airlines Award for Excellence - 2023.
                   </span>
                 </li>
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
                     2023 British Airways Top Agent.
+                  </span>
+                </li>
+                <li>
+                  <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
+                    Delta Airlines 15 years award for Excellence Platinum agent
+                    - 2022.
+                  </span>
+                </li>
+                <li>
+                  <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
+                    Rwandair award for support and outstanding performance -
+                    2022.
                   </span>
                 </li>
                 <li>
@@ -231,7 +242,7 @@ function OurStory() {
                 </li>
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
-                    Royal Air Maroc appreciation & special recognition - 2022. 
+                    Royal Air Maroc appreciation & special recognition - 2022.
                   </span>
                 </li>
                 <li>
@@ -242,7 +253,7 @@ function OurStory() {
                 <li>
                   <span className="txt4 !text-[20px] leading-[30px] text-[#697E94]">
                     Virgin Atlantic Platinum Achievement Award in recognition of
-                    outstanding performance -<br /> 2018.
+                    outstanding performance - 2018.
                   </span>
                 </li>
                 <li>

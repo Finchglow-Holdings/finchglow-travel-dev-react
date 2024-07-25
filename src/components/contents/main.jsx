@@ -1,21 +1,20 @@
 // import React, { useState } from "react";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import RoundText from "./roundText";
-import contents from '../props/round'; 
+import contents from "../props/round";
 import Cards from "../slider/cards";
-import AchievementsSection from './sections/achievement';
-import SectionWhereWeAre from './sections/where-we-are';
-import BlogSlide from '../slider/blog_cards';
-import FAQ from './sections/FAQ';
-import OurPartners from '../testimonial/partners';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import TestimonialSlider from '../testimonial/testimonial';
+import AchievementsSection from "./sections/achievement";
+import SectionWhereWeAre from "./sections/where-we-are";
+import BlogSlide from "../slider/blog_cards";
+import FAQ from "./sections/FAQ";
+import OurPartners from "../testimonial/partners";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import TestimonialSlider from "../testimonial/testimonial";
 import background from "./image/blue-background.webp";
-import Button from './Button';
-import FadeLink from './fadeLink';
-import SectionPartner from './sections/partner';
-
+import Button from "./Button";
+import FadeLink from "./FadeLink";
+import SectionPartner from "./sections/partner";
 
 function createRoundText(content) {
   return (
@@ -32,13 +31,11 @@ function createRoundText(content) {
   );
 }
 
-
 function Main() {
- 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
- 
+
   return (
     <div className="relative flex flex-col justify-center items-center w-full ">
       <section className="flex justify-center items-center w-full ">
@@ -91,14 +88,14 @@ function Main() {
                 tales and insider tips.
               </span>
               <div>
-                <FadeLink to="/">
+                <NavLink to="/">
                   <Button
                     size="medium"
                     className=" shadow-[#1018280D] !border-[#0260EE] !border-solid !border-[1px] !w-[122px] !h-[48px] text-[#05284C]"
                   >
                     Go to blog
                   </Button>
-                </FadeLink>
+                </NavLink>
               </div>
             </div>
           </div>

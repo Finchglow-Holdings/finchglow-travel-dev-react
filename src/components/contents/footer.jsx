@@ -10,7 +10,7 @@ import {
 import logo from "./image/logo/FT_logo_X5-01.png";
 import logo1 from "./image/logo/Accredited Agent logo.png";
 import logo2 from "./image/logo/NDPR.png";
-import FadeLink from "./fadeLink";
+import FadeLink from "./FadeLink";
 
 import "../contents/styles/_footer.css";
 
@@ -48,9 +48,8 @@ function footer() {
                 </a>
               </div>
               <p className="text-[16px] leading-[24px] text-[#506982] md:w-[403px]">
-                Finchglow Travels Nigeria Limited is a leading travel management
-                company headquartered in Nigeria with 8 offices across Lagos,
-                Abuja, Kano and Port Harcourt.
+                Finchglow Travels is the leading travel consolidator in Nigeria
+                with 9 offices across Lagos, Abuja, Kano and Port Harcourt.
               </p>
               <div className="flex">
                 <ul className="flex flex-col sm:flex-row justify-center items-start sm:items-center gap-[20px]">
@@ -81,28 +80,29 @@ function footer() {
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                   <li>
                     <FadeLink to="/about-finchglow-travels">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         About us
                       </span>
                     </FadeLink>
                   </li>
                   <li>
-                    <FadeLink to="/partnerplus-connect">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
-                        Trade PartnerPlus
+                    <FadeLink to="/affiliate-programme">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
+                        Affiliate Programs
                       </span>
                     </FadeLink>
                   </li>
+
                   <li>
                     <FadeLink to="/Corporate-travel-management">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Corporate Travel Management
                       </span>
                     </FadeLink>
                   </li>
                   <li>
                     <FadeLink to="/customised-travel-packages">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Customized Travel Packages
                       </span>
                     </FadeLink>
@@ -110,7 +110,7 @@ function footer() {
 
                   {/* <li>
                     <FadeLink to="">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Products
                       </span>
                     </FadeLink>
@@ -122,49 +122,56 @@ function footer() {
                 <ul className=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                   <li>
                     <FadeLink to="/ancillary-services">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Ancillary Services
                       </span>
                     </FadeLink>
                   </li>
                   <li>
                     <FadeLink to="/visa-and-immigration-services">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Visa and Immigration Services
+                      </span>
+                    </FadeLink>
+                  </li>
+                  <li>
+                    <FadeLink to="/partnerplus-connect">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
+                        PartnerPlus Connect
                       </span>
                     </FadeLink>
                   </li>
                   {/* <li>
                     <FadeLink to="/blog-home">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Blog
                       </span>
                     </FadeLink>
                   </li> */}
                   {/* <li>
                     <FadeLink to="">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Newsletter
                       </span>
                     </FadeLink>
                   </li> */}
                   <li>
                     <FadeLink to="/contact-us">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Contact us
                       </span>
                     </FadeLink>
                   </li>
                   {/* <li>
                     <FadeLink to="">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         FAQ
                       </span>
                     </FadeLink>
                   </li> */}
                   {/* <li>
                     <FadeLink to="">
-                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">
+                      <span className="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#ED3237]">
                         Testimonials
                       </span>
                     </FadeLink>
@@ -188,7 +195,7 @@ function footer() {
                   <a href="https://www.instagram.com/finchglow/">
                     <FaInstagram
                       size={20}
-                      className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
+                      className=" text-[#8294A6] hover:text-[#ED3237] transition-all duration-300 ease-in-out"
                     />
                   </a>
                 </li>
@@ -196,7 +203,7 @@ function footer() {
                   <a href="https://x.com/finchglow?mx=2">
                     <FaTwitter
                       size={20}
-                      className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
+                      className=" text-[#8294A6] hover:text-[#ED3237] transition-all duration-300 ease-in-out"
                     />
                   </a>
                 </li>
@@ -204,7 +211,7 @@ function footer() {
                   <a href="https://www.facebook.com/finchglowtravelsng">
                     <FaFacebook
                       size={20}
-                      className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
+                      className=" text-[#8294A6] hover:text-[#ED3237] transition-all duration-300 ease-in-out"
                     />
                   </a>
                 </li>
@@ -212,7 +219,7 @@ function footer() {
                   <a href="https://www.facebook.com/finchglowtravelsng">
                     <FaLinkedin
                       size={20}
-                      className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
+                      className=" text-[#8294A6] hover:text-[#ED3237] transition-all duration-300 ease-in-out"
                     />
                   </a>
                 </li>
@@ -220,7 +227,7 @@ function footer() {
                   <a href="https://www.youtube.com/@finchglow_travels">
                     <FaYoutube
                       size={20}
-                      className=" text-[#8294A6] hover:text-[#166534] transition-all duration-300 ease-in-out"
+                      className=" text-[#8294A6] hover:text-[#ED3237] transition-all duration-300 ease-in-out"
                     />
                   </a>
                 </li>

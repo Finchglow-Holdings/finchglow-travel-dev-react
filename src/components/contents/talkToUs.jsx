@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import FadeLink from "./fadeLink";
+import FadeLink from "./FadeLink";
 import Button from "./Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,6 +23,12 @@ function TalkToUs(props) {
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
+
+   const handleClick = () => {
+     window.open("https://partnerplus.finchglowtravels.com/",
+       "_blank");
+   };
+
 
   return (
     <section
@@ -62,7 +68,7 @@ function TalkToUs(props) {
               <FadeLink to="/contact-us?scrollTo=getinTouchSection">
                 <Button
                   size="cdn"
-                  className={` ${isAffiliatePage ? "!hidden" : ""}`}
+                  className={` ${isAffiliatePage | ispartnerPage ? "!hidden" : ""}`}
                 >
                   {props.buttz}
                 </Button>
@@ -72,6 +78,14 @@ function TalkToUs(props) {
                 size="cdn"
                 onClick={openOverlay}
                 className={` ${isAffiliatePage ? "block" : "!hidden"}`}
+              >
+                {props.buttz}
+              </Button>
+
+              <Button
+                size="cdn"
+                onClick={handleClick}
+                className={` ${ispartnerPage ? "block" : "!hidden"}`}
               >
                 {props.buttz}
               </Button>

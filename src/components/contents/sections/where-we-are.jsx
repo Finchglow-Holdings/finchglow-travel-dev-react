@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import ImageMap from "../image/Vector squre.webp";
 import ImageLayer from "../image/Layer_1.webp";
 import icon from "../image/icons/arrow-up-min.png";
-import FadeLink from '../fadeLink';
+import FadeLink from '../FadeLink';
 
 
 const SectionWhereWeAre = () => {
@@ -21,7 +21,7 @@ const SectionWhereWeAre = () => {
         <div className="relative flex flex-col lg:flex-row justify-between items-center w-full">
           <div className="relative flex flex-col justify-center items-start gap-[30px] w-full xl:w-[404px] h-auto text-left mb-[30px]">
             <div className="flex flex-col gap-[17px]">
-              <span data-aos="fade-up" className="txt2 text-[#3580F1]">
+              <span data-aos="fade-up" className="txt2 text-[#3580F1] capitalize">
                 Where we are
               </span>
               <h3 data-aos="fade-up" className="text-[#05284C] xl:w-[390px]">

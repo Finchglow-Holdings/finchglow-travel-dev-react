@@ -4,7 +4,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { SlArrowUp, SlArrowDown, SlArrowRight } from "react-icons/sl";
 import Button from "../contents/Button"; // Ensure this is the correct import statement
 import logo from "./logos/FT_logo_X5-01.png"; // Ensure this is the correct path
-import FadeLink from "../contents/fadeLink"; // Import the FadeLink component
+import FadeLink from "../contents/FadeLink"; // Import the FadeLink component
 import { useLocation } from "react-router-dom";
 
 const Nav = ({ openOverlay }) => {
@@ -209,11 +209,11 @@ const Nav = ({ openOverlay }) => {
                 </ul>
               </div>
             </li>
-            <li
+            {/* <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
             >
               <FadeLink to="/">Blog</FadeLink>
-            </li>
+            </li> */}
             <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] text-[#05284C] hover:border-b-[#81B0F7] ${activeLink === "contact-us" ? "border-b-[5px] border-b-[#81B0F7]" : ""}`}
             >
