@@ -2,7 +2,7 @@ import React from "react";
 import Image1 from "../image/blog/image1-min.jpeg";
 import Image2 from "../image/blog/image2-min.jpeg";
 import Icon from "../image/blog/icon/Icon wrap-min.png";
-import FadeLink from "../fadeLink";
+import FadeLink from "../FadeLink";
 import Button from "../Button";
 
 const LatestBlogSection = () => {

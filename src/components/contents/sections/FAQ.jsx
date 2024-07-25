@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoAddCircleOutline, IoRemoveCircleOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
-import FadeLink from "../fadeLink";
+import FadeLink from "../FadeLink";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import image from "../image/serious-young-african-american-female-warm-wrap-working-through-finances-night.png";

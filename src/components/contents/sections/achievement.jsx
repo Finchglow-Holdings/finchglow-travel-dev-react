@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import FadeLink from "../fadeLink";
+import FadeLink from "../FadeLink";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/_count.css";

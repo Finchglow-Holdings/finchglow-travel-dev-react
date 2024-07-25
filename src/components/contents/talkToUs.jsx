@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import FadeLink from "./fadeLink";
+import FadeLink from "./FadeLink";
 import Button from "./Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
