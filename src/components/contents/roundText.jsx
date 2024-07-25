@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FadeLink from "./FadeLink";
+import FadeLink from "./fadeLink";
 
 function RoundText(props) {
   const location = useLocation();

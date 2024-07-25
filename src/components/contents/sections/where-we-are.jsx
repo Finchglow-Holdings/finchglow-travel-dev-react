@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import ImageMap from "../image/Vector squre.webp";
 import ImageLayer from "../image/Layer_1.webp";
 import icon from "../image/icons/arrow-up-min.png";
-import FadeLink from "../FadeLink";
+import FadeLink from "../fadeLink";
 
 const SectionWhereWeAre = () => {
   useEffect(() => {

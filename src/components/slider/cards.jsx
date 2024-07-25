@@ -16,7 +16,7 @@ import "./swiper/cards.css";
 import "./swiper/pagination.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FadeLink from "../contents/FadeLink";
+import FadeLink from "../contents/fadeLink";
 
 const Slideshow = () => {
   const swiper = useSwiper();
