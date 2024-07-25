@@ -16,7 +16,7 @@ import "./swiper/cards.css";
 import "./swiper/pagination.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FadeLink from "../contents/FadeLink";
+import FadeLink from "../contents/fadeLink";
 
 const Slideshow = () => {
   const swiper = useSwiper();
@@ -86,7 +86,10 @@ const Slideshow = () => {
               </div>
             </div>
             <div className="card-content">
-              <span className="name">Corporate Travel <br />Management</span>
+              <span className="name">
+                Corporate Travel <br />
+                Management
+              </span>
               <p className="discription !font-medium">
                 Why choose between quality and cost? Our seamless business
                 travel solutions offer both, with seamless arrangements, flight
@@ -111,7 +114,10 @@ const Slideshow = () => {
               </div>
             </div>
             <div className="card-content">
-              <span className="name">Customised Travel <br />Packages</span>
+              <span className="name">
+                Customised Travel <br />
+                Packages
+              </span>
               <p className="discription !font-medium">
                 Let our travel experts handle the planning, crafting
                 personalised itineraries for leisure and business, ensuring

@@ -4,7 +4,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { SlArrowUp, SlArrowDown, SlArrowRight } from "react-icons/sl";
 import Button from "../contents/Button"; // Ensure this is the correct import statement
 import logo from "./logos/FT_logo_X5-01.png"; // Ensure this is the correct path
-import FadeLink from "../contents/FadeLink"; // Import the FadeLink component
+import FadeLink from "../contents/fadeLink"; // Import the FadeLink component
 import { useLocation } from "react-router-dom";
 
 const Nav = ({ openOverlay }) => {
