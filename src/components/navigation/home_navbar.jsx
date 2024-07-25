@@ -5,7 +5,7 @@ import { SlArrowUp, SlArrowDown, SlArrowRight } from "react-icons/sl";
 import Button from "../contents/Button";
 import logo from "./logos/finchglow-logo.png";
 import logo2 from "./logos/FT_logo_X5-01.png";
-import FadeLink from "../contents/FadeLink"; // Import the FadeLink component
+import FadeLink from "../contents/fadeLink"; // Import the FadeLink component
 
 const Navbar = ({ openOverlay }) => {
   const [toggle, setToggle] = useState(false);

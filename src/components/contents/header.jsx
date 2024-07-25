@@ -25,7 +25,7 @@ function header() {
         <div className="content">
           <div className="text-container flex flex-col text-left w-full mb-[30px]">
             <h1
-              className=" font-metropolis uppercase text-[#E6EAED] text-[20px] leading-[30px] sm:text-[39px] sm:leading-[48px] md:text-[55px] md:leading-[60px]"
+              className=" font-metropolis uppercase text-[#E6EAED] text-[21px] leading-[30px] sm:text-[39px] sm:leading-[48px] md:text-[55px] md:leading-[60px]"
               style={{ textAlign: "left", fontWeight: "900" }}
             >
               Turning <br />

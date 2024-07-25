@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import FadeLink from "./contents/FadeLink";
+import FadeLink from "./contents/fadeLink";
 import Title from "./contents/title";
 import contents from "./props/contents";
 import Nav from "./navigation/nav";

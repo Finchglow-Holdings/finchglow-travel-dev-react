@@ -1,35 +1,29 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination,  A11y } from 'swiper/modules';
-import { useSwiper } from 'swiper/react';
+import React from "react";
+import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper/modules";
+import { useSwiper } from "swiper/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Image1 from "../contents/image/postImage 1.webp";
 import Image2 from "../contents/image/postImage 2.webp";
 import Image3 from "../contents/image/postImage 3.webp";
-import Icon from "./blog-img/arrow-up.png"
-import FadeLink from '../contents/FadeLink';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import './swiper/blog.css'
-import './swiper/pagination.css';
-import './swiper/navigation.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-
-
-
+import Icon from "./blog-img/arrow-up.png";
+import FadeLink from "../contents/fadeLink";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./swiper/blog.css";
+import "./swiper/pagination.css";
+import "./swiper/navigation.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BlogSlide = () => {
-
   const swiper = useSwiper();
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
-
 
   return (
     <div className=" blog-container w-full flex flex-col items-start overflow-hidden lg:overflow-visible">
@@ -270,7 +264,3 @@ const BlogSlide = () => {
 };
 
 export default BlogSlide;
-
-
-
-

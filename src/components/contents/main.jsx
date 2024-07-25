@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 import TestimonialSlider from "../testimonial/testimonial";
 import background from "./image/blue-background.webp";
 import Button from "./Button";
-import FadeLink from "./FadeLink";
+import FadeLink from "./fadeLink";
 import SectionPartner from "./sections/partner";
 
 function createRoundText(content) {

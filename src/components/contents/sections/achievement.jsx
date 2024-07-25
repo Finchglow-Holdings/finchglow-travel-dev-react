@@ -1,25 +1,30 @@
-import React, { useEffect } from 'react';
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
-import FadeLink from '../FadeLink';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import '../styles/_count.css';
+import React, { useEffect } from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import FadeLink from "../fadeLink";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../styles/_count.css";
 import background from "../image/blue-background.webp";
-import icon1 from '../image/icons/dollor-min.png';
-import icon2 from '../image/icons/airoplane-min.png';
-import icon3 from '../image/icons/inbox-min.png';
-import icon4 from '../image/icons/customer-min.png';
+import icon1 from "../image/icons/dollor-min.png";
+import icon2 from "../image/icons/airoplane-min.png";
+import icon3 from "../image/icons/inbox-min.png";
+import icon4 from "../image/icons/customer-min.png";
 import icon from "../image/icons/arrow-up-min.png";
 
-
-
-
 const AchievementsSection = () => {
-  const { ref: nairaRef, inView: nairaInView } = useInView({ triggerOnce: true });
-  const { ref: tripsRef, inView: tripsInView } = useInView({ triggerOnce: true });
-  const { ref: consultantsRef, inView: consultantsInView } = useInView({ triggerOnce: true });
-  const { ref: clientsRef, inView: clientsInView } = useInView({ triggerOnce: true });
+  const { ref: nairaRef, inView: nairaInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: tripsRef, inView: tripsInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: consultantsRef, inView: consultantsInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: clientsRef, inView: clientsInView } = useInView({
+    triggerOnce: true,
+  });
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
