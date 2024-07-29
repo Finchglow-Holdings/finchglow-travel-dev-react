@@ -76,7 +76,7 @@ const Nav = ({ openOverlay }) => {
                 </span>
               </span>
 
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block z-[9999]">
                 <ul className="flex flex-col ">
                   <Link
                     className="flex w-full "
@@ -126,7 +126,7 @@ const Nav = ({ openOverlay }) => {
                 </span>
               </span>
 
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block z-[9999]">
                 <ul className="flex flex-col ">
                   <Link
                     className="flex w-full"
@@ -294,7 +294,7 @@ const Nav = ({ openOverlay }) => {
                 </span>
 
                 <div
-                  className={`dropdown cursor-pointer  w-full font-normal  ${
+                  className={`dropdown cursor-pointer z-[9999] w-full font-normal  ${
                     isDropdownOpen[0] ? "block" : "hidden"
                   }`}
                 >
@@ -355,7 +355,7 @@ const Nav = ({ openOverlay }) => {
                 </span>
 
                 <div
-                  className={`dropdown cursor-pointer w-full font-normal ${
+                  className={`dropdown cursor-pointer z-[9999] w-full font-normal ${
                     isDropdownOpen[1] ? "block" : "hidden"
                   }`}
                 >

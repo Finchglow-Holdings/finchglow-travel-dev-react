@@ -86,7 +86,7 @@ const Navbar = ({ openOverlay }) => {
                   />
                 </span>
               </span>
-              <div className="dropdown cursor-pointer z-[30] absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block z-[9999]">
                 <ul className="flex flex-col  ">
                   <Link to="/about-finchglow-travels" className="flex w-full">
                     <li className="flex justify-start items-start text-left w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
@@ -120,7 +120,7 @@ const Navbar = ({ openOverlay }) => {
                   />
                 </span>
               </span>
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block z-[9999]">
                 <ul className="flex flex-col ">
                   <Link to="/affiliate-programme" className="flex w-full">
                     <li className="flex justify-start items-start w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7]">
@@ -337,11 +337,11 @@ const Navbar = ({ openOverlay }) => {
                   </span>
                 </span>
                 <div
-                  className={`dropdown cursor-pointer  w-full font-normal ${
+                  className={`dropdown cursor-pointer  w-full font-normal z-[9999] ${
                     isDropdownOpen[1] ? "block" : "hidden"
                   }`}
                 >
-                  <ul className="flex flex-col">
+                  <ul className="flex flex-col ">
                     <Link className="flex w-full" to="/affiliate-programme">
                       <li className="flex justify-start items-start w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] group text-change">
                         <span
