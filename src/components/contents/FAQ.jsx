@@ -220,7 +220,7 @@ function Faq() {
                 </div>
               </div>
               {toggles[4] && (
-                <div className="block transition-all duration-300 ease-linear">
+                <div className="flex flex-col justify-center items-start transition-all duration-300 ease-linear">
                   <p className="text-[14px] leading-[24px] text-[#667085]">
                     Yes, we have strategic partnerships with several airlines
                     across different regions. See our growing list of airline

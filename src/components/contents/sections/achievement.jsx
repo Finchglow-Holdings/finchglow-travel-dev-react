@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/_count.css";
 import background from "../image/blue-background.webp";
-import icon1 from "../image/icons/dollor-min.png";
+import icon1 from "../image/icons/hand.png";
 import icon2 from "../image/icons/airoplane-min.png";
 import icon3 from "../image/icons/inbox-min.png";
 import icon4 from "../image/icons/customer-min.png";

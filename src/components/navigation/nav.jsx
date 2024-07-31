@@ -76,7 +76,7 @@ const Nav = ({ openOverlay }) => {
                 </span>
               </span>
 
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block z-[9999]">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px] shadow bg-[#EEF8FF] hidden group-hover:block z-[9999]">
                 <ul className="flex flex-col ">
                   <Link
                     className="flex w-full "
