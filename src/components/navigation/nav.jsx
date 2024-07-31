@@ -88,7 +88,7 @@ const Nav = ({ openOverlay }) => {
                     }
                   >
                     <li
-                      className={`flex justify-start items-start w-full py-[7px] px-[10px] border-soild border-b-[1px] dark:hover:bg-[#E6EFFD] hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "about-finchglow-travels" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-start items-start w-full py-[7px] px-[10px] border-soild  dark:hover:bg-[#E6EFFD] hover:border-l-[3px] hover:border-l-[#81B0F7]  text-change ${activeLink === "about-finchglow-travels" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                     >
                       <span className="text-[#05284C]">Who we are</span>
                     </li>
@@ -98,7 +98,8 @@ const Nav = ({ openOverlay }) => {
                     onClick={() => setActiveLink("finchglow-travels-story")}
                   >
                     <li
-                      className={`flex justify-start items-start w-full py-[7px] px-[10px] border-soild border-b-[1px] dark:hover:bg-[#E6EFFD] hover:border-l-[3px] hover:border-l-[#81B0F7] border-b-[#000] text-change ${activeLink === "finchglow-travels-story" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                      className={`flex justify-start items-start w-full py-[7px] px-[10px] border-soild  dark:hover:bg-[#E6EFFD] hover:border-l-[3px] hover:border-l-[#81B0F7] 
+                         text-change ${activeLink === "finchglow-travels-story" ? "border-soild border-l-[3px] border-l-[#81B0F7]" : ""}`}
                     >
                       <span className="text-[#05284C]">Our story</span>
                     </li>
@@ -191,7 +192,7 @@ const Nav = ({ openOverlay }) => {
                       </span>
                     </li>
                   </Link>
-                  <Link
+                  {/* <Link
                     className="flex w-full"
                     to="/partnerplus-connect"
                     onClick={() => setActiveLink("partnerplus-connect")}
@@ -203,7 +204,7 @@ const Nav = ({ openOverlay }) => {
                         PartnerPlus Connect
                       </span>
                     </li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
             </li>
@@ -221,21 +222,21 @@ const Nav = ({ openOverlay }) => {
                 <span className="text-[#05284C]">Contact us</span>
               </li>
             </Link>
-            <li className="py-[10px] w-[230px] pl-[18px]">
+            <li className="py-[10px] w-[330px] pl-[18px]">
               <span className="flex  space-x-3">
                 <Button
                   size="medium"
                   onClick={handleButtonClick}
-                  className="border-[1px] border-solid border-[#F48487] text-[#05284C]"
+                  className="border-[1px] border-solid capitalize border-[#F48487] text-[#05284C]"
                 >
                   Log in
                 </Button>
                 <Button
                   size="medium"
                   onClick={openOverlay}
-                  className="border-[1px] border-solid bg-[#05284C] border-[#0260EE] text-white "
+                  className="border-[1px] capitalize border-solid bg-[#05284C] border-[#0260EE] text-white "
                 >
-                  Sign up
+                  Partner Signup
                 </Button>
               </span>
             </li>
@@ -453,7 +454,7 @@ const Nav = ({ openOverlay }) => {
                         </span>
                       </li>
                     </Link>
-                    <Link
+                    {/* <Link
                       className="flex w-full"
                       to="/partnerplus-connect"
                       onClick={() => setActiveLink("partnerplus-connect")}
@@ -469,7 +470,7 @@ const Nav = ({ openOverlay }) => {
                           PartnerPlus Connect
                         </span>
                       </li>
-                    </Link>
+                    </Link> */}
                   </ul>
                 </div>
               </li>
@@ -496,16 +497,16 @@ const Nav = ({ openOverlay }) => {
                   <Button
                     size="medium"
                     onClick={handleButtonClick}
-                    className="border-[1px] border-solid border-[#F48487] text-[#05284C]"
+                    className="border-[1px] border-solid capitalize border-[#F48487] text-[#05284C]"
                   >
                     Log in
                   </Button>
                   <Button
                     size="medium"
                     onClick={openOverlay}
-                    className="border-[1px] border-solid bg-[#05284C] border-[#0260EE] text-white "
+                    className="border-[1px] border-solid capitalize bg-[#05284C] border-[#0260EE] text-white "
                   >
-                    Sign up
+                    Partner Signup
                   </Button>
                 </span>
               </li>

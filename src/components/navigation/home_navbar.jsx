@@ -167,13 +167,13 @@ const Navbar = ({ openOverlay }) => {
                     </li>
                   </Link>
 
-                  <Link to="/partnerplus-connect" className="flex w-full ">
+                  {/* <Link to="/partnerplus-connect" className="flex w-full ">
                     <li className="flex justify-start items-start w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
                       <span className="text-[#05284C]">
                         PartnerPlus Connect
                       </span>
                     </li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
             </li>
@@ -190,21 +190,21 @@ const Navbar = ({ openOverlay }) => {
               <Link to="/contact-us">Contact us</Link>
             </li>
 
-            <li className="py-[10px] w-[230px] pl-[18px]">
+            <li className="py-[10px] w-[330px] pl-[18px]">
               <span className="flex  space-x-3">
                 <Button
                   size="medium"
                   onClick={handleButtonClick}
-                  className={`border-[1px] border-solid border-[#F48487]  ${scrolled ? "text-[#05284C] " : "text-white "} `}
+                  className={`border-[1px] border-solid capitalize border-[#F48487]  ${scrolled ? "text-[#05284C] " : "text-white "} `}
                 >
                   Log in
                 </Button>
                 <Button
                   size="medium"
                   onClick={openOverlay}
-                  className={`border-[1px] border-solid bg-[#05284C] border-[#0260EE] text-white  ${scrolled ? "" : " "} `}
+                  className={`border-[1px] border-solid capitalize bg-[#05284C] border-[#0260EE] text-white  ${scrolled ? "" : " "} `}
                 >
-                  Sign up
+                  Partner Signup
                 </Button>
               </span>
             </li>
@@ -406,7 +406,7 @@ const Navbar = ({ openOverlay }) => {
                         </span>
                       </li>
                     </Link>
-                    <Link className="flex w-full" to="/partnerplus-connect">
+                    {/* <Link className="flex w-full" to="/partnerplus-connect">
                       <li className="flex justify-start items-start w-full py-[7px] px-[10px] border-soild hover:border-l-[3px] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] group text-change">
                         <span
                           className={`group-hover:text-[#05284C] ${
@@ -416,7 +416,7 @@ const Navbar = ({ openOverlay }) => {
                           PartnerPlus Connect
                         </span>
                       </li>
-                    </Link>
+                    </Link> */}
                   </ul>
                 </div>
               </li>
@@ -439,16 +439,16 @@ const Navbar = ({ openOverlay }) => {
                   <Button
                     size="medium"
                     onClick={handleButtonClick}
-                    className={`border-[1px] border-solid border-[#F48487]  ${scrolled ? "text-[#05284C] " : "text-white "} `}
+                    className={`border-[1px] border-solid border-[#F48487] capitalize  ${scrolled ? "text-[#05284C] " : "text-white "} `}
                   >
                     Log in
                   </Button>
                   <Button
                     size="medium"
                     onClick={openOverlay}
-                    className={`border-[1px] border-solid bg-[#05284C] border-[#0260EE] text-white  ${scrolled ? "" : " "} `}
+                    className={`border-[1px] border-solid bg-[#05284C] capitalize border-[#0260EE] text-white  ${scrolled ? "" : " "} `}
                   >
-                    Sign up
+                    Partner Signup
                   </Button>
                 </span>
               </li>
