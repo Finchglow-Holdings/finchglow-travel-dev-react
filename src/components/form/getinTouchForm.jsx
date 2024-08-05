@@ -44,7 +44,7 @@ const GetinTouchForm = () => {
           <input type="hidden" name="zc_gad" value="" />
 
           <h2></h2>
-          <div className="flex flex-col at500:flex-row justify-center items-center space-x-[28.44px] w-full">
+          <div className="flex flex-col at500:flex-row justify-center items-center at500:space-x-[28.44px] w-full">
             <div className="w-full">
               <label>First name</label>
               <input
