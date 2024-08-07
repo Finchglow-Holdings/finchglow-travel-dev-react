@@ -33,9 +33,9 @@ const NewsLetter = () => {
   }
 
   return (
-    <div className="popup">
-      <div className="popup-content flex flex-col justify-center items-center p-[20px] shadow-lg shadow-[#000] sm:p-[30px] md:p-[56.89px]">
-        <div className="close-icon w-full">
+    <div className="popup flex flex-col items-center justify-end sm:items-start ">
+      <div className="popup-content flex flex-col justify-center items-center p-[20px] shadow-lg shadow-[#000] sm:w-[418px] sm:p-[30px] md:p-[56.89px]">
+        <div className="close-icon flex justify-center sm:justify-end w-full">
           <AiOutlineClose
             onClick={closeOverlay}
             size={24}
@@ -44,10 +44,10 @@ const NewsLetter = () => {
         </div>
         <div className="flex flex-col gap-[30px] justify-center items-center px-[32px]">
           <div className="flex flex-col gap-[10px] justify-center items-center md:w-[340.22px]">
-            <h2 className="text-[30px] leading-[38px] text-center text-[#05284C]">
+            <h2 className=" text-[18px] at500:text-[30px] leading-[20px] at500:leading-[38px] text-center text-[#05284C]">
               Sign up for our newsletter
             </h2>
-            <p className="text-[18px] leading-[28px] text-center text-[#506982]">
+            <p className="text-[13px] at500:text-[18px] leading-[15px] at500:leading-[28px] text-center text-[#506982]">
               Be the first to know about the best deals, materials to aid
               business growth, travel industry news
             </p>
