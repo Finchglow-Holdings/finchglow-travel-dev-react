@@ -27,7 +27,7 @@ const contents = [
   {
     id: 2,
     title: "About us",
-    subTitle: "We are Nigeria’s Premier Indigenous Travel Consolidator",
+    subTitle: "We are Nigeria's leading travel consolidator",
     // subTitle2: null,
     riteContent: "Established in 2006 as a travel agency, Finchglow Travels is now Nigeria’s foremost travel consolidator.",
     imgURL: image2,
@@ -77,7 +77,7 @@ const contents = [
     title: "Affiliate Programs",
     subTitle: "Empower Your Growth with Our Trade PartnerPlus Program",
     // subTitle2: null,
-    riteContent: "As Nigeria's foremost travel consolidator, Finchglow Travels is committed to providing innovative and cost-effective solutions for travel agencies.",
+    riteContent: "As Nigeria's leading travel consolidator, Finchglow Travels is committed to providing innovative and cost-effective solutions for travel agencies.",
     imgURL: image8,
   },
     {
@@ -98,10 +98,10 @@ const contents = [
   },
     {
     id: 11,
-    title: "Partnerplus Connect",
-    subTitle: "Connect With Us Through Our Partnerplus Connect Webinar",
+    title: "PartnerPlus Connect",
+    subTitle: "Connect With Us Through Our PartnerPlus Connect Webinar",
     // subTitle2: null,
-    riteContent: "Partnerplus Connect is more than just an industry-focused monthly webinar — it's a catalyst for growth and innovation in Nigeria's travel industry. Led by Finchglow Travels' top executives, PartnerPlus Connect provides a unique opportunity for agents to learn from industry leaders and peers alike.",
+    riteContent: "PartnerPlus Connect is more than just an industry-focused monthly webinar — it's a catalyst for growth and innovation in Nigeria's travel industry. Led by Finchglow Travels' top executives, PartnerPlus Connect provides a unique opportunity for agents to learn from industry leaders and peers alike.",
     imgURL: image11,
   },
      {

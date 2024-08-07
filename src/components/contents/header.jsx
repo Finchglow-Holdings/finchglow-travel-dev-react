@@ -5,15 +5,16 @@ import image from "../contents/image/background-img.webp";
 import "./styles/cas.css";
 import { GoArrowDown } from "react-icons/go";
 import NewsLetter from "../form/newsletter";
-
+import LazyBlurHashImage from "../lazy/loadBlurHash";
 
 function header() {
   const [isOpen, setIsOpen] = useState(false);
   const openOverlay = () => setIsOpen(true);
   const closeOverlay = () => setIsOpen(false);
 
-
   return (
+    
+
     <div
       className="relative flex flex-col justify-center items-center bg-gray-600 bg-blend-multiply bg-no-repeat bg-cover bg-center h-[50vh] sm:h-screen py-[70px] w-full overflow-hidden"
       style={{ backgroundImage: `url(${image})` }}
@@ -21,7 +22,7 @@ function header() {
       <Navbar openOverlay={openOverlay} />
       <OverlayForm isOpen={isOpen} closeOverlay={closeOverlay} />
       <NewsLetter />
-      <div className=" absolute bottom-[-116px] sm:bottom-[-154px]  flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto h-full">
+      <div className=" absolute bottom-[-116px] sm:bottom-[-154px]  flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] z-[30] my-0 mx-auto h-full">
         <div className="content">
           <div className="text-container flex flex-col text-left w-full mb-[30px]">
             <h1

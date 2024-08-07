@@ -160,13 +160,13 @@ function AffiliatePrograms() {
           {cards.filter((cards) => cards.id === 3).map(createWhyChooseUs)}
         </section>
 
-        <section className="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
+        {/* <section className="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
           <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
             {experience
               .filter((experience) => experience.id === 3)
               .map(createeExperience)}
           </div>
-        </section>
+        </section> */}
 
         {/* We do this by hosting */}
         <section

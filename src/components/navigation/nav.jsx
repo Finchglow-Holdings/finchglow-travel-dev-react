@@ -76,8 +76,8 @@ const Nav = ({ openOverlay }) => {
                 </span>
               </span>
 
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px] shadow bg-[#EEF8FF] hidden group-hover:block z-[9999]">
-                <ul className="flex flex-col ">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px]  bg-[#EEF8FF] hidden group-hover:block z-[9999]">
+                <ul className="flex flex-col z-[9999]">
                   <Link
                     className="flex w-full "
                     to="/about-finchglow-travels"
@@ -127,8 +127,8 @@ const Nav = ({ openOverlay }) => {
                 </span>
               </span>
 
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal divide-gray-100 rounded-[2px] shadow dark:bg-[#EEF8FF] hidden group-hover:block z-[9999]">
-                <ul className="flex flex-col ">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px] bg-[#EEF8FF] hidden group-hover:block z-[9999]">
+                <ul className="flex flex-col z-[9999]">
                   <Link
                     className="flex w-full"
                     to="/affiliate-programme"
@@ -299,7 +299,7 @@ const Nav = ({ openOverlay }) => {
                     isDropdownOpen[0] ? "block" : "hidden"
                   }`}
                 >
-                  <ul className="flex flex-col ">
+                  <ul className="flex flex-col z-[9999]">
                     <Link
                       className="flex w-full"
                       to="/about-finchglow-travels"
@@ -360,7 +360,7 @@ const Nav = ({ openOverlay }) => {
                     isDropdownOpen[1] ? "block" : "hidden"
                   }`}
                 >
-                  <ul className="flex flex-col">
+                  <ul className="flex flex-col z-[9999]">
                     <Link
                       className="flex w-full"
                       to="/affiliate-programme"

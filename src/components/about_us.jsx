@@ -95,7 +95,7 @@ function About() {
                 <div className="relative flex flex-col justify-center items-start gap-[20px] w-full h-auto text-left">
                   <span
                     data-aos="fade-up"
-                    className="txt2 text-[#B3CFFA] xl:w-[739px]"
+                    className=" txt3 !text-[20px] text-[#B3CFFA] xl:w-[739px]"
                   >
                     Finchglow Travels was founded on the principle of excellent
                     service, a determination to simplify travel complexities,
@@ -106,7 +106,7 @@ function About() {
                   </span>
                   <span
                     data-aos="fade-up"
-                    className="txt3 !text-[#FFFFFF] xl:w-[739px]"
+                    className="txt2 !text-[#FFFFFF] xl:w-[739px]"
                   >
                     This commitment to continuous improvement ensures our
                     customers (whether travel agents or CorPorate, independent,

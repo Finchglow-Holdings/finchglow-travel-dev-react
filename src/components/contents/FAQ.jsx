@@ -40,10 +40,12 @@ function Faq() {
                 className="txt4 leading-[20px] text-[#667085]"
               >
                 Everything you need to know about our services. Can’t find the
-                answer you’re looking for? Please{" "}
-                <strong className="txt4 text-[#0260EE] hover:text-[#101828]">
-                  <a href="#">chat with our team.</a>
-                </strong>
+                answer you’re looking for? Please
+                <Link to="/contact-us">
+                  <strong className="txt4 text-[#0260EE] hover:text-[#101828]">
+                    chat with our team.
+                  </strong>
+                </Link>
               </span>
             </div>
             <div className="w-full h-auto md:w-[443.22px] overflow-hidden">
@@ -51,7 +53,7 @@ function Faq() {
               <LoadBlurHashImage
                 src={image}
                 blurHash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" // Replace with actual blurhash
-                className="w-full h-auto md:h-[448.56px] md:w-[398.22px] object-cover"
+                className="w-full h-auto md:h-[448.56px] md:w-[443.22px] object-cover"
                 alt="image"
               />
             </div>

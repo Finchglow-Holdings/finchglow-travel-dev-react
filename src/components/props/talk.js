@@ -62,7 +62,7 @@ const talk = [
     title:
       "Don't Just Peek, Dive Deep, and Get in on the Secret Sauce! Join over 4,000 other trade partners and maximise your profit.",
     // details: null,
-    buttz: "Get started",
+    buttz: "Sign Up",
     pageLink: "/contact-us",
   
   },

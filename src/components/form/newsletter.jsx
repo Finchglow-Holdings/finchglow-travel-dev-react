@@ -34,7 +34,7 @@ const NewsLetter = () => {
 
   return (
     <div className="popup">
-      <div className="popup-content flex flex-col justify-center items-center p-[20px] sm:p-[30px] md:p-[56.89px]">
+      <div className="popup-content flex flex-col justify-center items-center p-[20px] shadow-lg shadow-[#000] sm:p-[30px] md:p-[56.89px]">
         <div className="close-icon w-full">
           <AiOutlineClose
             onClick={closeOverlay}

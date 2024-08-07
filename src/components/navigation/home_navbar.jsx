@@ -86,8 +86,8 @@ const Navbar = ({ openOverlay }) => {
                   />
                 </span>
               </span>
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px] shadow bg-[#EEF8FF] hidden group-hover:block z-[9999]">
-                <ul className="flex flex-col  ">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px] bg-[#EEF8FF] hidden group-hover:block z-[9999]">
+                <ul className="flex flex-col  z-[9999]">
                   <Link to="/about-finchglow-travels" className="flex w-full">
                     <li className="flex justify-start items-start text-left w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7] ">
                       <span className="text-[#05284C] ">Who we are </span>
@@ -120,8 +120,8 @@ const Navbar = ({ openOverlay }) => {
                   />
                 </span>
               </span>
-              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px] shadow bg-[#EEF8FF] hidden group-hover:block z-[9999]">
-                <ul className="flex flex-col ">
+              <div className="dropdown cursor-pointer absolute top-[38px] w-[230px] font-normal rounded-[2px]  bg-[#EEF8FF] hidden group-hover:block z-[9999]">
+                <ul className="flex flex-col z-[9999]">
                   <Link to="/affiliate-programme" className="flex w-full">
                     <li className="flex justify-start items-start w-full py-[7px] px-[10px] dark:hover:bg-[#CCDFFC] hover:border-l-[3px] hover:border-l-[#81B0F7]">
                       <span className="text-[#05284C]">Affiliate Programs</span>
