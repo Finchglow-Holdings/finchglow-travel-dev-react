@@ -124,7 +124,7 @@ function OurStory() {
 
         <section className="relative flex flex-col justify-center items-center  bg-[#EEF8FF]  xl:h-[648px] w-full h-auto overflow-hidden">
           <div className="static w-[95%] flex flex-col justify-center items-start gap-[48px] 2xl:w-[1280px] px-[15px] py-[30px] at500:px-[40px] md:pl-[80px] md:pr-[40px] my-0 mx-auto">
-            <h3 className="text-[#05284C]">Company Snapshot</h3>
+            <h3 className="text-[#05284C]">Company snapshot</h3>
             <div className="flex flex-col xl:flex-row justify-start items-start w-full gap-[20px] xl:gap-[10px]">
               <div className="flex flex-col at500:flex-row justify-center items-start w-full gap-[20px] xl:gap-[10px]">
                 <div className="bg-[#D4E8F6] flex flex-col justify-start items-start text-left rounded-[20px] gap-[20px] at500:gap-[50px] h-auto md:h-[395px] w-full p-[30px]">

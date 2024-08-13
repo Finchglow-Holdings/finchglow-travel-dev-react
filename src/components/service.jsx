@@ -30,6 +30,8 @@ function createRoundText(content) {
       title={content.title}
       subTitle={content.subTitle}
       description1={content.description1}
+      description2={content.description2}
+      description3={content.description3}
       description4={content.description4}
       imgURL={content.imgURL}
     />
@@ -109,8 +111,8 @@ function Service() {
                       data-aos="fade-up"
                       className="txt2 text-[#667085] text-left w-full silver:w-[358px]"
                     >
-                      Unlock Your Revenue Potential: Join Our Affiliate Program,
-                      Trade PartnerPlus, Today!
+                      Unlock your revenue potential: Join our Affiliate Program,
+                      Trade PartnerPlus, today!
                     </span>
                   </div>
                   <span
@@ -119,7 +121,7 @@ function Service() {
                   >
                     Are you a travel agency looking to increase revenue and
                     offer your clients unbeatable deals? Look no further! Join
-                    our esteemed affiliate program, Trade Partner Plus, and say
+                    our esteemed affiliate program, Trade PartnerPlus, and say
                     hello to a tomorrow of limitless possibilities.
                   </span>
                   <Link to="/affiliate-programme">
@@ -168,7 +170,7 @@ function Service() {
                     data-aos-anchor-placement="top-bottom"
                     className="txt2 text-[#667085] text-left w-full silver:w-[318px]"
                   >
-                    Transform Your Corporate Travel Experience with Us!
+                    Transform your corporate travel experience with us!
                   </span>
                 </div>
                 <span
@@ -249,7 +251,7 @@ function Service() {
                       data-aos-anchor-placement="top-bottom"
                       className="txt2 text-[#667085] text-left w-full silver:w-[318px]"
                     >
-                      Fulfil Your Travel Dreams with our Premier Travel Services
+                      Fulfil your travel dreams with our premier travel services
                     </span>
                   </div>
                   <span
@@ -308,8 +310,8 @@ function Service() {
                     data-aos-anchor-placement="top-bottom"
                     className="txt2 text-[#667085] text-left w-full "
                   >
-                    Enrich Your Travels with Our Comprehensive Ancillary
-                    Services!
+                    Enrich your travels with our comprehensive ancillary
+                    services!
                   </span>
                 </div>
                 <span
@@ -378,7 +380,7 @@ function Service() {
                       data-aos="fade-up"
                       className="txt2 text-[#667085] text-left w-full silver:w-[358px]"
                     >
-                      Simplify your visa Experience with Finchglow Travels as
+                      Simplify your visa experience with Finchglow Travels as
                       your visa and immigration partner
                     </span>
                   </div>

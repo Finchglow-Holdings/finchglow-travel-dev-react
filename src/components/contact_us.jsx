@@ -31,6 +31,8 @@ function createLocation(location) {
       key={location.id}
       office={location.office}
       address={location.address}
+      call1={location.call1}
+      call2={location.call2}
       line1={location.line1}
       line2={location.line2}
       link={location.link}

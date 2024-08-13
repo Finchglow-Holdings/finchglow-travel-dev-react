@@ -3,7 +3,7 @@ import image from "../contents/image/icons/Check-red icon-min.png";
 const cards = [
   {
     id: 1,
-    title: "Why Choose Us?",
+    title: "Why choose us?",
     imgURL: image,
     subTitle1: "Tailored Solutions",
     details1:
@@ -24,7 +24,7 @@ const cards = [
 
   {
     id: 2,
-    title: "Why Choose Us?",
+    title: "Why choose us?",
     imgURL: image,
     subTitle1: "Tailored to Your Desires",
     details1:
@@ -36,7 +36,7 @@ const cards = [
     //third content
     subTitle3: "Seamless Business Ventures",
     details3:
-      "For CorPorate nomads, our business travel services promise effortless journeys. Navigate meetings, conferences, and opportunities with precision and grace, backed by our logistical mastery.",
+      "For Corporate nomads, our business travel services promise effortless journeys. Navigate meetings, conferences, and opportunities with precision and grace, backed by our logistical mastery.",
     // fort content
     subTitle4: "Stay Within Budget",
     details4:
@@ -45,7 +45,7 @@ const cards = [
 
   {
     id: 3,
-    title: "Why Partner With Us?",
+    title: "Why partner with us?",
     imgURL: image,
     subTitle1: "A dedicated trade platform",
     details1:
@@ -71,7 +71,7 @@ const cards = [
   //   Ancillary Services fisrt card container
   {
     id: 4,
-    title: "Why Choose Our Ancillary Services?",
+    title: "Why choose our Ancillary Services?",
     imgURL: image,
     subTitle1: "Tailored to You",
     details1:
@@ -88,7 +88,7 @@ const cards = [
   //   Ancill Services  card container
   {
     id: 5,
-    title: "Why Choose Our Visa and Immigration Services?",
+    title: "Why choose our Visa and Immigration Services?",
     imgURL: image,
     subTitle1: "Expert Guidance",
     details1:

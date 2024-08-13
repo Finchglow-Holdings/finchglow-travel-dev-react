@@ -34,7 +34,7 @@ const ticketing = [
   
   {
     id: 2,
-    title: "What Sets Us Apart",
+    title: "What sets us apart",
     imgURL: icon,
     subTitle1: "24/7 Support",
     details1: "We understand that the business doesn't adhere to a 9-to-5 schedule. Our round-the-clock support ensures you're always connected.",
@@ -49,7 +49,7 @@ const ticketing = [
 
     {
     id: 3,
-    title: "How Trade PartnerPlus Works",
+    title: "How Trade PartnerPlus works",
     imgURL: icon,
     subTitle1: "Sign Up",
     details1: "Joining is quick and easy. Just complete our simple registration process to start your journey to increased profits.",

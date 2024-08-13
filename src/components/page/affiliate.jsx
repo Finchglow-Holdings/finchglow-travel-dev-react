@@ -116,7 +116,7 @@ function AffiliatePrograms() {
         <section className="relative homeBg flex flex-col justify-center items-center w-full h-auto overflow-hidden z-[3] lg:overflow-visible">
           <div className="static w-full gap-[48px] flex flex-col justify-center items-start 2xl:w-[1280px] px-[15px] py-[90px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
             <h3 className="text-[#05284C] text-left silver:w-[652px]">
-              Join The Trade PartnerPlus Program, Become A Trade Partner
+              Join the Trade PartnerPlus Program, become a Trade Partner
             </h3>
             <div className="flex flex-col md:flex-row justify-between gap-[30px] items-start w-full">
               <span className="txt2 !leading-[26px] w-full silver:w-[250.5px] text-[#506982]">

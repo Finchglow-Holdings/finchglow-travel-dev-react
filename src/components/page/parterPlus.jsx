@@ -196,7 +196,7 @@ function PartnerPlusConnect() {
               <div className="relative flex justify-start items-start w-full h-auto text-left">
                 <div className="flex flex-col justify-center items-start gap-[17.78px] text-left lg:w-[392px]">
                   <h3 data-aos="fade-up" className="text-[#05284C]">
-                    Trade PartnerPlus Connect Program
+                    Trade PartnerPlus Program
                   </h3>
                   <p
                     data-aos="fade-up"

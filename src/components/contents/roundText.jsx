@@ -31,31 +31,31 @@ function RoundText(props) {
           </div>
 
           <div className="relative flex flex-col justify-center items-start w-full h-auto text-left mb-[30px]">
-            <div className="flex flex-col justify-center items-start w-full h-auto  gap-[20px] text-left ">
-              <span
+            <ul className="flex flex-col justify-center items-start w-full h-auto  gap-[20px] text-left ">
+              <li
                 data-aos="fade-up"
-                className={`txt3 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
+                className={`txt3  !text-[#697E94] ${isServicePage ? " list-disc !text-[20px] lg:w-[541px]" : "!text-[20px] xl:!w-[609px]"}`}
                 dangerouslySetInnerHTML={{ __html: props.description1 }}
-              ></span>
-              <span
+              ></li>
+              <li
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? "list-disc !text-[20px] lg:w-[541px]" : "xl:!w-[609px]"}`}
               >
                 {props.description2}
-              </span>
-              <span
+              </li>
+              <li
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? "list-disc !text-[20px] lg:w-[541px]" : "xl:!w-[609px]"}`}
               >
                 {props.description3}
-              </span>
-              <span
+              </li>
+              <li
                 data-aos="fade-up"
-                className={`txt2 !text-[#697E94] ${isServicePage ? "lg:w-[541px]" : "xl:!w-[609px]"}`}
+                className={`txt2 !text-[#697E94] ${isServicePage ? " lg:w-[541px]" : "xl:!w-[609px]"}`}
               >
                 {props.description4}
-              </span>
-            </div>
+              </li>
+            </ul>
             <Link to={props.LinkText}>
               <span
                 data-aos="fade-up"

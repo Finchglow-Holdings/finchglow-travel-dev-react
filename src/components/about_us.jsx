@@ -143,12 +143,12 @@ function About() {
                   data-aos="fade-up"
                   className="txt2 !font-semibold !text-[20px] !leading-[30px] text-[#697E94] xl:w-[543px]"
                 >
-                  As Nigeria’s foremost travel consolidator, Finchglow Travels
-                  has the scale to deliver maximum value and a team of seasoned
-                  professionals that possess an unparalleled understanding of
-                  the travel landscape. We offer unprecedented access to a vast
-                  network of suppliers and partners, ensuring you have options
-                  for the best rates and inventory available.
+                  At Finchglow Travels, our commitment to excellence sets us
+                  apart to ensure that we are your travel agent’s agent, and
+                  therefore the best answer to all your travel needs. When it
+                  comes to your travel goals, either as a business or
+                  individual, our cutting-edge technology solutions streamline
+                  every aspect of the process, taking out inefficiencies.
                 </span>
               </div>
 

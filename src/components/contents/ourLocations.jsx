@@ -50,18 +50,32 @@ function OurLocations(props) {
                 data-aos="fade-up"
                 className="flex justify-center items-start gap-[12px] text-left"
               >
-                <img src={iconCall} className="w-[28px] h-[28px]" alt="" />
-                {props.line1}
-                <span className="txt2 text-[#667085] text-left"></span>
+                <a
+                  href={props.call1}
+                  class="flex justify-center space-x-2 items-center text-left"
+                >
+                  <img src={iconCall} className="w-[28px] h-[28px]" alt="" />
+
+                  <span className="txt2 text-[#667085] text-left">
+                    {props.line1}
+                  </span>
+                </a>
               </div>
 
               <div
                 data-aos="fade-up"
                 className="flex justify-center items-start gap-[12px] text-left"
               >
-                <img src={iconCall} className="w-[28px] h-[28px]" alt="" />
-                {props.line2}
-                <span className="txt2 text-[#667085] text-left"></span>
+                <a
+                  href={props.call2}
+                  class="flex justify-center space-x-2 items-center text-left"
+                >
+                  <img src={iconCall} className="w-[28px] h-[28px]" alt="" />
+
+                  <span className="txt2 text-[#667085] text-left">
+                    {props.line2}
+                  </span>
+                </a>
               </div>
             </div>
             {/* phone number ends here*/}

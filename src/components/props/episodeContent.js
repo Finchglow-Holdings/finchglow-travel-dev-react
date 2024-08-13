@@ -15,7 +15,7 @@ import episodeImage7 from '../slideEpisode/image 7-min.jpg';
 const episodes = [
     {
         id: 1,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 1.0",
         topicLabel:"Topic:",
@@ -32,7 +32,7 @@ const episodes = [
     },
      {
         id: 2,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 2.0",
         topicLabel:"Topic:",
@@ -49,7 +49,7 @@ const episodes = [
     },
       {
         id: 3,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 3.0",
         topicLabel:"Topic:",
@@ -66,7 +66,7 @@ const episodes = [
     },
        {
         id: 4,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 4.0",
         topicLabel:"Topic:",
@@ -83,7 +83,7 @@ const episodes = [
     },
         {
         id: 5,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 5.0",
         topicLabel:"Topic:",
@@ -100,7 +100,7 @@ const episodes = [
     },
         {
         id: 6,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 5.0",
         topicLabel:"Topic:",
@@ -118,7 +118,7 @@ const episodes = [
  
         {
         id: 7,
-        mainTitle:"Previous Episodes",
+        mainTitle:"Previous episodes",
         mainSubtitle:"Check out previous topics of PartnerPlus Connect ahead of the next edition.",
         episodeTitle:"PartnerPlus Connect 7.0",
         topicLabel:"Topic:",

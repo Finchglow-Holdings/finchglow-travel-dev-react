@@ -29,7 +29,7 @@ const talk = [
   },
   {
     id: 4,
-    title: "Ready to revolutionise your Corporate travel experience?",
+    title: "Ready to revolutionise your corporate travel experience?",
     details:
       "Let's embark on this transformation where you’ll experience unparalleled service and efficiency.",
     buttz: "Request A Proposal",
@@ -62,7 +62,7 @@ const talk = [
     title:
       "Don't Just Peek, Dive Deep, and Get in on the Secret Sauce! Join over 4,000 other trade partners and maximise your profit.",
     // details: null,
-    buttz: "Sign Up",
+    buttz: "Sign up",
     pageLink: "/contact-us",
   
   },
