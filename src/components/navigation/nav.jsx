@@ -38,10 +38,7 @@ const Nav = ({ openOverlay }) => {
     setToggle(false);
   }
   const handleButtonClick = () => {
-    window.open(
-      "https://connectpro.finchglowtravels.com/Auth/Login ",
-      "_blank"
-    );
+    window.open("https://partnerpro.finchglowtravels.com", "_blank");
   };
 
   return (

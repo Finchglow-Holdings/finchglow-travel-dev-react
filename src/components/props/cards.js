@@ -88,7 +88,7 @@ const cards = [
   //   Ancill Services  card container
   {
     id: 5,
-    title: "Why choose our Visa and Immigration Services?",
+    title: "Explore our range of services",
     imgURL: image,
     subTitle1: "Expert Guidance",
     details1:

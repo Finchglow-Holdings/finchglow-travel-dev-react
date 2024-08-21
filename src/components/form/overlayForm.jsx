@@ -12,7 +12,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
           <div className="flex justify-between items-start w-full  ">
             <div className="flex flex-col ">
               <h2 className="text-[18px] text-[#101828] !font-medium">
-                Travels Trade Partner Registration
+                Trade Partner Registration
               </h2>
               <span className="text-[12px] text-[#101828] font-medium">
                 Please fill the form below
@@ -40,7 +40,7 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
               {/* To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field --> */}
               <input type="hidden" name="zc_gad" value="" />
               {/* If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM  */}
-              <h2 ></h2>
+              <h2></h2>
               <p></p>
               {/* Name and Last Name*/}
               <div className="flex flex-col at500:flex-row justify-center items-center at500:space-x-3 w-full">
@@ -186,7 +186,6 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                     phoneformat="1"
                     iscountrycodeenabled="false"
                     maxLength="20"
-                    
                     fieldtype="11"
                     id="international_PhoneNumber1_countrycode"
                     placeholder="+1 (555) 000-0000"
@@ -222,7 +221,6 @@ const OverlayForm = ({ isOpen, closeOverlay }) => {
                   type="text"
                   maxLength="2083"
                   name="Website"
-                  
                   placeholder=""
                 />
               </div>
