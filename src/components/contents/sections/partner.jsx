@@ -16,10 +16,13 @@ const SectionPartner = () => {
   return (
     <section className="relative regale-blue flex justify-center flex-col items-center w-full h-auto overflow-hidden">
       <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px]  at500:px-[64px]  md:px-[94px] my-0 mx-auto">
-        <div className="relative flex flex-col lg:flex-row justify-between items-center w-full">
+        <div className="relative flex flex-col lg:gap-[40px] lg:flex-row justify-between items-center w-full">
           <div className="relative flex flex-col justify-center items-start gap-[30px] w-full xl:w-[404px] h-auto text-left mb-[30px]">
             <div className="flex flex-col gap-[17px]">
-              <span data-aos="fade-up" className="flex !font-bold txt2 !text-[25px] text-[#3580F1]">
+              <span
+                data-aos="fade-up"
+                className="flex !font-bold txt2 !text-[25px] text-[#3580F1]"
+              >
                 PartnerPlus
                 <img src={Imgconnt} alt="" />
               </span>
@@ -44,14 +47,29 @@ const SectionPartner = () => {
           </div>
 
           <div className="relative flex flex-col justify-center items-end w-full">
-            <a href="https://partnerplus.finchglowtravels.com/">
+            <div className="flex justify-center items-center w-full h-auto xl:w-[80%]">
+              <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/wLvKTCIMPSk"
+                title="PartnerPlus Connect X: Growing Your Travel Business with PartnerPlus Pro"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            {/* <a
+              className=" w-full h-auto object-cover"
+              href="https://partnerplus.finchglowtravels.com/"
+            >
               <LoadBlurHashImage
                 src={Image}
                 blurHash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" // Replace with actual blurhash
-                className="w-full h-[300px] lg:w-[447px] lg:h-[656px] object-cover"
+                className="!w-full h-auto lg:w-[447px] lg:h-[656px] object-contain"
                 alt="Affiliate Programs"
               />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

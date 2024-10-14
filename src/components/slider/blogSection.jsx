@@ -1,774 +1,385 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination,  A11y } from 'swiper/modules';
-import { useSwiper } from 'swiper/react';
+// import React, { useEffect, useState } from "react";
+// import axios from "axios";
+// import ErrorPage from "../errorMessage/errorPage";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination, A11y } from "swiper/modules";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+// import Icon from "./blog-img/arrow-up.png";
+// import Link from "../contents/link";
+// import "swiper/css";
+// // import "swiper/css/navigation";
+// // import "swiper/css/pagination";
+// import "./swiper/blog.css";
+// import "./swiper/pagination.css";
+// // import "./swiper/navigation.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
+// const BlogSlide = () => {
+//   const [posts, setPosts] = useState([]);
+//   const [hasError, setHasError] = useState(false);
+//   const [postLimit, setPostLimit] = useState(6); //control amount cards
+
+//   useEffect(() => {
+//     axios
+//       .get("https://finchglowtravels.agency/wp-json/wp/v2/posts?_embed=&page=1")
+//       // .get("https://absolutgaming.net/wp-json/wp/v2/posts?_embed&author")
+//       .then((response) => {
+//         setPosts(response.data);
+//       })
+//       .catch((error) => {
+//         console.error("Error fetching posts:", error);
+//         setHasError(true);
+//       });
+//   }, []);
+
+//   useEffect(() => {
+//     AOS.init({ duration: 3000, once: true });
+//   }, []);
+
+//   if (hasError) {
+//     return <ErrorPage />;
+//   }
+
+//   return (
+//     <section className="relative bg-[#EEF5FF] flex justify-center flex-col items-center w-full h-auto">
+//       <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[70px] my-0 mx-auto">
+//         <div className="blog-container w-full flex flex-col items-start overflow-hidden lg:overflow-visible">
+//           <Swiper
+//             className="relative flex flex-col sm:!py-[30px] !overflow-visible"
+//             style={{ width: "100%" }}
+//             modules={[Navigation, Pagination, A11y]}
+//             spaceBetween={25}
+//             slidesPerView={3}
+//             breakpoints={{
+//               0: { slidesPerView: 1 },
+//               520: { slidesPerView: 2 },
+//               950: { slidesPerView: 3 },
+//               1024: { slidesPerView: 3 },
+//             }}
+//             navigation={{
+//               nextEl: ".swiper-button-next-blog",
+//               prevEl: ".swiper-button-prev-blog",
+//             }}
+//           >
+//             {posts.slice(0, postLimit).map((post) => (
+//               <SwiperSlide key={post.id} className="md:right-[-8px] z-[4]">
+//                 <div className="flex flex-col  gap-[20px]  bg-[#E6EFFD] overflow-hidden rounded-b-[14px]">
+//                   <div className="flex flex-col relative w-full overflow-hidden">
+//                     {post._embedded["wp:featuredmedia"] && (
+//                       <img
+//                         className="h-[270px]"
+//                         src={
+//                           post._embedded["wp:featuredmedia"][0].media_details
+//                             .sizes.full.source_url
+//                         }
+//                         alt={
+//                           post._embedded["wp:featuredmedia"][0].alt_text ||
+//                           post.title.rendered
+//                         }
+//                         style={{
+//                           maxWidth: "100%",
+//                           objectFit: "cover",
+//                         }}
+//                       />
+//                     )}
+//                   </div>
+//                   <Link
+//                     to={`/blog/${post.slug}`}
+//                     className="flex flex-col overflow-hidden gap-[20px] "
+//                   >
+//                     <div className="flex  flex-col justify-center w-full p-[30px] max-h-[300px]">
+//                       {post._embedded["wp:term"] && (
+//                         <p
+//                           data-aos="fade-up"
+//                           className="txt4 text-[#0260EE] leading-[24px]"
+//                         >
+//                           {post._embedded["wp:term"][0] &&
+//                             post._embedded["wp:term"][0][0].name}
+//                         </p>
+//                       )}
+
+//                       <div className="flex justify-between items-start w-full">
+//                         <h5
+//                           data-aos="fade-up"
+//                           className="text-[#101828] !leading-[25px] ip8:w-[268px]"
+//                         >
+//                           {post.title.rendered}
+//                         </h5>
+//                         <span data-aos="fade-up" className="arrow">
+//                           <img
+//                             className="relative group-hover:right-[-6px] h-auto object-cover"
+//                             src={Icon}
+//                             alt="arrow up"
+//                           />
+//                         </span>
+//                       </div>
+
+//                       <span
+//                         data-aos="fade-up"
+//                         className="txt5 !font-medium text-[#667085]"
+//                         dangerouslySetInnerHTML={{
+//                           __html: post.excerpt.rendered,
+//                         }}
+//                       ></span>
+//                       {/* <span
+//                     data-aos="fade-up"
+//                     className="txt5 !font-medium text-[#667085]"
+//                   >
+//                     {post.excerpt.rendered.length >200 ? (
+//                       `${post.excerpt.rendered.substring(0, 200)}...`
+//                     ) : (
+//                       <span
+//                         dangerouslySetInnerHTML={{
+//                           __html: post.excerpt.rendered,
+//                         }}
+//                       />
+//                     )}
+//                   </span> */}
+//                     </div>
+//                   </Link>
+//                 </div>
+//               </SwiperSlide>
+//             ))}
+//           </Swiper>
+
+//           <div className="relative flex !items-end !justify-end w-full gap-2 2xl:w-[1280px] px-[15px] pt-[30px] at500:px-[10px] my-0 mx-auto">
+//             <div className="next p-2">
+//               <FaArrowLeft className="swiper-button-prev-blog relative  top-0 text-[#05284C] hover:text-[#05284C] w-[20px]" />
+//             </div>
+//             <div className="prev p-2">
+//               <FaArrowRight className="swiper-button-next-blog relative text-[#05284C] top-0 hover:text-[#05284C] w-[20px]" />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default BlogSlide;
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import ErrorPage from "../errorMessage/errorPage";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import Image1 from './blog-img/image1.jpeg'
-import Image2 from './blog-img/image2.jpeg'
-import Image3 from './blog-img/image3.jpeg'
-import Image4 from './blog-img/image4.jpeg'
-import Image5 from './blog-img/image5.jpeg'
-import Image6 from './blog-img/image6.jpeg'
-import Icon from "./blog-img/icon/Icon wrap.png"
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import './swiper/blogSlider.css'
-import './swiper/pagination.css';
-import './swiper/navigation.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Icon from "./blog-img/arrow-up.png";
+import Link from "../contents/link";
+import "swiper/css";
+import "./swiper/blog.css";
+import "./swiper/pagination.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+const BlogSlide = () => {
+  const [posts, setPosts] = useState([]);
+  const [hasError, setHasError] = useState(false);
+  const [postLimit, setPostLimit] = useState(12); // Increase limit to show enough posts
 
-
-
-
-const blogSection = () => {
-
-  const swiper = useSwiper();
+  useEffect(() => {
+    axios
+      .get("https://finchglowtravels.agency/wp-json/wp/v2/posts?_embed=&page=1")
+      // .get("https://absolutgaming.net/wp-json/wp/v2/posts?_embed&author")
+      .then((response) => {
+        setPosts(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching posts:", error);
+        setHasError(true);
+      });
+  }, []);
 
   useEffect(() => {
     AOS.init({ duration: 3000, once: true });
   }, []);
 
 
-    return (
-      
-        <section className='relative bg-[#EEF5FF] flex justify-center flex-col items-center w-full h-auto'>
-            <div className='static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px] at500:px-[70px] my-0 mx-auto'>
-                <div className=" blogSlider-container w-full flex flex-col items-start overflow-hidden ">
-        
-        
-                    <Swiper className=' relative flex flex-col sm:!py-[30px] !overflow-visible' style={{width:"100%"}}
-                        modules={[Navigation, Pagination, A11y]}
-                        spaceBetween={25}
-                        slidesPerView={1}
-                        navigation={{
-                            nextEl: '.swiper-button-next-blogSlide',
-                            prevEl: '.swiper-button-prev-blogSlide',
-                        }}
-                        // pagination={{ clickable: true }}
-                        
+
+  if (hasError) {
+    return <ErrorPage />;
+  }
+
+  // Helper to group posts into chunks of 6
+  const chunkPosts = (posts, size) => {
+    const chunks = [];
+    for (let i = 0; i < posts.length; i += size) {
+      chunks.push(posts.slice(i, i + size));
+    }
+    return chunks;
+  };
+
+  const groupedPosts = chunkPosts(posts.slice(0, postLimit), 6); // Group by 6 posts per slide
+
+  return (
+    <section className="relative bg-[#EEF5FF] flex justify-center flex-col items-center w-full h-auto overflow-hidden">
+      <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[70px] my-0 mx-auto">
+        <div className="blog-container w-full flex flex-col justify-center items-start overflow-hidden">
+          <Swiper
+            className="relative flex flex-col !overflow-hidden  !h-auto"
+            style={{ width: "100%" }}
+            modules={[Navigation, Pagination, A11y]}
+            spaceBetween={25}
+            slidesPerView={1} // Show one set of 6 cards per slide
+            navigation={{
+              nextEl: ".swiper-button-next-blog",
+              prevEl: ".swiper-button-prev-blog",
+            }}
+          >
+            {groupedPosts.map((group, index) => (
+              <SwiperSlide
+                key={index}
+                className="!flex !justify-center !items-center !w-full z-[4]"
+              >
+                <div className="flex flex-col gap-[20px]">
+                  {/* First Row: 3 cards */}
+                  <div className="flex flex-row gap-[20px]">
+                    {group.slice(0, 3).map((post) => (
+                      <div
+                        data-aos="zoom-in"
+                        key={post.id}
+                        className="flex flex-col bg-[#E6EFFD] max-w-[350px] overflow-hidden rounded-b-[14px]"
+                      >
+                        <div className="flex flex-col relative w-full  overflow-hidden">
+                          {post._embedded["wp:featuredmedia"] && (
+                            <img
+                              className="h-auto w-full min-h-[270px]"
+                              src={
+                                post._embedded["wp:featuredmedia"][0]
+                                  .media_details.sizes.full.source_url
+                              }
+                              alt={
+                                post._embedded["wp:featuredmedia"][0]
+                                  .alt_text || post.title.rendered
+                              }
+                              style={{ maxWidth: "100%", objectFit: "cover" }}
+                            />
+                          )}
+                        </div>
+                        <Link
+                          to={`/blog/${post.slug}`}
+                          className="flex flex-col overflow-hidden gap-[20px]"
                         >
-                        <SwiperSlide className=' md:right-[-8px] z-[4]'>
-                                    
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image1} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Business Day • 9/12/2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image2} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Demi WIlkinson • 16 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          PM mental models
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Mental models are simple expressions of complex processes or relationships.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image3} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                           Candice Wu • 15 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            What is Wireframing?
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Introduction to Wireframing and its Principles. Learn from the best in the industry.
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
+                          <div className="flex flex-col justify-center w-full p-[30px] max-h-[300px]">
+                            {post._embedded["wp:term"] && (
+                              <p
+                                data-aos="fade-up"
+                                className="txt4 text-[#0260EE] leading-[24px]"
+                              >
+                                {post._embedded["wp:term"][0] &&
+                                  post._embedded["wp:term"][0][0].name}
+                              </p>
+                            )}
+                            <div className="flex justify-between items-start w-full">
+                              <h5
+                                data-aos="fade-up"
+                                className="text-[#101828] !leading-[25px] ip8:w-[268px]"
+                              >
+                                {post.title.rendered}
+                              </h5>
+                              <span data-aos="fade-up" className="arrow">
+                                <img
+                                  className="relative group-hover:right-[-6px] h-auto object-cover"
+                                  src={Icon}
+                                  alt="arrow up"
+                                />
+                              </span>
                             </div>
-                            {/* second content */}
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
+                            <span
+                              data-aos="fade-up"
+                              className="txt5 !font-medium text-[#667085]"
+                              dangerouslySetInnerHTML={{
+                                __html: post.excerpt.rendered,
+                              }}
+                            ></span>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
 
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image4} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Natali Craig • 14 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            How collaboration makes us better designers
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Collaboration can make our teams stronger, and our individual designs better.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image5} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Drew Cano • 13 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          Our top 10 Javascript frameworks to use
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           JavaScript frameworks make development easy with extensive features and functionalities.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image6} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                          Orlando Diggs • 12 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Podcast: Creating a better CX Community
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Starting a community doesn’t need to be complicated, but how do you get started?
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                                    
-                        </SwiperSlide>
-
-                        <SwiperSlide className=' md:right-[-8px] z-[4]'>
-                                    
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image1} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Business Day • 9/12/2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image2} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Demi WIlkinson • 16 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          PM mental models
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Mental models are simple expressions of complex processes or relationships.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image3} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                           Candice Wu • 15 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            What is Wireframing?
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Introduction to Wireframing and its Principles. Learn from the best in the industry.
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            {/* second content */}
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image4} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Natali Craig • 14 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            How collaboration makes us better designers
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Collaboration can make our teams stronger, and our individual designs better.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image5} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Drew Cano • 13 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          Our top 10 Javascript frameworks to use
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           JavaScript frameworks make development easy with extensive features and functionalities.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image6} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                          Orlando Diggs • 12 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Podcast: Creating a better CX Community
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Starting a community doesn’t need to be complicated, but how do you get started?
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                                    
-                        </SwiperSlide>
-
-                        <SwiperSlide className=' md:right-[-8px] z-[4]'>
-                                    
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image1} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Business Day • 9/12/2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image2} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Demi WIlkinson • 16 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          PM mental models
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Mental models are simple expressions of complex processes or relationships.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image3} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                           Candice Wu • 15 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            What is Wireframing?
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Introduction to Wireframing and its Principles. Learn from the best in the industry.
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            {/* second content */}
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image4} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Natali Craig • 14 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            How collaboration makes us better designers
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Collaboration can make our teams stronger, and our individual designs better.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image5} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Drew Cano • 13 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          Our top 10 Javascript frameworks to use
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           JavaScript frameworks make development easy with extensive features and functionalities.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image6} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                          Orlando Diggs • 12 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Podcast: Creating a better CX Community
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Starting a community doesn’t need to be complicated, but how do you get started?
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                                    
-                        </SwiperSlide>
-
-                        <SwiperSlide className=' md:right-[-8px] z-[4]'>
-                                    
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image1} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Business Day • 9/12/2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image2} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Demi WIlkinson • 16 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          PM mental models
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Mental models are simple expressions of complex processes or relationships.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image3} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                           Candice Wu • 15 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            What is Wireframing?
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Introduction to Wireframing and its Principles. Learn from the best in the industry.
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            {/* second content */}
-                            <div className='flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]'>
-
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image4} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Natali Craig • 14 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            How collaboration makes us better designers
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           Collaboration can make our teams stronger, and our individual designs better.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex flex-col overflow-hidden gap-[20px]">
-                                    <div className="h-[287px] w-full">
-                                        <img src={Image5} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                            Drew Cano • 13 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                          Our top 10 Javascript frameworks to use
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                           JavaScript frameworks make development easy with extensive features and functionalities.
-                                        </span>
-                                        
-                                    </div>
-                                </div> 
-                                        
-                                <div className="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
-                                    <div className="h-[287px] w-full mb-[20px]">
-                                        <img src={Image6} alt="" className="w-full h-full object-cover" />
-                                    </div>
-
-                                    <div className="flex flex-col justify-start items-start w-full gap-[20px]">
-                                        <span data-aos="fade-up" className="txt4 text-[#0260EE] leading-[24px]">
-                                          Orlando Diggs • 12 Jan 2022
-                                        </span>
-                                        <div className="flex justify-between items-center w-full hover:gap-[12px]">
-                                        <h5 data-aos="fade-up"  className="text-[#101828] !leading-[30px] ip8:w-[268px]">
-                                            Podcast: Creating a better CX Community
-                                        </h5>
-                                        <a href='#' data-aos="fade-up" className="arrow">
-                                            <img className="relative hover:right-[-6px] w-[24px] h-[24px] object-contain " 
-                                            src={Icon} 
-                                            alt="arrow up" 
-                                            />
-                                        </a>
-                                        </div>
-                                        <span data-aos="fade-up" className="txt5 text-[#667085]">
-                                            Starting a community doesn’t need to be complicated, but how do you get started?
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                                    
-                        </SwiperSlide>
-
-                    </Swiper>
-                    
-                    <div  className="relative  flex  !justify-between !items-center w-full !gap-2 max-w-[1280px] px-[15px] pt-[30px] at500:px-[10px] my-0 mx-auto ">
-                        <div className="next !float-right p-2 ">
-                            <FaArrowLeft className="swiper-button-prev-blogSlide !relative !left-[-3px] !top-0 !text-[#05284C] hover:!text-[#05284C] !w-[20px]" />
+                  {/* Second Row: 3 cards */}
+                  <div data-aos="zoom-in" className="flex flex-row gap-[20px] ">
+                    {group.slice(3, 6).map((post) => (
+                      <div
+                        key={post.id}
+                        className="flex flex-col bg-[#E6EFFD] max-w-[350px] overflow-hidden rounded-b-[14px]"
+                      >
+                        {/* Same structure for the second row of posts */}
+                        <div className="flex flex-col relative w-full overflow-hidden">
+                          {post._embedded["wp:featuredmedia"] && (
+                            <img
+                              className="h-auto w-full min-h-[270px]"
+                              src={
+                                post._embedded["wp:featuredmedia"][0]
+                                  .media_details.sizes.full.source_url
+                              }
+                              alt={
+                                post._embedded["wp:featuredmedia"][0]
+                                  .alt_text || post.title.rendered
+                              }
+                              style={{ maxWidth: "100%", objectFit: "cover" }}
+                            />
+                          )}
                         </div>
-                        <div className="prev float-right p-2">
-                            <FaArrowRight className="swiper-button-next-blogSlide !relative !text-[#05284C] !top-0 hover:!text-[#05284C] !w-[20px]" />
-                        </div>
-                    </div>
-
+                        <Link
+                          to={`/blog/${post.slug}`}
+                          className="flex flex-col overflow-hidden gap-[20px]"
+                        >
+                          <div className="flex flex-col justify-center w-full p-[30px] max-h-[300px]">
+                            {post._embedded["wp:term"] && (
+                              <p
+                                data-aos="fade-up"
+                                className="txt4 text-[#0260EE] leading-[24px]"
+                              >
+                                {post._embedded["wp:term"][0] &&
+                                  post._embedded["wp:term"][0][0].name}
+                              </p>
+                            )}
+                            <div className="flex justify-between items-start w-full">
+                              <h5
+                                data-aos="fade-up"
+                                className="text-[#101828] !leading-[25px] ip8:w-[268px]"
+                              >
+                                {post.title.rendered}
+                              </h5>
+                              <span data-aos="fade-up" className="arrow">
+                                <img
+                                  className="relative group-hover:right-[-6px] h-auto object-cover"
+                                  src={Icon}
+                                  alt="arrow up"
+                                />
+                              </span>
+                            </div>
+                            <span
+                              data-aos="fade-up"
+                              className="txt5 !font-medium text-[#667085]"
+                              dangerouslySetInnerHTML={{
+                                __html: post.excerpt.rendered,
+                              }}
+                            ></span>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-            </div>
-        </section>
-    
-    
-   
-    );
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="relative flex !items-end !justify-end w-full gap-2 2xl:w-[1280px] px-[15px] at500:px-[10px] py-[20px] md:py-[40px] my-0 mx-auto">
+          <div className="next p-2">
+            <FaArrowLeft className="swiper-button-prev-blog relative top-0 text-[#05284C] hover:text-[#05284C] w-[20px]" />
+          </div>
+          <div className="prev p-2">
+            <FaArrowRight className="swiper-button-next-blog relative text-[#05284C] top-0 hover:text-[#05284C] w-[20px]" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
-export default blogSection;
-
-
-
-
+export default BlogSlide;

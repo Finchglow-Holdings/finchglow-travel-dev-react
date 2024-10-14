@@ -16,7 +16,7 @@ const SectionWhereWeAre = () => {
   return (
     <section className="relative regale-blue flex justify-center flex-col items-center w-full h-auto overflow-hidden">
       <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] pt-[70px] pb-[55px] at500:pl-[80px] at500:pr-0 2xl:px-[20px] my-0 mx-auto  overflow-hidden">
-        <div className="relative flex flex-col lg:flex-row justify-between items-center w-full">
+        <div className="relative flex flex-col xl:flex-row justify-between items-center w-full">
           <div className="relative flex flex-col justify-center items-start gap-[30px] w-full xl:w-[404px] h-auto text-left mb-[30px]">
             <div className="flex flex-col gap-[17px]">
               <span

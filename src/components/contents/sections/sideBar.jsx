@@ -5,7 +5,7 @@ import ZohoOptinForm from "../../form/zohoOptinForm";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar relative flex flex-col justify-start xl:w-[384px] z-0">
+    <div className="sidebar relative flex flex-col justify-start silver:w-[384px] z-0">
       {/* sign-up */}
       <div className="relative bg-[#E6EFFD] rounded-[14.22px] z-[33] shadow-md md:shadow-lg flex justify-center items-center w-full p-[30px] my-0 mx-auto">
         {/*row1 */}

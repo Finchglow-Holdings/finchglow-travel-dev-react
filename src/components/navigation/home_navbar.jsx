@@ -175,11 +175,11 @@ const Navbar = ({ openOverlay }) => {
               </div>
             </li>
 
-            {/* <li
+            <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "blog" ? "border-b-[5px] border-b-[#81B0F7]" : ""} ${scrolled ? "text-[#05284C]" : "text-white"}`}
             >
-              < Link  to="/">Blog</ Link >
-            </li> */}
+              <Link to="/blog-home">Blog</Link>
+            </li>
 
             <li
               className={`py-[10px] px-[10px] hover:border-b-[5px] hover:border-b-[#81B0F7] ${activeLink === "contact" ? "border-b-[5px] border-b-[#81B0F7]" : ""} ${scrolled ? "text-[#05284C]" : "text-white"}`}
@@ -418,18 +418,18 @@ const Navbar = ({ openOverlay }) => {
                 </div>
               </li>
 
-              {/* <li
+              <li
                 className={`w-full py-[10px] px-[10px] hover:border-l-[3px] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] ${scrolled ? "text-[#05284C]" : "text-white"}`}
               >
-                < Link  to="/">Blog</ Link >
-              </li> */}
-              <Link className="flex w-full" to="/contact-us">
+                <Link to="/blog-home">Blog</Link>
+              </li>
+              
                 <li
                   className={`w-full py-[7px] px-[10px] hover:border-l-[3px] hover:text-[#05284C] dark:hover:bg-[#E6EFFD] hover:border-l-[#81B0F7] ${scrolled ? "text-[#05284C]" : "text-white"}`}
                 >
-                  <span className=""> Contact us</span>
+                  <Link to="/contact-us">Contact us</Link>
                 </li>
-              </Link>
+             
 
               <li className="py-[10px] w-full pl-[10px]">
                 <span className="flex  space-x-3">

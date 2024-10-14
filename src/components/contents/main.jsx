@@ -62,9 +62,8 @@ function Main() {
 
       <AchievementsSection />
       <SectionWhereWeAre />
-      <SectionPartner />
       {/* our blog section */}
-      {/* <section className="relative bg-[#FFFFFF] flex justify-center flex-col items-center w-full h-auto">
+      <section className="relative bg-[#FFFFFF] flex justify-center flex-col items-center w-full h-auto">
         <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px]  at500:px-[40px] md:pl-[80px] md:pr-0  my-0 mx-auto overflow-hidden">
           <div className="relative flex flex-col justify-center items-start w-full text-left mb-[20px] lg:mb-[30px]">
             <div className="relative flex flex-col gap-[17px] justify-between items-start w-full text-left ">
@@ -88,20 +87,21 @@ function Main() {
                 tales and insider tips.
               </span>
               <div>
-                < Link  to="/">
+                <Link to="/blog-home">
                   <Button
                     size="medium"
                     className=" shadow-[#1018280D] !border-[#0260EE] !border-solid !border-[1px] !w-[122px] !h-[48px] text-[#05284C]"
                   >
                     Go to blog
                   </Button>
-                </ Link >
+                </Link>
               </div>
             </div>
           </div>
           <BlogSlide />
         </div>
-      </section> */}
+      </section>
+      <SectionPartner />
 
       <section
         className="relative flex flex-col justify-center items-center bg-[#03182E] bg-blend-soft-light bg-no-repeat bg-cover bg-center md:h-[384px] w-full h-auto overflow-hidden"

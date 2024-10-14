@@ -1,5 +1,5 @@
 /* Styles for large screens */
-@media (min-width: 1024px) {
+@media (min-width: 950px) {
   .sidebar {
     flex: 0 0 384px;
   }

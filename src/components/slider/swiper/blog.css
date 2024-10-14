@@ -61,13 +61,13 @@
 
 .swiper-button-prev-blog,
 .swiper-rtl .swiper-button-next-blog {
-    left: var(--swiper-navigation-sides-offset, 10px);
-    right: auto;
+    right: var(--swiper-navigation-sides-offset, 84px);
+    left: auto;
 }
 
 .swiper-button-next-blog,
 .swiper-rtl .swiper-button-prev-blog {
-    right: var(--swiper-navigation-sides-offset, 10px);
+    right: var(--swiper-navigation-sides-offset, 45px);
     left: auto;
 }
 
@@ -91,11 +91,11 @@
     content: 'prev';
 }
 
-.swiper-button-next-blog,
+/* .swiper-button-next-blog,
 .swiper-rtl .swiper-button-prev-blog {
     right: var(--swiper-navigation-sides-offset, 10px);
     left: auto;
-}
+} */
 
 .swiper-button-next-blog:after,
 .swiper-rtl .swiper-button-prev-blog:after {

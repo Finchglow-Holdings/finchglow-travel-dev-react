@@ -81,6 +81,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/blog/:slug",
+    element: (
+      <>
+        <BlogPost />
+      </>
+    ),
+  },
+  {
     path: "contact-us",
     element: (
       <>
