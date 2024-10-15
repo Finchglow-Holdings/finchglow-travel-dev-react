@@ -181,7 +181,6 @@ const BlogSlide = () => {
   useEffect(() => {
     axios
       .get("https://finchglowtravels.agency/wp-json/wp/v2/posts?_embed=&page=1")
-      // .get("https://absolutgaming.net/wp-json/wp/v2/posts?_embed&author")
       .then((response) => {
         setPosts(response.data);
       })
