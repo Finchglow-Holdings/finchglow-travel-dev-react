@@ -1,4 +1,4 @@
-// src/OneSignal.js
+import "./OneSignalServiceWorker"
 import { useEffect } from "react";
 
 let initialized = false; // Flag to check if OneSignal is initialized
