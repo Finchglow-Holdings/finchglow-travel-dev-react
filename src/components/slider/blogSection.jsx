@@ -238,7 +238,7 @@ const BlogSlide = () => {
                       <div
                         data-aos="zoom-in"
                         key={post.id}
-                        className="flex flex-col bg-[#E6EFFD] max-w-[350px] overflow-hidden rounded-b-[14px]"
+                        className="flex flex-col  max-w-[350px] overflow-hidden rounded-b-[14px]"
                       >
                         <div className="flex flex-col relative w-full  overflow-hidden">
                           {post._embedded["wp:featuredmedia"] && (
@@ -260,7 +260,7 @@ const BlogSlide = () => {
                           to={`/blog/${post.slug}`}
                           className="flex flex-col overflow-hidden gap-[20px]"
                         >
-                          <div className="flex flex-col justify-center w-full p-[30px] max-h-[300px]">
+                          <div className="flex flex-col justify-center w-full p-[5px] max-h-[300px]">
                             {post._embedded["wp:term"] && (
                               <p
                                 data-aos="fade-up"

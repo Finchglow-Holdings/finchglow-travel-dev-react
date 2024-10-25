@@ -47,16 +47,16 @@ const SectionPartner = () => {
           </div>
 
           <div className="relative flex flex-col justify-center items-end w-full">
-            <div className="flex justify-center items-center w-full h-auto xl:w-[80%]">
+            <div className="flex justify-center items-center w-full h-auto xl:w-[67%]">
               <iframe
                 width="100%"
                 height="500"
                 src="https://www.youtube.com/embed/wLvKTCIMPSk"
                 title="PartnerPlus Connect X: Growing Your Travel Business with PartnerPlus Pro"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </div>
             {/* <a
