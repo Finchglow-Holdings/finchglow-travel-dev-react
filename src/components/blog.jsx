@@ -9,6 +9,7 @@ import BlogSlider from "./slider/blogSection";
 import Footer from "./contents/footer";
 import TestimonialSlide from "./testimonial/testimonial";
 import OverlayForm from "./form/overlayForm";
+import LatestBlogSection from "./slider/blogMobile";
 
 function createTitle(content) {
   return (
@@ -42,6 +43,7 @@ function Blog() {
         </section>
 
         <BlogSlider />
+        <LatestBlogSection/>
 
         <section className="relative flex flex-col justify-center items-center  md:h-[384px] w-full h-auto overflow-hidden">
           <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[50px]  at500:px-[55px]  my-0 mx-auto overflow-hidden">

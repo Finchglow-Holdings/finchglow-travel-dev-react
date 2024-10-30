@@ -474,7 +474,7 @@ const Nav = ({ openOverlay }) => {
               </li>
 
               <li
-                className={`relative flex  w-full gap-[10px] items-center hover:border-l-[3px] dark:hover:bg-[#CCDFFC] hover:border-l-[#81B0F7] hover:text-[#05284C] py-[7px] px-[10px] ${activeLink === "blog-home" ? "border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                className={`relative flex  w-full gap-[10px] justify-start items-start hover:border-l-[3px] dark:hover:bg-[#CCDFFC] hover:border-l-[#81B0F7] hover:text-[#05284C] py-[7px] px-[10px] ${activeLink === "blog-home" ? "border-l-[3px] border-l-[#81B0F7]" : ""}`}
               >
                 <Link to="/blog-home">
                   <span className="w-full text-[#05284C]">Blog</span>
@@ -483,7 +483,7 @@ const Nav = ({ openOverlay }) => {
 
              
                 <li
-                  className={` relative flex dark:hover:bg-[#CCDFFC]  justify-between w-full gap-[10px] items-center hover:border-l-[3px] hover:border-l-[#81B0F7] hover:text-[#05284C] py-[7px] px-[10px] ${activeLink === "contact-us" ? "border-l-[3px] border-l-[#81B0F7]" : ""}`}
+                  className={` relative flex dark:hover:bg-[#CCDFFC]  justify-start w-full gap-[10px] items-center hover:border-l-[3px] hover:border-l-[#81B0F7] hover:text-[#05284C] py-[7px] px-[10px] ${activeLink === "contact-us" ? "border-l-[3px] border-l-[#81B0F7]" : ""}`}
                 >
                   <Link to="/contact-us">
                     <span className="text-[#05284C]"> Contact us</span>
