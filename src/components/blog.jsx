@@ -43,7 +43,7 @@ function Blog() {
         </section>
 
         <BlogSlider />
-        <LatestBlogSection/>
+       
 
         <section className="relative flex flex-col justify-center items-center  md:h-[384px] w-full h-auto overflow-hidden">
           <div className="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[50px]  at500:px-[55px]  my-0 mx-auto overflow-hidden">

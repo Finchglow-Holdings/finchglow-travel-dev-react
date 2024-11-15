@@ -212,7 +212,7 @@ const BlogSlide = () => {
   const groupedPosts = chunkPosts(posts.slice(0, postLimit), 6); // Group by 6 posts per slide
 
   return (
-    <section className="relative bg-[#EEF5FF] hidden sm:flex justify-center flex-col items-center w-full h-auto overflow-hidden">
+    <section className="relative bg-[#EEF5FF] flex justify-center flex-col items-center w-full h-auto overflow-hidden">
       <div className="static w-full flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[70px] at500:px-[70px] my-0 mx-auto">
         <div className="blog-container w-full flex flex-col justify-center items-start overflow-hidden">
           <Swiper
@@ -301,7 +301,7 @@ const BlogSlide = () => {
                   {/* Second Row: 3 cards */}
                   <div
                     data-aos="zoom-in"
-                    className="hidden sm:grid grid-cols-1 sm:grid-cols-2 silver:grid-cols-3 items-start gap-x-5 gap-y-5"
+                    className="grid grid-cols-1 sm:grid-cols-2 silver:grid-cols-3 items-start gap-x-5 gap-y-5"
                   >
                     {group.slice(3, 6).map((post) => (
                       <div

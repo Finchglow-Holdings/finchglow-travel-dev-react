@@ -1,3 +1,8 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }, { "source": "/partner-plus-connect", "destination": "https://partnerplus.finchglowtravels.com" }, { "source": "/_next", "destination": "https://partnerplus.finchglowtravels.com" }, { "source": "/images", "destination": "https://partnerplus.finchglowtravels.com" }]
+  "rewrites": [
+    { "source": "/partner-plus-connect", "destination": "https://partnerplus.finchglowtravels.com" },
+    { "source": "/_next/(.*)", "destination": "https://partnerplus.finchglowtravels.com/_next/$1" },
+    { "source": "/images/(.*)", "destination": "https://partnerplus.finchglowtravels.com/images/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
