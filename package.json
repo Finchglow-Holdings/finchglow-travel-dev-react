@@ -4,7 +4,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+   "main": "index.js",
   "scripts": {
+    "ssr": "npm run build && node server/index.js",
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -12,10 +14,18 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+   "proxy": "http://localhost:5000",
   "dependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/register": "^7.25.9",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.7.7",
     "dompurify": "^3.1.5",
+    "express": "^4.21.1",
+    "ignore-styles": "^5.0.1",
+    "prerender": "^5.21.6",
+    "prerender-node": "^3.8.0",
     "react": "^18.2.0",
     "react-blurhash": "^0.3.0",
     "react-countup": "^6.5.3",
@@ -26,7 +36,7 @@
     "react-lazy-load-image-component": "^1.6.2",
     "react-onesignal": "^3.0.1",
     "react-parallax": "^3.5.1",
-    "react-router-dom": "^6.23.1",
+    "react-router-dom": "^6.28.0",
     "react-slideshow-image": "^4.3.1",
     "swiper": "^11.1.4"
   },
